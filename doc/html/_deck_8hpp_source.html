@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Projet : Jeu de cartes - POO:  Fichier source de /home/figiel-paul/Bureau/ProjetPoo/ProjetPOO-ARAYA-FIGIEL/include/Deck.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Projet : Jeu de cartes - POO
+   &#160;<span id="projectnumber">V3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Deck.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_deck_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef DECK_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DECK_HPP</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">class </span><a class="code" href="class_carte.html">Carte</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="class_champion.html">Champion</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_deck.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_deck.html">Deck</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">private</span> :</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    std::vector&lt;Carte*&gt; listecartes_;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_champion.html">Champion</a> *champion_;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">public</span> :</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_deck.html#a57ae1cb4ac6fd61c249cefb2db85eb99">Deck</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_deck.html#ab3f7a58ffccaeed56fb76939978396b9">   24</a></span>&#160;    std::vector&lt;Carte*&gt; <a class="code" href="class_deck.html#ab3f7a58ffccaeed56fb76939978396b9">getListeCartes</a>(){ <span class="keywordflow">return</span> listecartes_;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_deck.html#a428e9abf1bf8c7cf6acb9371361759ef">   25</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_deck.html#a428e9abf1bf8c7cf6acb9371361759ef">setListeCartes</a>(std::vector&lt;Carte*&gt; l){ listecartes_=l;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_deck.html#a17dd89315d08272505adbc12ca857aec">   26</a></span>&#160;    <a class="code" href="class_champion.html">Champion</a> *<a class="code" href="class_deck.html#a17dd89315d08272505adbc12ca857aec">getChampion</a>(){<span class="keywordflow">return</span> champion_;};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;   <span class="comment">// FIN set et get---------------------------------------------------</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_carte.html">Carte</a> *<a class="code" href="class_deck.html#a400a064a590119f8809d7a19e4f6704c">piocher</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_deck.html#a3e12ffedb0635987a189e9a982dc5661">addCarte</a>(<a class="code" href="class_carte.html">Carte</a> *c);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_deck.html#a773e994efea1dab3ee65f974ce6e6e39">addChampion</a>(<a class="code" href="class_champion.html">Champion</a> *ch);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_deck.html#a561639507d28e89d055136368801da46">clear</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_deck.html#ae5a1e52ab00ae5924f2bc6b730dba3eb">shuffle</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_deck_html_a17dd89315d08272505adbc12ca857aec"><div class="ttname"><a href="class_deck.html#a17dd89315d08272505adbc12ca857aec">Deck::getChampion</a></div><div class="ttdeci">Champion * getChampion()</div><div class="ttdef"><b>Definition:</b> Deck.hpp:26</div></div>
+<div class="ttc" id="class_deck_html_a400a064a590119f8809d7a19e4f6704c"><div class="ttname"><a href="class_deck.html#a400a064a590119f8809d7a19e4f6704c">Deck::piocher</a></div><div class="ttdeci">Carte * piocher()</div><div class="ttdoc">Pioche une carte et la suprime du deck. </div></div>
+<div class="ttc" id="class_deck_html_a57ae1cb4ac6fd61c249cefb2db85eb99"><div class="ttname"><a href="class_deck.html#a57ae1cb4ac6fd61c249cefb2db85eb99">Deck::Deck</a></div><div class="ttdeci">Deck()</div><div class="ttdoc">Constructeur vide. </div></div>
+<div class="ttc" id="class_carte_html"><div class="ttname"><a href="class_carte.html">Carte</a></div><div class="ttdef"><b>Definition:</b> Carte.hpp:9</div></div>
+<div class="ttc" id="class_deck_html"><div class="ttname"><a href="class_deck.html">Deck</a></div><div class="ttdef"><b>Definition:</b> Deck.hpp:8</div></div>
+<div class="ttc" id="class_deck_html_ab3f7a58ffccaeed56fb76939978396b9"><div class="ttname"><a href="class_deck.html#ab3f7a58ffccaeed56fb76939978396b9">Deck::getListeCartes</a></div><div class="ttdeci">std::vector&lt; Carte * &gt; getListeCartes()</div><div class="ttdef"><b>Definition:</b> Deck.hpp:24</div></div>
+<div class="ttc" id="class_deck_html_ae5a1e52ab00ae5924f2bc6b730dba3eb"><div class="ttname"><a href="class_deck.html#ae5a1e52ab00ae5924f2bc6b730dba3eb">Deck::shuffle</a></div><div class="ttdeci">void shuffle()</div><div class="ttdoc">Mélange le deck. </div></div>
+<div class="ttc" id="class_deck_html_a3e12ffedb0635987a189e9a982dc5661"><div class="ttname"><a href="class_deck.html#a3e12ffedb0635987a189e9a982dc5661">Deck::addCarte</a></div><div class="ttdeci">void addCarte(Carte *c)</div><div class="ttdoc">rajoue une carte au deck </div></div>
+<div class="ttc" id="class_deck_html_a561639507d28e89d055136368801da46"><div class="ttname"><a href="class_deck.html#a561639507d28e89d055136368801da46">Deck::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">supprime toutes les carte du deck ( clear le vecteur&lt;Carte*&gt;) </div></div>
+<div class="ttc" id="class_deck_html_a773e994efea1dab3ee65f974ce6e6e39"><div class="ttname"><a href="class_deck.html#a773e994efea1dab3ee65f974ce6e6e39">Deck::addChampion</a></div><div class="ttdeci">void addChampion(Champion *ch)</div><div class="ttdoc">rajoue un champion au deck </div></div>
+<div class="ttc" id="class_champion_html"><div class="ttname"><a href="class_champion.html">Champion</a></div><div class="ttdef"><b>Definition:</b> Champion.hpp:8</div></div>
+<div class="ttc" id="class_deck_html_a428e9abf1bf8c7cf6acb9371361759ef"><div class="ttname"><a href="class_deck.html#a428e9abf1bf8c7cf6acb9371361759ef">Deck::setListeCartes</a></div><div class="ttdeci">void setListeCartes(std::vector&lt; Carte * &gt; l)</div><div class="ttdef"><b>Definition:</b> Deck.hpp:25</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche 22 Novembre 2015 15:17:00 pour Projet : Jeu de cartes - POO par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

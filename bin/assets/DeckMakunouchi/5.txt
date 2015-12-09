@@ -1,0 +1,8 @@
+id_=17
+nom_=Mordre l'oreil
+num_=5
+retournable_=0
+type_=1
+Leffet_=EffetFinisher
+Fstartup_=0.2
+dmg_=9

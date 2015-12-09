@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Projet : Jeu de cartes - POO:  Fichier source de /home/figiel-paul/Bureau/ProjetPoo/ProjetPOO-ARAYA-FIGIEL/include/Carte.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Projet : Jeu de cartes - POO
+   &#160;<span id="projectnumber">V3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Carte.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_carte_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//#include &quot;Effet.hpp&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="_jeu_8hpp.html">Jeu.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef CARTE_HPP</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CARTE_HPP</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="class_effet.html">Effet</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_carte.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_carte.html">Carte</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">int</span> id_;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    std::string nom_;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">int</span> type_; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">//0=coup, 1=choppe, 2=block , 3 = esquive, 4=jocker</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">int</span> type2_;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">//0=coup, 1=choppe, 2=block , 3 = esquive, 4=jocker</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    std::vector&lt;Effet*&gt; Leffet_;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    std::vector&lt;Effet*&gt; Leffet2_;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">int</span> num_; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">// numéro ex: 2 de trèfle , 3 de carreaux ( note : le numero pour les jocker est 0)</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">int</span> couleur_; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">//0=trèfle , 1 = pique, 2=carreaux, 3=coeur</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">bool</span> retournable_;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">int</span> face_; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// O = face rector et 1 = face verso --&gt; utile pour les cartes retournable</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">double</span> Fstartup_;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// frame de startup</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">double</span> Fstartup2_;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">double</span> dmg_;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">double</span> dmg2_;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">//Constructeur------------------------------------------------------------</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_carte.html#a06daaca86c31c80f8308f4a81d46dc9b">   46</a></span>&#160;<span class="comment"></span>    <a class="code" href="class_carte.html#a06daaca86c31c80f8308f4a81d46dc9b">Carte</a>()</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// Constructeur pour carte qui n&#39;ont&#39; qu&#39;un coté.</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_carte.html#a5a1e7bd0334c6cf52ba8991c3a019815">   67</a></span>&#160;        <a class="code" href="class_carte.html#a5a1e7bd0334c6cf52ba8991c3a019815">Carte</a> ( <span class="keywordtype">int</span> <span class="keywordtype">id</span>, std::string nom, <span class="keywordtype">int</span> type, std::vector&lt;Effet*&gt; Leffet, <span class="keywordtype">int</span> num, <span class="keywordtype">int</span> couleur, <span class="keywordtype">double</span> FS,<span class="keywordtype">double</span> dmg) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        id_=id;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        nom_=nom;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        type_=type;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        Leffet_=Leffet;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        num_=num;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        couleur_=couleur;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        retournable_=<span class="keyword">false</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        Fstartup_=FS;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        face_=0;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        dmg_=dmg;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        };</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="comment">// Constructeur pour carte qui ont 2 coté.</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="class_carte.html#a9fbd39e6a9da16692854ce076ee1a007">  112</a></span>&#160;        <a class="code" href="class_carte.html#a9fbd39e6a9da16692854ce076ee1a007">Carte</a> ( <span class="keywordtype">int</span> <span class="keywordtype">id</span>, std::string nom, <span class="keywordtype">int</span> type, <span class="keywordtype">int</span> type2, std::vector&lt;Effet*&gt; Leffet, std::vector&lt;Effet*&gt; Leffet2, <span class="keywordtype">int</span> num, <span class="keywordtype">int</span> couleur, <span class="keywordtype">double</span> FS, <span class="keywordtype">double</span> FS2,<span class="keywordtype">double</span> dmg, <span class="keywordtype">double</span> dmg2) {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            id_=id;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        nom_=nom;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        type_=type;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        type2_=type2;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        Leffet_=Leffet;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        Leffet2_=Leffet2;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        num_=num;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        couleur_=couleur;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        retournable_=<span class="keyword">true</span>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        Fstartup_=FS;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        Fstartup2_=FS2;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        face_=0;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        dmg_=dmg;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        dmg2_=dmg2;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <a class="code" href="class_carte.html#a63300ff55c58b5d5b1674a3fc8f25910">~Carte</a>();</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="comment">// get et set ------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    </div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="class_carte.html#ae51a40df8fb2ab5498ae67e165ceb5f2">  150</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_carte.html#ae51a40df8fb2ab5498ae67e165ceb5f2">getId</a>(){ <span class="keywordflow">return</span> id_ ;}</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="class_carte.html#a1aad4c6854631a3de71210d33c15e258">  152</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_carte.html#a1aad4c6854631a3de71210d33c15e258">setID</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>) { id_=id;}</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    </div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="class_carte.html#a7b68885ddbd8c8f6991e5447346913bc">  154</a></span>&#160;    std::string <a class="code" href="class_carte.html#a7b68885ddbd8c8f6991e5447346913bc">getNom</a>() { <span class="keywordflow">return</span> nom_;}</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    </div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="class_carte.html#a90596fd46a269874d7473afe9733869a">  156</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_carte.html#a90596fd46a269874d7473afe9733869a">setNom</a>(std::string nom) { nom_=nom;}</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    </div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="class_carte.html#aa58ee91b50b7e5e1d2483acb698b59f4">  158</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_carte.html#aa58ee91b50b7e5e1d2483acb698b59f4">getType</a>() {<span class="keywordflow">return</span> type_;}</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="class_carte.html#a78fd9aadbd17a4649669117ada726dfa">  160</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_carte.html#a78fd9aadbd17a4649669117ada726dfa">getType2</a>() { <span class="keywordflow">return</span> type2_;}</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    </div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="class_carte.html#a16726786b2df18980f82b9f19d72cd00">  162</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_carte.html#a16726786b2df18980f82b9f19d72cd00">setType</a>( <span class="keywordtype">int</span> type) { type_=type;}</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="class_carte.html#a78d440deb46f085e53d29cbb81c39c0f">  164</a></span>&#160;     <span class="keywordtype">void</span> <a class="code" href="class_carte.html#a78d440deb46f085e53d29cbb81c39c0f">setType2</a>( <span class="keywordtype">int</span> type) { type2_=type;}</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="class_carte.html#a4410810499a30afcdfe51a70db079dfa">  166</a></span>&#160;    std::vector&lt;Effet*&gt; <a class="code" href="class_carte.html#a4410810499a30afcdfe51a70db079dfa">getLeffet</a>(){ <span class="keywordflow">return</span> Leffet_;}</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="class_carte.html#ae66d95ae0ba845fe4b5601c36b68cabd">  168</a></span>&#160;    std::vector&lt;Effet*&gt; <a class="code" href="class_carte.html#ae66d95ae0ba845fe4b5601c36b68cabd">getLeffet2</a>(){ <span class="keywordflow">return</span> Leffet2_;}</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="class_carte.html#a92a0d5cda40ca72720524937f88f497b">  170</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_carte.html#a92a0d5cda40ca72720524937f88f497b">setLeffet</a> (std::vector&lt;Effet*&gt; Leffet){ Leffet_=Leffet;}</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="class_carte.html#a1fc20e7a2df33a2ca24ebea22c18f074">  172</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_carte.html#a1fc20e7a2df33a2ca24ebea22c18f074">setLeffet2</a> (std::vector&lt;Effet*&gt; Leffet){ Leffet2_=Leffet;}</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    </div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="class_carte.html#ae4ede142122a382b2b6648906c4cd37a">  174</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_carte.html#ae4ede142122a382b2b6648906c4cd37a">getNum</a>(){ <span class="keywordflow">return</span> num_;}</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    </div>
+<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="class_carte.html#a6d5eb0a01948dc48a9c86b7c5083be29">  176</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_carte.html#a6d5eb0a01948dc48a9c86b7c5083be29">setNum</a>(<span class="keywordtype">int</span> num){  num_=num;}</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="class_carte.html#a87f5a4affacf484c8e1f308abf4ec514">  178</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_carte.html#a87f5a4affacf484c8e1f308abf4ec514">getCouleur</a>(){ <span class="keywordflow">return</span> couleur_;}</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    </div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="class_carte.html#a8736424ac59160d97300befe55b12eea">  180</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_carte.html#a8736424ac59160d97300befe55b12eea">setCouleur</a>(<span class="keywordtype">int</span> coul){ couleur_=coul;}</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="class_carte.html#a4564309a6927eb31e2e0641d1fc80315">  182</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_carte.html#a4564309a6927eb31e2e0641d1fc80315">getRetournable</a>(){ <span class="keywordflow">return</span> retournable_;}</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    </div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="class_carte.html#a53c600ae84b2c9033cede1e147e7de60">  184</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_carte.html#a53c600ae84b2c9033cede1e147e7de60">setRetournable</a>(<span class="keywordtype">bool</span> r){ retournable_=r;}</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="class_carte.html#aac84bc0e598a0c5180ff74e945963a3a">  186</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_carte.html#aac84bc0e598a0c5180ff74e945963a3a">getFstartup</a>(){ <span class="keywordflow">return</span> Fstartup_;}</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="class_carte.html#a759d6b7a8b08cf7a6d1e0e5f4e10c28c">  188</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_carte.html#a759d6b7a8b08cf7a6d1e0e5f4e10c28c">getFstartup2</a>(){ <span class="keywordflow">return</span> Fstartup2_;}</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="class_carte.html#ac742ba23680cb680376984a3b89dcce1">  190</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_carte.html#ac742ba23680cb680376984a3b89dcce1">getFace</a>(){ <span class="keywordflow">return</span> face_;}</div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="class_carte.html#a72278c63fcebe0f1fb38e6f6a49244e9">  191</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_carte.html#a72278c63fcebe0f1fb38e6f6a49244e9">setFace</a>(<span class="keywordtype">int</span> x){face_=x;}</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="class_carte.html#ab3e508c3af45a3e5b38a397b003cc250">  195</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_carte.html#ab3e508c3af45a3e5b38a397b003cc250">setFstartup</a>(<span class="keywordtype">int</span> FS) {Fstartup_=FS ;}</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="class_carte.html#a82c6e252c3225604e23977e3453af623">  197</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_carte.html#a82c6e252c3225604e23977e3453af623">setFstartup2</a>(<span class="keywordtype">int</span> FS) {Fstartup2_=FS ;}</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00199"></a><span class="lineno"><a class="line" href="class_carte.html#a6b831afaa8d2f723ecd642b92de536fb">  199</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_carte.html#a6b831afaa8d2f723ecd642b92de536fb">getDmg</a>(){<span class="keywordflow">return</span> dmg_;}</div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="class_carte.html#ac6e5febd328ba89c73d755b7edfc61ae">  200</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_carte.html#ac6e5febd328ba89c73d755b7edfc61ae">getDmg2</a>(){<span class="keywordflow">return</span> dmg2_;}</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="class_carte.html#a496ea294465e9ba361ec759b2472da7e">  202</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_carte.html#a496ea294465e9ba361ec759b2472da7e">setDmg</a>(<span class="keywordtype">double</span> dmg){ dmg_ = dmg;}</div>
+<div class="line"><a name="l00203"></a><span class="lineno"><a class="line" href="class_carte.html#aedb1a92861dec58f566818795efc1e04">  203</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_carte.html#aedb1a92861dec58f566818795efc1e04">setDmg2</a>(<span class="keywordtype">double</span> dmg2){dmg2_ = dmg2;}</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="comment">// FIN set et get---------------------------------------------------</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;   <span class="comment">// C&#39;est 4 get vont chercher la bonne valeur selon si la carte est face recto ou verso</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="comment"></span>    <span class="keywordtype">int</span> <a class="code" href="class_carte.html#ad1f2b50c5c627c11547282e88a912d44">getGoodType</a>();</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_carte.html#a03c8b823ad97a064f6415eea63dcdd3d">getGoodFstartup</a>();</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    std::vector&lt;Effet*&gt; <a class="code" href="class_carte.html#aca394e9c23d6b9a8ab7d35e9362295f0">getGoodLeffet</a>();</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_carte.html#a3f437815a1d95bb70a9ede79c9f53348">getGoodDmg</a>();</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    </div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_carte.html#ac59034763b08ced32db5d82d080f3ddc">addEffet</a>(<a class="code" href="class_effet.html">Effet</a>* newEffet);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_carte.html#a3f2cf87d69031210310f6b9eff20fe81">addEffet2</a>(<a class="code" href="class_effet.html">Effet</a> *newEffet);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_carte.html#a22cc2da2c3819aeadd1e09e88dfbedcf">actionEffet</a>(<a class="code" href="class_jeu.html">Jeu</a>* jeu, <span class="keywordtype">int</span> j);<span class="comment">// prend en compte le coté sur le quel la carte est tourné</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="class_carte.html#a007f478e6e0efb44fb4421a94bdacf65">afficher</a>(); <span class="comment">// affiche les stats de la carte</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_carte.html#a54e8a949b343e2c77f3ad8bbbdf0b89a">changerFace</a>(); <span class="comment">// tourne la carte de sur son autre face si possible sinon ne fait rien et affiche un message d&#39;erreur. Le résultat de la fonction est vrai si on peut la retourner et false sinon.</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="comment">// C&#39;est 4 fonction vont renvoyer une string qui convient selon leur valeur ex: type_=0 renvoi &quot;coup&quot;</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    std::string <a class="code" href="class_carte.html#a7f41044fea15a5a73c85e9fbee83114c">convertionType</a>(<span class="keywordtype">int</span> x); <span class="comment">// Cele-ci prend un int pour savoir le type de quel face on veut afficher</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    std::string <a class="code" href="class_carte.html#a9d6b3e60bcd0d08ce097e87ee7e70d3b">convertionNum</a>();</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    std::string <a class="code" href="class_carte.html#a0d9210299570093ca0842df066da50f4">convertionFace</a>();</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    std::string <a class="code" href="class_carte.html#a9898b43ffbbb68f886dc57f9d72c5f8c">convertionCouleur</a>();</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    </div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_carte.html#a86d9ef30147380af813336d7fd529521">equals</a>(<a class="code" href="class_carte.html">Carte</a> *c);</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    </div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;   </div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;};</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="preprocessor">#endif // CARTE_H</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="preprocessor"></span></div>
+<div class="ttc" id="class_carte_html_a5a1e7bd0334c6cf52ba8991c3a019815"><div class="ttname"><a href="class_carte.html#a5a1e7bd0334c6cf52ba8991c3a019815">Carte::Carte</a></div><div class="ttdeci">Carte(int id, std::string nom, int type, std::vector&lt; Effet * &gt; Leffet, int num, int couleur, double FS, double dmg)</div><div class="ttdoc">Constructeur de carte à 1 coté. </div><div class="ttdef"><b>Definition:</b> Carte.hpp:67</div></div>
+<div class="ttc" id="class_carte_html_a3f2cf87d69031210310f6b9eff20fe81"><div class="ttname"><a href="class_carte.html#a3f2cf87d69031210310f6b9eff20fe81">Carte::addEffet2</a></div><div class="ttdeci">void addEffet2(Effet *newEffet)</div><div class="ttdoc">rajoute un effet à Leffet2_ de la carte </div></div>
+<div class="ttc" id="class_carte_html_a759d6b7a8b08cf7a6d1e0e5f4e10c28c"><div class="ttname"><a href="class_carte.html#a759d6b7a8b08cf7a6d1e0e5f4e10c28c">Carte::getFstartup2</a></div><div class="ttdeci">double getFstartup2()</div><div class="ttdef"><b>Definition:</b> Carte.hpp:188</div></div>
+<div class="ttc" id="class_carte_html_a03c8b823ad97a064f6415eea63dcdd3d"><div class="ttname"><a href="class_carte.html#a03c8b823ad97a064f6415eea63dcdd3d">Carte::getGoodFstartup</a></div><div class="ttdeci">int getGoodFstartup()</div><div class="ttdoc">Retourne le type de les frame de startup de la carte selon son coté ( Fstartup_ si recto Fstartup2_ p...</div></div>
+<div class="ttc" id="class_carte_html_ae51a40df8fb2ab5498ae67e165ceb5f2"><div class="ttname"><a href="class_carte.html#ae51a40df8fb2ab5498ae67e165ceb5f2">Carte::getId</a></div><div class="ttdeci">int getId()</div><div class="ttdef"><b>Definition:</b> Carte.hpp:150</div></div>
+<div class="ttc" id="class_jeu_html"><div class="ttname"><a href="class_jeu.html">Jeu</a></div><div class="ttdef"><b>Definition:</b> Jeu.hpp:11</div></div>
+<div class="ttc" id="class_carte_html_aedb1a92861dec58f566818795efc1e04"><div class="ttname"><a href="class_carte.html#aedb1a92861dec58f566818795efc1e04">Carte::setDmg2</a></div><div class="ttdeci">void setDmg2(double dmg2)</div><div class="ttdef"><b>Definition:</b> Carte.hpp:203</div></div>
+<div class="ttc" id="class_carte_html_ac742ba23680cb680376984a3b89dcce1"><div class="ttname"><a href="class_carte.html#ac742ba23680cb680376984a3b89dcce1">Carte::getFace</a></div><div class="ttdeci">double getFace()</div><div class="ttdef"><b>Definition:</b> Carte.hpp:190</div></div>
+<div class="ttc" id="class_carte_html_a7b68885ddbd8c8f6991e5447346913bc"><div class="ttname"><a href="class_carte.html#a7b68885ddbd8c8f6991e5447346913bc">Carte::getNom</a></div><div class="ttdeci">std::string getNom()</div><div class="ttdef"><b>Definition:</b> Carte.hpp:154</div></div>
+<div class="ttc" id="class_carte_html_ac6e5febd328ba89c73d755b7edfc61ae"><div class="ttname"><a href="class_carte.html#ac6e5febd328ba89c73d755b7edfc61ae">Carte::getDmg2</a></div><div class="ttdeci">double getDmg2()</div><div class="ttdef"><b>Definition:</b> Carte.hpp:200</div></div>
+<div class="ttc" id="class_carte_html_a06daaca86c31c80f8308f4a81d46dc9b"><div class="ttname"><a href="class_carte.html#a06daaca86c31c80f8308f4a81d46dc9b">Carte::Carte</a></div><div class="ttdeci">Carte()</div><div class="ttdoc">Constructeur vide. </div><div class="ttdef"><b>Definition:</b> Carte.hpp:46</div></div>
+<div class="ttc" id="class_effet_html"><div class="ttname"><a href="class_effet.html">Effet</a></div><div class="ttdef"><b>Definition:</b> Effet.hpp:9</div></div>
+<div class="ttc" id="class_carte_html_ae66d95ae0ba845fe4b5601c36b68cabd"><div class="ttname"><a href="class_carte.html#ae66d95ae0ba845fe4b5601c36b68cabd">Carte::getLeffet2</a></div><div class="ttdeci">std::vector&lt; Effet * &gt; getLeffet2()</div><div class="ttdef"><b>Definition:</b> Carte.hpp:168</div></div>
+<div class="ttc" id="class_carte_html_a007f478e6e0efb44fb4421a94bdacf65"><div class="ttname"><a href="class_carte.html#a007f478e6e0efb44fb4421a94bdacf65">Carte::afficher</a></div><div class="ttdeci">void afficher()</div><div class="ttdoc">affiche les stats de la carte </div></div>
+<div class="ttc" id="class_carte_html_a87f5a4affacf484c8e1f308abf4ec514"><div class="ttname"><a href="class_carte.html#a87f5a4affacf484c8e1f308abf4ec514">Carte::getCouleur</a></div><div class="ttdeci">int getCouleur()</div><div class="ttdef"><b>Definition:</b> Carte.hpp:178</div></div>
+<div class="ttc" id="class_carte_html_a22cc2da2c3819aeadd1e09e88dfbedcf"><div class="ttname"><a href="class_carte.html#a22cc2da2c3819aeadd1e09e88dfbedcf">Carte::actionEffet</a></div><div class="ttdeci">void actionEffet(Jeu *jeu, int j)</div><div class="ttdoc">apelle actionEffet de Effet sur chaque effet de la carte en prennant en compte le coté ou est tourner...</div></div>
+<div class="ttc" id="class_carte_html_a16726786b2df18980f82b9f19d72cd00"><div class="ttname"><a href="class_carte.html#a16726786b2df18980f82b9f19d72cd00">Carte::setType</a></div><div class="ttdeci">void setType(int type)</div><div class="ttdef"><b>Definition:</b> Carte.hpp:162</div></div>
+<div class="ttc" id="class_carte_html"><div class="ttname"><a href="class_carte.html">Carte</a></div><div class="ttdef"><b>Definition:</b> Carte.hpp:9</div></div>
+<div class="ttc" id="class_carte_html_a7f41044fea15a5a73c85e9fbee83114c"><div class="ttname"><a href="class_carte.html#a7f41044fea15a5a73c85e9fbee83114c">Carte::convertionType</a></div><div class="ttdeci">std::string convertionType(int x)</div><div class="ttdoc">convertie les entier 0, 1, ect... indiquant le type de la carte en string : coup,choppe ect...</div></div>
+<div class="ttc" id="class_carte_html_a6d5eb0a01948dc48a9c86b7c5083be29"><div class="ttname"><a href="class_carte.html#a6d5eb0a01948dc48a9c86b7c5083be29">Carte::setNum</a></div><div class="ttdeci">void setNum(int num)</div><div class="ttdef"><b>Definition:</b> Carte.hpp:176</div></div>
+<div class="ttc" id="class_carte_html_a90596fd46a269874d7473afe9733869a"><div class="ttname"><a href="class_carte.html#a90596fd46a269874d7473afe9733869a">Carte::setNom</a></div><div class="ttdeci">void setNom(std::string nom)</div><div class="ttdef"><b>Definition:</b> Carte.hpp:156</div></div>
+<div class="ttc" id="class_carte_html_a496ea294465e9ba361ec759b2472da7e"><div class="ttname"><a href="class_carte.html#a496ea294465e9ba361ec759b2472da7e">Carte::setDmg</a></div><div class="ttdeci">void setDmg(double dmg)</div><div class="ttdef"><b>Definition:</b> Carte.hpp:202</div></div>
+<div class="ttc" id="class_carte_html_a78d440deb46f085e53d29cbb81c39c0f"><div class="ttname"><a href="class_carte.html#a78d440deb46f085e53d29cbb81c39c0f">Carte::setType2</a></div><div class="ttdeci">void setType2(int type)</div><div class="ttdef"><b>Definition:</b> Carte.hpp:164</div></div>
+<div class="ttc" id="class_carte_html_a1aad4c6854631a3de71210d33c15e258"><div class="ttname"><a href="class_carte.html#a1aad4c6854631a3de71210d33c15e258">Carte::setID</a></div><div class="ttdeci">void setID(int id)</div><div class="ttdef"><b>Definition:</b> Carte.hpp:152</div></div>
+<div class="ttc" id="class_carte_html_a53c600ae84b2c9033cede1e147e7de60"><div class="ttname"><a href="class_carte.html#a53c600ae84b2c9033cede1e147e7de60">Carte::setRetournable</a></div><div class="ttdeci">void setRetournable(bool r)</div><div class="ttdef"><b>Definition:</b> Carte.hpp:184</div></div>
+<div class="ttc" id="class_carte_html_a3f437815a1d95bb70a9ede79c9f53348"><div class="ttname"><a href="class_carte.html#a3f437815a1d95bb70a9ede79c9f53348">Carte::getGoodDmg</a></div><div class="ttdeci">double getGoodDmg()</div><div class="ttdoc">Retourne les dommages de la carte selon son coté ( dmg_ si recto dmg2_ pour verso) ...</div></div>
+<div class="ttc" id="class_carte_html_a9898b43ffbbb68f886dc57f9d72c5f8c"><div class="ttname"><a href="class_carte.html#a9898b43ffbbb68f886dc57f9d72c5f8c">Carte::convertionCouleur</a></div><div class="ttdeci">std::string convertionCouleur()</div><div class="ttdoc">convertie les entier 0, 1, ect... indiquant la couleur de la carte en string : coeur,pique... </div></div>
+<div class="ttc" id="class_carte_html_ab3e508c3af45a3e5b38a397b003cc250"><div class="ttname"><a href="class_carte.html#ab3e508c3af45a3e5b38a397b003cc250">Carte::setFstartup</a></div><div class="ttdeci">void setFstartup(int FS)</div><div class="ttdef"><b>Definition:</b> Carte.hpp:195</div></div>
+<div class="ttc" id="class_carte_html_a82c6e252c3225604e23977e3453af623"><div class="ttname"><a href="class_carte.html#a82c6e252c3225604e23977e3453af623">Carte::setFstartup2</a></div><div class="ttdeci">void setFstartup2(int FS)</div><div class="ttdef"><b>Definition:</b> Carte.hpp:197</div></div>
+<div class="ttc" id="class_carte_html_a63300ff55c58b5d5b1674a3fc8f25910"><div class="ttname"><a href="class_carte.html#a63300ff55c58b5d5b1674a3fc8f25910">Carte::~Carte</a></div><div class="ttdeci">~Carte()</div></div>
+<div class="ttc" id="class_carte_html_a6b831afaa8d2f723ecd642b92de536fb"><div class="ttname"><a href="class_carte.html#a6b831afaa8d2f723ecd642b92de536fb">Carte::getDmg</a></div><div class="ttdeci">double getDmg()</div><div class="ttdef"><b>Definition:</b> Carte.hpp:199</div></div>
+<div class="ttc" id="class_carte_html_a4564309a6927eb31e2e0641d1fc80315"><div class="ttname"><a href="class_carte.html#a4564309a6927eb31e2e0641d1fc80315">Carte::getRetournable</a></div><div class="ttdeci">bool getRetournable()</div><div class="ttdef"><b>Definition:</b> Carte.hpp:182</div></div>
+<div class="ttc" id="class_carte_html_aac84bc0e598a0c5180ff74e945963a3a"><div class="ttname"><a href="class_carte.html#aac84bc0e598a0c5180ff74e945963a3a">Carte::getFstartup</a></div><div class="ttdeci">double getFstartup()</div><div class="ttdef"><b>Definition:</b> Carte.hpp:186</div></div>
+<div class="ttc" id="class_carte_html_a72278c63fcebe0f1fb38e6f6a49244e9"><div class="ttname"><a href="class_carte.html#a72278c63fcebe0f1fb38e6f6a49244e9">Carte::setFace</a></div><div class="ttdeci">void setFace(int x)</div><div class="ttdef"><b>Definition:</b> Carte.hpp:191</div></div>
+<div class="ttc" id="class_carte_html_a8736424ac59160d97300befe55b12eea"><div class="ttname"><a href="class_carte.html#a8736424ac59160d97300befe55b12eea">Carte::setCouleur</a></div><div class="ttdeci">void setCouleur(int coul)</div><div class="ttdef"><b>Definition:</b> Carte.hpp:180</div></div>
+<div class="ttc" id="class_carte_html_a4410810499a30afcdfe51a70db079dfa"><div class="ttname"><a href="class_carte.html#a4410810499a30afcdfe51a70db079dfa">Carte::getLeffet</a></div><div class="ttdeci">std::vector&lt; Effet * &gt; getLeffet()</div><div class="ttdef"><b>Definition:</b> Carte.hpp:166</div></div>
+<div class="ttc" id="class_carte_html_ac59034763b08ced32db5d82d080f3ddc"><div class="ttname"><a href="class_carte.html#ac59034763b08ced32db5d82d080f3ddc">Carte::addEffet</a></div><div class="ttdeci">void addEffet(Effet *newEffet)</div><div class="ttdoc">rajoute un effet à Leffet_ de la carte </div></div>
+<div class="ttc" id="class_carte_html_aca394e9c23d6b9a8ab7d35e9362295f0"><div class="ttname"><a href="class_carte.html#aca394e9c23d6b9a8ab7d35e9362295f0">Carte::getGoodLeffet</a></div><div class="ttdeci">std::vector&lt; Effet * &gt; getGoodLeffet()</div><div class="ttdoc">Retourne la bonne liste d&#39;effet de la carte selon son coté ( Leffet_ si recto Leffet2_ pour verso) ...</div></div>
+<div class="ttc" id="_jeu_8hpp_html"><div class="ttname"><a href="_jeu_8hpp.html">Jeu.hpp</a></div></div>
+<div class="ttc" id="class_carte_html_a86d9ef30147380af813336d7fd529521"><div class="ttname"><a href="class_carte.html#a86d9ef30147380af813336d7fd529521">Carte::equals</a></div><div class="ttdeci">bool equals(Carte *c)</div><div class="ttdoc">regarde si 2 carte sont les même selon leur id </div></div>
+<div class="ttc" id="class_carte_html_a9fbd39e6a9da16692854ce076ee1a007"><div class="ttname"><a href="class_carte.html#a9fbd39e6a9da16692854ce076ee1a007">Carte::Carte</a></div><div class="ttdeci">Carte(int id, std::string nom, int type, int type2, std::vector&lt; Effet * &gt; Leffet, std::vector&lt; Effet * &gt; Leffet2, int num, int couleur, double FS, double FS2, double dmg, double dmg2)</div><div class="ttdoc">Constructeur de carte à 1 coté. </div><div class="ttdef"><b>Definition:</b> Carte.hpp:112</div></div>
+<div class="ttc" id="class_carte_html_a54e8a949b343e2c77f3ad8bbbdf0b89a"><div class="ttname"><a href="class_carte.html#a54e8a949b343e2c77f3ad8bbbdf0b89a">Carte::changerFace</a></div><div class="ttdeci">bool changerFace()</div></div>
+<div class="ttc" id="class_carte_html_aa58ee91b50b7e5e1d2483acb698b59f4"><div class="ttname"><a href="class_carte.html#aa58ee91b50b7e5e1d2483acb698b59f4">Carte::getType</a></div><div class="ttdeci">int getType()</div><div class="ttdef"><b>Definition:</b> Carte.hpp:158</div></div>
+<div class="ttc" id="class_carte_html_ad1f2b50c5c627c11547282e88a912d44"><div class="ttname"><a href="class_carte.html#ad1f2b50c5c627c11547282e88a912d44">Carte::getGoodType</a></div><div class="ttdeci">int getGoodType()</div><div class="ttdoc">Retourne le type de la carte selon son coté ( type_ si recto type2_ pour verso) </div></div>
+<div class="ttc" id="class_carte_html_a78fd9aadbd17a4649669117ada726dfa"><div class="ttname"><a href="class_carte.html#a78fd9aadbd17a4649669117ada726dfa">Carte::getType2</a></div><div class="ttdeci">int getType2()</div><div class="ttdef"><b>Definition:</b> Carte.hpp:160</div></div>
+<div class="ttc" id="class_carte_html_a1fc20e7a2df33a2ca24ebea22c18f074"><div class="ttname"><a href="class_carte.html#a1fc20e7a2df33a2ca24ebea22c18f074">Carte::setLeffet2</a></div><div class="ttdeci">void setLeffet2(std::vector&lt; Effet * &gt; Leffet)</div><div class="ttdef"><b>Definition:</b> Carte.hpp:172</div></div>
+<div class="ttc" id="class_carte_html_a92a0d5cda40ca72720524937f88f497b"><div class="ttname"><a href="class_carte.html#a92a0d5cda40ca72720524937f88f497b">Carte::setLeffet</a></div><div class="ttdeci">void setLeffet(std::vector&lt; Effet * &gt; Leffet)</div><div class="ttdef"><b>Definition:</b> Carte.hpp:170</div></div>
+<div class="ttc" id="class_carte_html_ae4ede142122a382b2b6648906c4cd37a"><div class="ttname"><a href="class_carte.html#ae4ede142122a382b2b6648906c4cd37a">Carte::getNum</a></div><div class="ttdeci">int getNum()</div><div class="ttdef"><b>Definition:</b> Carte.hpp:174</div></div>
+<div class="ttc" id="class_carte_html_a9d6b3e60bcd0d08ce097e87ee7e70d3b"><div class="ttname"><a href="class_carte.html#a9d6b3e60bcd0d08ce097e87ee7e70d3b">Carte::convertionNum</a></div><div class="ttdeci">std::string convertionNum()</div><div class="ttdoc">convertie les entier 0, 1, ect... indiquant le numéro de la carte en string : 2,3... valet,dame,roi, as </div></div>
+<div class="ttc" id="class_carte_html_a0d9210299570093ca0842df066da50f4"><div class="ttname"><a href="class_carte.html#a0d9210299570093ca0842df066da50f4">Carte::convertionFace</a></div><div class="ttdeci">std::string convertionFace()</div><div class="ttdoc">convertie les entier 0, 1 indiquant le coté de la carte en string : recto, verso </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche 22 Novembre 2015 15:17:00 pour Projet : Jeu de cartes - POO par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

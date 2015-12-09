@@ -1,0 +1,9 @@
+id_=4
+nom_=Circular inclusion
+num_=6
+retournable_=0
+type_=1
+Leffet_=EffetReturn
+Leffet_=EffetFinisher
+Fstartup_=7
+dmg_=10

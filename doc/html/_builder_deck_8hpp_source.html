@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Projet : Jeu de cartes - POO:  Fichier source de /home/figiel-paul/Bureau/ProjetPoo/ProjetPOO-ARAYA-FIGIEL/include/BuilderDeck.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Projet : Jeu de cartes - POO
+   &#160;<span id="projectnumber">V3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BuilderDeck.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_builder_deck_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; <span class="comment">//------------------------------</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef BUILDERDECK_HPP</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BUILDERDECK_HPP</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span><span class="keyword">class </span><a class="code" href="class_carte.html">Carte</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_deck.html">Deck</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="code" href="class_champion.html">Champion</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//------------------------------</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"></span><span class="comment">//------------------------------</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_builder_deck.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_builder_deck.html">BuilderDeck</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">protected</span> :</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_builder_deck.html#a42b472c027a5a27e2078acabd0f62e76">   27</a></span>&#160;        <a class="code" href="class_deck.html">Deck</a> *<a class="code" href="class_builder_deck.html#a42b472c027a5a27e2078acabd0f62e76">deck_</a>;    </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_builder_deck.html#a476542ac85e53c79bbda3cd9ed79dea5">   28</a></span>&#160;        std::string <a class="code" href="class_builder_deck.html#a476542ac85e53c79bbda3cd9ed79dea5">dossier_</a>;   </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">public</span> :</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_carte.html">Carte</a> *<a class="code" href="class_builder_deck.html#a6318e704c6b8739fc6666dbc4ab61be2">creerCarte</a>(std::string fichier) = 0;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_champion.html">Champion</a> *<a class="code" href="class_builder_deck.html#aeb26090c61c4729af8010b5c4e282389">creerChampion</a>(std::string fichiercarte) = 0;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_builder_deck.html#a382f879b47ad1115f4357a3ff0f21e2b">creerCartes</a>() = 0;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_deck.html">Deck</a> *<a class="code" href="class_builder_deck.html#a8d4db97ac54a8d341591304e3027e7be">creerDeck</a>() = 0;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_builder_deck_html"><div class="ttname"><a href="class_builder_deck.html">BuilderDeck</a></div><div class="ttdoc">Classe BuilderDeck qui permet de charger en memoire un deck composé de carte à partir de fichiers txt...</div><div class="ttdef"><b>Definition:</b> BuilderDeck.hpp:24</div></div>
+<div class="ttc" id="class_builder_deck_html_a382f879b47ad1115f4357a3ff0f21e2b"><div class="ttname"><a href="class_builder_deck.html#a382f879b47ad1115f4357a3ff0f21e2b">BuilderDeck::creerCartes</a></div><div class="ttdeci">virtual void creerCartes()=0</div><div class="ttdoc">Rempli le deck de toutes les cartes contenues dans dossier_. </div></div>
+<div class="ttc" id="class_builder_deck_html_a6318e704c6b8739fc6666dbc4ab61be2"><div class="ttname"><a href="class_builder_deck.html#a6318e704c6b8739fc6666dbc4ab61be2">BuilderDeck::creerCarte</a></div><div class="ttdeci">virtual Carte * creerCarte(std::string fichier)=0</div><div class="ttdoc">Charge une carte à partir du chemin relatif de son fichier. </div></div>
+<div class="ttc" id="class_carte_html"><div class="ttname"><a href="class_carte.html">Carte</a></div><div class="ttdef"><b>Definition:</b> Carte.hpp:9</div></div>
+<div class="ttc" id="class_builder_deck_html_a476542ac85e53c79bbda3cd9ed79dea5"><div class="ttname"><a href="class_builder_deck.html#a476542ac85e53c79bbda3cd9ed79dea5">BuilderDeck::dossier_</a></div><div class="ttdeci">std::string dossier_</div><div class="ttdef"><b>Definition:</b> BuilderDeck.hpp:28</div></div>
+<div class="ttc" id="class_builder_deck_html_aeb26090c61c4729af8010b5c4e282389"><div class="ttname"><a href="class_builder_deck.html#aeb26090c61c4729af8010b5c4e282389">BuilderDeck::creerChampion</a></div><div class="ttdeci">virtual Champion * creerChampion(std::string fichiercarte)=0</div><div class="ttdoc">Charge un champion à partir du chemin relatif de son fichier. </div></div>
+<div class="ttc" id="class_deck_html"><div class="ttname"><a href="class_deck.html">Deck</a></div><div class="ttdef"><b>Definition:</b> Deck.hpp:8</div></div>
+<div class="ttc" id="class_builder_deck_html_a42b472c027a5a27e2078acabd0f62e76"><div class="ttname"><a href="class_builder_deck.html#a42b472c027a5a27e2078acabd0f62e76">BuilderDeck::deck_</a></div><div class="ttdeci">Deck * deck_</div><div class="ttdef"><b>Definition:</b> BuilderDeck.hpp:27</div></div>
+<div class="ttc" id="class_builder_deck_html_a8d4db97ac54a8d341591304e3027e7be"><div class="ttname"><a href="class_builder_deck.html#a8d4db97ac54a8d341591304e3027e7be">BuilderDeck::creerDeck</a></div><div class="ttdeci">virtual Deck * creerDeck()=0</div><div class="ttdoc">Melange les cartes dans deck_ et le renvoie. </div></div>
+<div class="ttc" id="class_champion_html"><div class="ttname"><a href="class_champion.html">Champion</a></div><div class="ttdef"><b>Definition:</b> Champion.hpp:8</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche 22 Novembre 2015 15:17:00 pour Projet : Jeu de cartes - POO par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

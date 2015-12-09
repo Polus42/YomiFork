@@ -1,0 +1,11 @@
+id_=8
+nom_=Cours en java/Projet en c++
+num_=10
+retournable_=1
+type_=0
+Fstartup_=2
+dmg_=6
+type2_=1
+Leffet2_=EffetBoost
+Fstartup2_=11
+dmg2_=10

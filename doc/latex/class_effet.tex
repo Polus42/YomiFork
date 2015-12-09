@@ -1,0 +1,102 @@
+\hypertarget{class_effet}{\section{Référence de la classe Effet}
+\label{class_effet}\index{Effet@{Effet}}
+}
+
+
+{\ttfamily \#include $<$Effet.\-hpp$>$}
+
+Graphe d'héritage de Effet\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.454545cm]{class_effet}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_effet_a79744b45fc5715a4742e63565d4f89cb}{Effet} ()
+\begin{DoxyCompactList}\small\item\em Constructeur vide. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_effet_a57adb1db82d03cda90600f93cc8b5197}{action\-Effet} (\hyperlink{class_jeu}{Jeu} $\ast$jeu, int x)
+\begin{DoxyCompactList}\small\item\em applique l'effet \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_effet_a1bc485c64cfa136e279d5c9183b3e41d}{afficher} ()=0
+\begin{DoxyCompactList}\small\item\em affiche le nom de l'effet et ce qu'il fait \end{DoxyCompactList}\item 
+virtual std\-::string \hyperlink{class_effet_a1d3b1a8092df2624399c80d24a21cc88}{get\-Nom} ()=0
+\begin{DoxyCompactList}\small\item\em va chercher le nom de l'effet \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{class_effet_a79744b45fc5715a4742e63565d4f89cb}{\index{Effet@{Effet}!Effet@{Effet}}
+\index{Effet@{Effet}!Effet@{Effet}}
+\subsubsection[{Effet}]{\setlength{\rightskip}{0pt plus 5cm}Effet\-::\-Effet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_effet_a79744b45fc5715a4742e63565d4f89cb}
+
+
+Constructeur vide. 
+
+Constructeur de la classe \hyperlink{class_effet}{Effet} 
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_effet_a57adb1db82d03cda90600f93cc8b5197}{\index{Effet@{Effet}!action\-Effet@{action\-Effet}}
+\index{action\-Effet@{action\-Effet}!Effet@{Effet}}
+\subsubsection[{action\-Effet}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Effet\-::action\-Effet (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu} $\ast$}]{jeu, }
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_effet_a57adb1db82d03cda90600f93cc8b5197}
+
+
+applique l'effet 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \hyperlink{class_jeu}{Jeu}} & $\ast$jeu \-: le jeu \\
+\hline
+{\em int} & x \-: le joueur qui joue l'effet \\
+\hline
+\end{DoxyParams}
+
+
+Réimplémentée dans \hyperlink{class_effet_boost_a8584fa1a61d87ffd7ec51782b78413c4}{Effet\-Boost}, \hyperlink{class_effet_endurant_affdc8528f7315776243ae2b08523dda2}{Effet\-Endurant}, \hyperlink{class_effet_the_answer_a3e8f2cad127fdf393f1421eb04a6ebe8}{Effet\-The\-Answer}, \hyperlink{class_effet_finisher_ab0980df9cf22d096c61c5acc90ddeb43}{Effet\-Finisher}, \hyperlink{class_effet_link_a92936d48d1685122199da60317e6199a}{Effet\-Link}, \hyperlink{class_effet_return_a9bd08ea82f466e0a0181a83cd1922a52}{Effet\-Return}, et \hyperlink{class_effet_yolo_abb0ba5ceef4b948c833519557c850cf3}{Effet\-Yolo}.
+
+\hypertarget{class_effet_a1bc485c64cfa136e279d5c9183b3e41d}{\index{Effet@{Effet}!afficher@{afficher}}
+\index{afficher@{afficher}!Effet@{Effet}}
+\subsubsection[{afficher}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Effet\-::afficher (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_effet_a1bc485c64cfa136e279d5c9183b3e41d}
+
+
+affiche le nom de l'effet et ce qu'il fait 
+
+
+
+Implémenté dans \hyperlink{class_effet_boost_a5cd27853b4b1dd08ff0c7465f5890bf4}{Effet\-Boost}, \hyperlink{class_effet_endurant_a41b08a28984aaa91d07331731ea57a80}{Effet\-Endurant}, \hyperlink{class_effet_the_answer_a35ba2f942b38ffc60c9c64a763ba77b5}{Effet\-The\-Answer}, \hyperlink{class_effet_finisher_ae6a5994848a870f415bf2aacc5377109}{Effet\-Finisher}, \hyperlink{class_effet_link_a3d02ae47a14a579bd9582b744d4307d7}{Effet\-Link}, \hyperlink{class_effet_return_aeb7b436619ff6654961fd421c1886be8}{Effet\-Return}, et \hyperlink{class_effet_yolo_afd45910743596b404709e5da05a507bb}{Effet\-Yolo}.
+
+\hypertarget{class_effet_a1d3b1a8092df2624399c80d24a21cc88}{\index{Effet@{Effet}!get\-Nom@{get\-Nom}}
+\index{get\-Nom@{get\-Nom}!Effet@{Effet}}
+\subsubsection[{get\-Nom}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\-::string Effet\-::get\-Nom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_effet_a1d3b1a8092df2624399c80d24a21cc88}
+
+
+va chercher le nom de l'effet 
+
+\begin{DoxyReturn}{Renvoie}
+\-: une string qui corespond au nom de l'effet' 
+\end{DoxyReturn}
+
+
+Implémenté dans \hyperlink{class_effet_boost_aba325a637c5e0bb4bea74179ae27ea69}{Effet\-Boost}, \hyperlink{class_effet_endurant_adc7d05da5bcdd44cb5623420c5b67bf5}{Effet\-Endurant}, \hyperlink{class_effet_the_answer_a4438775df11e19a34226ac8f8b499961}{Effet\-The\-Answer}, \hyperlink{class_effet_finisher_a86281252a8294c6398602e5dcd956ad9}{Effet\-Finisher}, \hyperlink{class_effet_link_a3c5e55a3e756a3c012c9c9643f5747a2}{Effet\-Link}, \hyperlink{class_effet_return_ad8ac1f6ec29d8472a06d0d4d22e5ad8d}{Effet\-Return}, et \hyperlink{class_effet_yolo_a1118497023e66bc661aca8ba4189f036}{Effet\-Yolo}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \-:\begin{DoxyCompactItemize}
+\item 
+/home/figiel-\/paul/\-Bureau/\-Projet\-Poo/\-Projet\-P\-O\-O-\/\-A\-R\-A\-Y\-A-\/\-F\-I\-G\-I\-E\-L/include/\hyperlink{_effet_8hpp}{Effet.\-hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,8 @@
+id_=1
+nom_=Lancer de souris
+num_=3
+retournable_=0
+type_=1
+Leffet_=EffetLink
+Fstartup_=3
+dmg_=2

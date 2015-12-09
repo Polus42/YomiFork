@@ -1,0 +1,13 @@
+id_=26
+nom_=Dempsey Roll / Insensible
+num_=1
+retournable_=1
+type_=0
+Leffet_=EffetBoost
+Leffet_=EffetFinisher
+Fstartup_=8
+dmg_=16
+type2_=2
+Leffet2_=EffetReturn
+Fstartup2_=0
+dmg2_=0

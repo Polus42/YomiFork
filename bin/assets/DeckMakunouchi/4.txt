@@ -1,0 +1,8 @@
+id_=16
+nom_=Direct
+num_=4
+retournable_=0
+type_=0
+Leffet_=EffetLink
+Fstartup_=2
+dmg_=5

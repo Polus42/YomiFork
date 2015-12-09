@@ -1,0 +1,10 @@
+id_=18
+nom_=Crochet/Duck
+num_=6
+retournable_=1
+type_=0
+Fstartup_=4
+dmg_=8
+type2_=3
+Fstartup2_=0
+dmg2_=0

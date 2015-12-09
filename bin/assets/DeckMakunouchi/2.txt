@@ -1,0 +1,13 @@
+id_=14
+nom_=Jab/Clinch
+num_=2
+retournable_=1
+type_=0
+Leffet_=EffetReturn
+Fstartup_=0.8
+dmg_=2
+type2_=1
+Leffet2_=EffetReturn
+Leffet2_=EffetFinisher
+Fstartup2_=0.6
+dmg2_=2

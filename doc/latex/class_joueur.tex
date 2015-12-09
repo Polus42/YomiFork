@@ -1,0 +1,276 @@
+\hypertarget{class_joueur}{\section{Référence de la classe Joueur}
+\label{class_joueur}\index{Joueur@{Joueur}}
+}
+
+
+{\ttfamily \#include $<$Joueur.\-hpp$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_joueur_a5d2999c278f52be863c3ae8c356dc5dd}{Joueur} (\hyperlink{class_deck}{Deck} $\ast$deck, std\-::string nom)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\hyperlink{class_champion}{Champion} $\ast$ \hyperlink{class_joueur_ae4cf4def8bd931f40609d8ee2970e223}{get\-Champ} ()
+\item 
+void \hyperlink{class_joueur_a4583fb6f3edb2858c06c9b8879e59ffc}{set\-Champ} (\hyperlink{class_champion}{Champion} $\ast$champ)
+\item 
+\hyperlink{class_deck}{Deck} $\ast$ \hyperlink{class_joueur_a42e4b9f8297af3646805587a9bda7fad}{get\-Deck} ()
+\item 
+void \hyperlink{class_joueur_a76d1becbccc8e3d7e9767cdd224d1fa6}{set\-Deck} (\hyperlink{class_deck}{Deck} $\ast$d)
+\item 
+\hyperlink{class_deck}{Deck} $\ast$ \hyperlink{class_joueur_ab87d2c2ad00d77a768b4f71769a46814}{get\-Cim} ()
+\item 
+void \hyperlink{class_joueur_ae5ad6f405cd958b9568114674d2a0dd5}{set\-Cim} (\hyperlink{class_deck}{Deck} $\ast$cim)
+\item 
+double \hyperlink{class_joueur_a0841dd21d5fa3b474ae78fb675c648ee}{get\-Mult\-Dmg} ()
+\item 
+void \hyperlink{class_joueur_aac098c0542b6b90948ef0eba4a8d52f6}{set\-Mult\-Dmg} (double md)
+\item 
+std\-::vector$<$ \hyperlink{class_carte}{Carte} $\ast$ $>$ $\ast$ \hyperlink{class_joueur_a6c66977dd88ec9b6927ce8035abc2fb7}{get\-Main} ()
+\item 
+void \hyperlink{class_joueur_a440de4d37f0d29fcaa8bf315fcd2b8be}{set\-Main} (std\-::vector$<$ \hyperlink{class_carte}{Carte} $\ast$ $>$ $\ast$main)
+\item 
+void \hyperlink{class_joueur_af32faed0cf3db6f3dd613d9d5b5aff9a}{set\-Nom} (std\-::string nom)
+\item 
+std\-::string \hyperlink{class_joueur_a5ba8036208a35efd6bf37a86b36063b0}{get\-Nom} ()
+\item 
+void \hyperlink{class_joueur_a1ed6a04dae56ba4db8550a1c4d9a8e5a}{mult\-Dmg} (int x)
+\begin{DoxyCompactList}\small\item\em multiplie les dommages du joueur ---$>$ mult\-Dmg\-\_\-=mult\-Dmg\-\_\-$\ast$x sachant qu'on ne veut pas mult\-Dmg\-\_\-$>$3 ( régle anti one shoot ) \end{DoxyCompactList}\item 
+void \hyperlink{class_joueur_a881fbda6f6be97214aaed647cda9522b}{piocher} ()
+\begin{DoxyCompactList}\small\item\em pioche une carte du deck et la rajoute à la main du joueur \end{DoxyCompactList}\item 
+void \hyperlink{class_joueur_a74a07a6ac4976f0ad898cb607f7e8ae1}{action\-Effet} (\hyperlink{class_jeu}{Jeu} $\ast$jeu, int j)
+\begin{DoxyCompactList}\small\item\em applique l'effet du champion du joueur \end{DoxyCompactList}\item 
+void \hyperlink{class_joueur_a8e5d808b7d59f05e9be7f335564f73f6}{add\-Carte\-Main} (\hyperlink{class_carte}{Carte} $\ast$c)
+\begin{DoxyCompactList}\small\item\em ajoute une carte à la main du joueur \end{DoxyCompactList}\item 
+void \hyperlink{class_joueur_a9da8663575f4d42504b6d09a6f7611a5}{add\-Carte\-Cim} (\hyperlink{class_carte}{Carte} $\ast$c)
+\begin{DoxyCompactList}\small\item\em ajoute une carte au cimetière du joueur \end{DoxyCompactList}\item 
+void \hyperlink{class_joueur_a0fff3f0ae27db0703a28616b79b7d50c}{add\-Carte\-Deck} (\hyperlink{class_carte}{Carte} $\ast$c)
+\begin{DoxyCompactList}\small\item\em ajoute une au deck du joueur \end{DoxyCompactList}\item 
+\hyperlink{class_carte}{Carte} $\ast$ \hyperlink{class_joueur_a1bbc084069be942f09c86eebfd4490b8}{jouer\-Carte} (int x)
+\begin{DoxyCompactList}\small\item\em renvoie la carte d'indice x de la main du joueur et la suprime de sa main \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{class_joueur_a5d2999c278f52be863c3ae8c356dc5dd}{\index{Joueur@{Joueur}!Joueur@{Joueur}}
+\index{Joueur@{Joueur}!Joueur@{Joueur}}
+\subsubsection[{Joueur}]{\setlength{\rightskip}{0pt plus 5cm}Joueur\-::\-Joueur (
+\begin{DoxyParamCaption}
+\item[{{\bf Deck} $\ast$}]{deck, }
+\item[{std\-::string}]{nom}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a5d2999c278f52be863c3ae8c356dc5dd}
+
+
+Constructeur. 
+
+Constructeur de la classe \hyperlink{class_joueur}{Joueur}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em $\ast$edeck} & \-: deck du joueur \\
+\hline
+{\em nom} & \-: nom du joueur \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_joueur_a74a07a6ac4976f0ad898cb607f7e8ae1}{\index{Joueur@{Joueur}!action\-Effet@{action\-Effet}}
+\index{action\-Effet@{action\-Effet}!Joueur@{Joueur}}
+\subsubsection[{action\-Effet}]{\setlength{\rightskip}{0pt plus 5cm}void Joueur\-::action\-Effet (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu} $\ast$}]{jeu, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a74a07a6ac4976f0ad898cb607f7e8ae1}
+
+
+applique l'effet du champion du joueur 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \hyperlink{class_jeu}{Jeu}} & $\ast$jeu \-: Le jeu \\
+\hline
+{\em int} & j \-: un entier indiquant qu'elle est le joueur \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_joueur_a9da8663575f4d42504b6d09a6f7611a5}{\index{Joueur@{Joueur}!add\-Carte\-Cim@{add\-Carte\-Cim}}
+\index{add\-Carte\-Cim@{add\-Carte\-Cim}!Joueur@{Joueur}}
+\subsubsection[{add\-Carte\-Cim}]{\setlength{\rightskip}{0pt plus 5cm}void Joueur\-::add\-Carte\-Cim (
+\begin{DoxyParamCaption}
+\item[{{\bf Carte} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a9da8663575f4d42504b6d09a6f7611a5}
+
+
+ajoute une carte au cimetière du joueur 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \hyperlink{class_carte}{Carte}} & $\ast$c \-: carte à rajouter \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_joueur_a0fff3f0ae27db0703a28616b79b7d50c}{\index{Joueur@{Joueur}!add\-Carte\-Deck@{add\-Carte\-Deck}}
+\index{add\-Carte\-Deck@{add\-Carte\-Deck}!Joueur@{Joueur}}
+\subsubsection[{add\-Carte\-Deck}]{\setlength{\rightskip}{0pt plus 5cm}void Joueur\-::add\-Carte\-Deck (
+\begin{DoxyParamCaption}
+\item[{{\bf Carte} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a0fff3f0ae27db0703a28616b79b7d50c}
+
+
+ajoute une au deck du joueur 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \hyperlink{class_carte}{Carte}} & $\ast$c \-: carte à rajouter \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_joueur_a8e5d808b7d59f05e9be7f335564f73f6}{\index{Joueur@{Joueur}!add\-Carte\-Main@{add\-Carte\-Main}}
+\index{add\-Carte\-Main@{add\-Carte\-Main}!Joueur@{Joueur}}
+\subsubsection[{add\-Carte\-Main}]{\setlength{\rightskip}{0pt plus 5cm}void Joueur\-::add\-Carte\-Main (
+\begin{DoxyParamCaption}
+\item[{{\bf Carte} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a8e5d808b7d59f05e9be7f335564f73f6}
+
+
+ajoute une carte à la main du joueur 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \hyperlink{class_carte}{Carte}} & $\ast$c \-: carte à rajouter \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_joueur_ae4cf4def8bd931f40609d8ee2970e223}{\index{Joueur@{Joueur}!get\-Champ@{get\-Champ}}
+\index{get\-Champ@{get\-Champ}!Joueur@{Joueur}}
+\subsubsection[{get\-Champ}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Champion}$\ast$ Joueur\-::get\-Champ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_joueur_ae4cf4def8bd931f40609d8ee2970e223}
+\hypertarget{class_joueur_ab87d2c2ad00d77a768b4f71769a46814}{\index{Joueur@{Joueur}!get\-Cim@{get\-Cim}}
+\index{get\-Cim@{get\-Cim}!Joueur@{Joueur}}
+\subsubsection[{get\-Cim}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Deck}$\ast$ Joueur\-::get\-Cim (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_joueur_ab87d2c2ad00d77a768b4f71769a46814}
+\hypertarget{class_joueur_a42e4b9f8297af3646805587a9bda7fad}{\index{Joueur@{Joueur}!get\-Deck@{get\-Deck}}
+\index{get\-Deck@{get\-Deck}!Joueur@{Joueur}}
+\subsubsection[{get\-Deck}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Deck}$\ast$ Joueur\-::get\-Deck (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_joueur_a42e4b9f8297af3646805587a9bda7fad}
+\hypertarget{class_joueur_a6c66977dd88ec9b6927ce8035abc2fb7}{\index{Joueur@{Joueur}!get\-Main@{get\-Main}}
+\index{get\-Main@{get\-Main}!Joueur@{Joueur}}
+\subsubsection[{get\-Main}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Carte}$\ast$$>$$\ast$ Joueur\-::get\-Main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_joueur_a6c66977dd88ec9b6927ce8035abc2fb7}
+\hypertarget{class_joueur_a0841dd21d5fa3b474ae78fb675c648ee}{\index{Joueur@{Joueur}!get\-Mult\-Dmg@{get\-Mult\-Dmg}}
+\index{get\-Mult\-Dmg@{get\-Mult\-Dmg}!Joueur@{Joueur}}
+\subsubsection[{get\-Mult\-Dmg}]{\setlength{\rightskip}{0pt plus 5cm}double Joueur\-::get\-Mult\-Dmg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_joueur_a0841dd21d5fa3b474ae78fb675c648ee}
+\hypertarget{class_joueur_a5ba8036208a35efd6bf37a86b36063b0}{\index{Joueur@{Joueur}!get\-Nom@{get\-Nom}}
+\index{get\-Nom@{get\-Nom}!Joueur@{Joueur}}
+\subsubsection[{get\-Nom}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Joueur\-::get\-Nom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_joueur_a5ba8036208a35efd6bf37a86b36063b0}
+\hypertarget{class_joueur_a1bbc084069be942f09c86eebfd4490b8}{\index{Joueur@{Joueur}!jouer\-Carte@{jouer\-Carte}}
+\index{jouer\-Carte@{jouer\-Carte}!Joueur@{Joueur}}
+\subsubsection[{jouer\-Carte}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Carte}$\ast$ Joueur\-::jouer\-Carte (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a1bbc084069be942f09c86eebfd4490b8}
+
+
+renvoie la carte d'indice x de la main du joueur et la suprime de sa main 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em int} & x \-: l'indice de la carte \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_joueur_a1ed6a04dae56ba4db8550a1c4d9a8e5a}{\index{Joueur@{Joueur}!mult\-Dmg@{mult\-Dmg}}
+\index{mult\-Dmg@{mult\-Dmg}!Joueur@{Joueur}}
+\subsubsection[{mult\-Dmg}]{\setlength{\rightskip}{0pt plus 5cm}void Joueur\-::mult\-Dmg (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a1ed6a04dae56ba4db8550a1c4d9a8e5a}
+
+
+multiplie les dommages du joueur ---$>$ mult\-Dmg\-\_\-=mult\-Dmg\-\_\-$\ast$x sachant qu'on ne veut pas mult\-Dmg\-\_\-$>$3 ( régle anti one shoot ) 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em int} & x \-: de combien on veut multiplié \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_joueur_a881fbda6f6be97214aaed647cda9522b}{\index{Joueur@{Joueur}!piocher@{piocher}}
+\index{piocher@{piocher}!Joueur@{Joueur}}
+\subsubsection[{piocher}]{\setlength{\rightskip}{0pt plus 5cm}void Joueur\-::piocher (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a881fbda6f6be97214aaed647cda9522b}
+
+
+pioche une carte du deck et la rajoute à la main du joueur 
+
+\hypertarget{class_joueur_a4583fb6f3edb2858c06c9b8879e59ffc}{\index{Joueur@{Joueur}!set\-Champ@{set\-Champ}}
+\index{set\-Champ@{set\-Champ}!Joueur@{Joueur}}
+\subsubsection[{set\-Champ}]{\setlength{\rightskip}{0pt plus 5cm}void Joueur\-::set\-Champ (
+\begin{DoxyParamCaption}
+\item[{{\bf Champion} $\ast$}]{champ}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_joueur_a4583fb6f3edb2858c06c9b8879e59ffc}
+\hypertarget{class_joueur_ae5ad6f405cd958b9568114674d2a0dd5}{\index{Joueur@{Joueur}!set\-Cim@{set\-Cim}}
+\index{set\-Cim@{set\-Cim}!Joueur@{Joueur}}
+\subsubsection[{set\-Cim}]{\setlength{\rightskip}{0pt plus 5cm}void Joueur\-::set\-Cim (
+\begin{DoxyParamCaption}
+\item[{{\bf Deck} $\ast$}]{cim}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_joueur_ae5ad6f405cd958b9568114674d2a0dd5}
+\hypertarget{class_joueur_a76d1becbccc8e3d7e9767cdd224d1fa6}{\index{Joueur@{Joueur}!set\-Deck@{set\-Deck}}
+\index{set\-Deck@{set\-Deck}!Joueur@{Joueur}}
+\subsubsection[{set\-Deck}]{\setlength{\rightskip}{0pt plus 5cm}void Joueur\-::set\-Deck (
+\begin{DoxyParamCaption}
+\item[{{\bf Deck} $\ast$}]{d}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_joueur_a76d1becbccc8e3d7e9767cdd224d1fa6}
+\hypertarget{class_joueur_a440de4d37f0d29fcaa8bf315fcd2b8be}{\index{Joueur@{Joueur}!set\-Main@{set\-Main}}
+\index{set\-Main@{set\-Main}!Joueur@{Joueur}}
+\subsubsection[{set\-Main}]{\setlength{\rightskip}{0pt plus 5cm}void Joueur\-::set\-Main (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf Carte} $\ast$ $>$ $\ast$}]{main}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_joueur_a440de4d37f0d29fcaa8bf315fcd2b8be}
+\hypertarget{class_joueur_aac098c0542b6b90948ef0eba4a8d52f6}{\index{Joueur@{Joueur}!set\-Mult\-Dmg@{set\-Mult\-Dmg}}
+\index{set\-Mult\-Dmg@{set\-Mult\-Dmg}!Joueur@{Joueur}}
+\subsubsection[{set\-Mult\-Dmg}]{\setlength{\rightskip}{0pt plus 5cm}void Joueur\-::set\-Mult\-Dmg (
+\begin{DoxyParamCaption}
+\item[{double}]{md}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_joueur_aac098c0542b6b90948ef0eba4a8d52f6}
+\hypertarget{class_joueur_af32faed0cf3db6f3dd613d9d5b5aff9a}{\index{Joueur@{Joueur}!set\-Nom@{set\-Nom}}
+\index{set\-Nom@{set\-Nom}!Joueur@{Joueur}}
+\subsubsection[{set\-Nom}]{\setlength{\rightskip}{0pt plus 5cm}void Joueur\-::set\-Nom (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{nom}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_joueur_af32faed0cf3db6f3dd613d9d5b5aff9a}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \-:\begin{DoxyCompactItemize}
+\item 
+/home/figiel-\/paul/\-Bureau/\-Projet\-Poo/\-Projet\-P\-O\-O-\/\-A\-R\-A\-Y\-A-\/\-F\-I\-G\-I\-E\-L/include/\hyperlink{_joueur_8hpp}{Joueur.\-hpp}\end{DoxyCompactItemize}

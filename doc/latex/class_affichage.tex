@@ -1,0 +1,178 @@
+\hypertarget{class_affichage}{\section{Référence de la classe Affichage}
+\label{class_affichage}\index{Affichage@{Affichage}}
+}
+
+
+Classe \hyperlink{class_affichage}{Affichage} qui sert à interpreter graphiquement l'état d'un objet \hyperlink{class_jeu}{Jeu}.  
+
+
+
+
+{\ttfamily \#include $<$Affichage.\-hpp$>$}
+
+Graphe d'héritage de Affichage\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_affichage}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_affichage_a7445260b13fa54a65411e810b13ab299}{Affichage} (int res\-X, int res\-Y, std\-::string nom\-\_\-fenetre, \hyperlink{class_jeu}{Jeu} $\ast$j)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+void \hyperlink{class_affichage_a8ef1dd725b16a7515d0469d9389758ac}{set\-Jeu} (\hyperlink{class_jeu}{Jeu} j)
+\begin{DoxyCompactList}\small\item\em Setter. \end{DoxyCompactList}\item 
+void \hyperlink{class_affichage_ab8a5da8d3c5a712eceb7c60fc097f076}{update\-Window} ()
+\begin{DoxyCompactList}\small\item\em Fait la mise à jour graphique de l'affichage, va regarder dans le jeu observé toutes les valeurs à mettre à jour. \end{DoxyCompactList}\item 
+sf\-::\-Render\-Window $\ast$ \hyperlink{class_affichage_a4f102614c071b8dc90a00f136a12d9fd}{get\-Window} ()
+\begin{DoxyCompactList}\small\item\em Getter. \end{DoxyCompactList}\item 
+void \hyperlink{class_affichage_a76b52d63ae50d54a10bdc27370809a06}{actualiser} ()
+\begin{DoxyCompactList}\small\item\em Implémente l'actualisation de la classe observeur. \end{DoxyCompactList}\item 
+void \hyperlink{class_affichage_ae9cc540e03d44f364b9266e3ec35e2d1}{fermer} ()
+\begin{DoxyCompactList}\small\item\em Ferme la fenetre d'affichage S\-F\-M\-L. \end{DoxyCompactList}\item 
+bool \hyperlink{class_affichage_a135fddd2df0e1f2981975cc4ca105265}{est\-Ouvert} ()
+\begin{DoxyCompactList}\small\item\em Sert à savoir si la fenetre S\-F\-M\-L est ouverte. \end{DoxyCompactList}\item 
+void \hyperlink{class_affichage_afb6dbfbdff30d33ec2cc77393b900e6d}{dessiner\-Infos} ()
+\begin{DoxyCompactList}\small\item\em Dessine à l'ecran toutes les infos relatives au jeu, ( à la partie ) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Classe \hyperlink{class_affichage}{Affichage} qui sert à interpreter graphiquement l'état d'un objet \hyperlink{class_jeu}{Jeu}. 
+
+\begin{DoxyDate}{Date}
+15/11/2015 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Auteur}
+paul\-\_\-figiel 
+\end{DoxyAuthor}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{class_affichage_a7445260b13fa54a65411e810b13ab299}{\index{Affichage@{Affichage}!Affichage@{Affichage}}
+\index{Affichage@{Affichage}!Affichage@{Affichage}}
+\subsubsection[{Affichage}]{\setlength{\rightskip}{0pt plus 5cm}Affichage\-::\-Affichage (
+\begin{DoxyParamCaption}
+\item[{int}]{res\-X, }
+\item[{int}]{res\-Y, }
+\item[{std\-::string}]{nom\-\_\-fenetre, }
+\item[{{\bf Jeu} $\ast$}]{j}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_affichage_a7445260b13fa54a65411e810b13ab299}
+
+
+Constructeur. 
+
+Constructeur de la classe \hyperlink{class_affichage}{Affichage}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em res\-X} & \-: resolution en x de la fenetre \\
+\hline
+{\em res\-Y} & \-: resolution en y de la fenetre \\
+\hline
+{\em nom\-\_\-fenetre} & \-: nom de la fenetre \\
+\hline
+{\em j} & \-: pointeur sur un jeu \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_affichage_a76b52d63ae50d54a10bdc27370809a06}{\index{Affichage@{Affichage}!actualiser@{actualiser}}
+\index{actualiser@{actualiser}!Affichage@{Affichage}}
+\subsubsection[{actualiser}]{\setlength{\rightskip}{0pt plus 5cm}void Affichage\-::actualiser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_affichage_a76b52d63ae50d54a10bdc27370809a06}
+
+
+Implémente l'actualisation de la classe observeur. 
+
+
+
+Implémente \hyperlink{class_observeur_ad3f81ed71b0b056e7c20b731211c5958}{Observeur}.
+
+\hypertarget{class_affichage_afb6dbfbdff30d33ec2cc77393b900e6d}{\index{Affichage@{Affichage}!dessiner\-Infos@{dessiner\-Infos}}
+\index{dessiner\-Infos@{dessiner\-Infos}!Affichage@{Affichage}}
+\subsubsection[{dessiner\-Infos}]{\setlength{\rightskip}{0pt plus 5cm}void Affichage\-::dessiner\-Infos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_affichage_afb6dbfbdff30d33ec2cc77393b900e6d}
+
+
+Dessine à l'ecran toutes les infos relatives au jeu, ( à la partie ) 
+
+\hypertarget{class_affichage_a135fddd2df0e1f2981975cc4ca105265}{\index{Affichage@{Affichage}!est\-Ouvert@{est\-Ouvert}}
+\index{est\-Ouvert@{est\-Ouvert}!Affichage@{Affichage}}
+\subsubsection[{est\-Ouvert}]{\setlength{\rightskip}{0pt plus 5cm}bool Affichage\-::est\-Ouvert (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_affichage_a135fddd2df0e1f2981975cc4ca105265}
+
+
+Sert à savoir si la fenetre S\-F\-M\-L est ouverte. 
+
+\begin{DoxyReturn}{Renvoie}
+true si la fenetre S\-F\-M\-L est ouverte 
+\end{DoxyReturn}
+\hypertarget{class_affichage_ae9cc540e03d44f364b9266e3ec35e2d1}{\index{Affichage@{Affichage}!fermer@{fermer}}
+\index{fermer@{fermer}!Affichage@{Affichage}}
+\subsubsection[{fermer}]{\setlength{\rightskip}{0pt plus 5cm}void Affichage\-::fermer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_affichage_ae9cc540e03d44f364b9266e3ec35e2d1}
+
+
+Ferme la fenetre d'affichage S\-F\-M\-L. 
+
+\hypertarget{class_affichage_a4f102614c071b8dc90a00f136a12d9fd}{\index{Affichage@{Affichage}!get\-Window@{get\-Window}}
+\index{get\-Window@{get\-Window}!Affichage@{Affichage}}
+\subsubsection[{get\-Window}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Render\-Window$\ast$ Affichage\-::get\-Window (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_affichage_a4f102614c071b8dc90a00f136a12d9fd}
+
+
+Getter. 
+
+\begin{DoxyReturn}{Renvoie}
+window\-\_\- \-: la fenetre d'affichage S\-F\-M\-L utilisée 
+\end{DoxyReturn}
+\hypertarget{class_affichage_a8ef1dd725b16a7515d0469d9389758ac}{\index{Affichage@{Affichage}!set\-Jeu@{set\-Jeu}}
+\index{set\-Jeu@{set\-Jeu}!Affichage@{Affichage}}
+\subsubsection[{set\-Jeu}]{\setlength{\rightskip}{0pt plus 5cm}void Affichage\-::set\-Jeu (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu}}]{j}
+\end{DoxyParamCaption}
+)}}\label{class_affichage_a8ef1dd725b16a7515d0469d9389758ac}
+
+
+Setter. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em j} & \-: le jeu que l'affichage doit observer \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_affichage_ab8a5da8d3c5a712eceb7c60fc097f076}{\index{Affichage@{Affichage}!update\-Window@{update\-Window}}
+\index{update\-Window@{update\-Window}!Affichage@{Affichage}}
+\subsubsection[{update\-Window}]{\setlength{\rightskip}{0pt plus 5cm}void Affichage\-::update\-Window (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_affichage_ab8a5da8d3c5a712eceb7c60fc097f076}
+
+
+Fait la mise à jour graphique de l'affichage, va regarder dans le jeu observé toutes les valeurs à mettre à jour. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \-:\begin{DoxyCompactItemize}
+\item 
+/home/figiel-\/paul/\-Bureau/\-Projet\-Poo/\-Projet\-P\-O\-O-\/\-A\-R\-A\-Y\-A-\/\-F\-I\-G\-I\-E\-L/include/\hyperlink{_affichage_8hpp}{Affichage.\-hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,71 @@
+\hypertarget{class_director}{\section{Référence de la classe Director}
+\label{class_director}\index{Director@{Director}}
+}
+
+
+Classe \hyperlink{class_director}{Director} qui sert à gerer les builder de carte.  
+
+
+
+
+{\ttfamily \#include $<$Director.\-hpp$>$}
+
+Graphe d'héritage de Director\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_director}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_deck}{Deck} $\ast$ \hyperlink{class_director_aea0cbfa1badb2688676406bf47fc7b62}{faire\-Deck} ()=0
+\begin{DoxyCompactList}\small\item\em Permet de construire un deck à partir d'un fichier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_builder_deck}{Builder\-Deck} $\ast$ \hyperlink{class_director_aab69d1e289d61bf63407e8c1554a0c09}{builderdeck\-\_\-}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Classe \hyperlink{class_director}{Director} qui sert à gerer les builder de carte. 
+
+\begin{DoxyDate}{Date}
+15/11/2015 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Auteur}
+paul\-\_\-figiel 
+\end{DoxyAuthor}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_director_aea0cbfa1badb2688676406bf47fc7b62}{\index{Director@{Director}!faire\-Deck@{faire\-Deck}}
+\index{faire\-Deck@{faire\-Deck}!Director@{Director}}
+\subsubsection[{faire\-Deck}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Deck}$\ast$ Director\-::faire\-Deck (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_director_aea0cbfa1badb2688676406bf47fc7b62}
+
+
+Permet de construire un deck à partir d'un fichier. 
+
+\begin{DoxyReturn}{Renvoie}
+\-: un pointeur sur le deck créé 
+\end{DoxyReturn}
+
+
+Implémenté dans \hyperlink{class_director_concret_a282099b6194ce102102b780a5b4bcb46}{Director\-Concret}.
+
+
+
+\subsection{Documentation des données membres}
+\hypertarget{class_director_aab69d1e289d61bf63407e8c1554a0c09}{\index{Director@{Director}!builderdeck\-\_\-@{builderdeck\-\_\-}}
+\index{builderdeck\-\_\-@{builderdeck\-\_\-}!Director@{Director}}
+\subsubsection[{builderdeck\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Builder\-Deck}$\ast$ Director\-::builderdeck\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_director_aab69d1e289d61bf63407e8c1554a0c09}
+Le builder qui créé les decks 
+
+La documentation de cette classe a été générée à partir du fichier suivant \-:\begin{DoxyCompactItemize}
+\item 
+/home/figiel-\/paul/\-Bureau/\-Projet\-Poo/\-Projet\-P\-O\-O-\/\-A\-R\-A\-Y\-A-\/\-F\-I\-G\-I\-E\-L/include/\hyperlink{_director_8hpp}{Director.\-hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,13 @@
+id_=10
+nom_=Rapport Projet / Rendu Code
+num_=12
+retournable_=1
+type_=2
+Leffet_=EffetReturn
+Fstartup_=0
+dmg_=0
+type2_=3
+Leffet2_=EffetBoost
+Leffet2_=EffetYolo
+Fstartup2_=0
+dmg2_=0

@@ -1,0 +1,13 @@
+id_=3
+nom_=Coder en Java/ UML
+num_=5
+retournable_=1
+type_=0
+Leffet_=EffetBoost
+Leffet_=EffetLink
+Fstartup_=4
+dmg_=7
+type2_=2
+Leffet2_=EffetReturn
+Fstartup2_=0
+dmg2_=0

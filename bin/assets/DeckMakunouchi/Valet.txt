@@ -1,0 +1,12 @@
+id_=23
+nom_=Cross counter / Encaisser
+num_=11
+retournable_=1
+type_=0
+Leffet_=EffetYolo
+Fstartup_=0.8
+dmg_=5
+type2_=2
+Leffet2_=EffetReturn
+Fstartup2_=0
+dmg2_=0

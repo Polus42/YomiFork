@@ -1,0 +1,12 @@
+id_=2
+nom_=Cacher derrière le bureau/ En retard
+num_=4
+retournable_=1
+type_=2
+Leffet_=EffetReturn
+Fstartup_=0
+dmg_=0
+type2_=3
+Leffet2_=EffetYolo
+Fstartup2_=0
+dmg2_=0

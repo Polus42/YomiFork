@@ -1,0 +1,8 @@
+id_=21
+nom_=Esquive de la tête
+num_=9
+retournable_=0
+type_=3
+Leffet_=EffetYolo
+Fstartup_=0
+dmg_=0

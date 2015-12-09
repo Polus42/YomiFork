@@ -1,0 +1,646 @@
+\hypertarget{class_jeu}{\section{Référence de la classe Jeu}
+\label{class_jeu}\index{Jeu@{Jeu}}
+}
+
+
+{\ttfamily \#include $<$Jeu.\-hpp$>$}
+
+Graphe d'héritage de Jeu\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_jeu}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_jeu_acc5795ee00edf75516d3dfe65be3e6d6}{Jeu} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\hyperlink{class_joueur}{Joueur} $\ast$ \hyperlink{class_jeu_a56ed2a2cef42566e3c157cc11588e2ae}{get\-J1} ()
+\item 
+void \hyperlink{class_jeu_a74110004db819646a40323b1daa2c249}{set\-J1} (\hyperlink{class_joueur}{Joueur} $\ast$j)
+\item 
+\hyperlink{class_joueur}{Joueur} $\ast$ \hyperlink{class_jeu_afd1e01e7843d24cee637b41ffdfec9ad}{get\-J2} ()
+\item 
+void \hyperlink{class_jeu_a37c63b56c95a83753c6f9521e1d355b4}{set\-J2} (\hyperlink{class_joueur}{Joueur} $\ast$j)
+\item 
+std\-::vector$<$ \hyperlink{class_carte}{Carte} $\ast$ $>$ \hyperlink{class_jeu_ab6e4e2510694715b5a97fdeb73387cc6}{get\-Carte\-J1} ()
+\item 
+std\-::vector$<$ \hyperlink{class_carte}{Carte} $\ast$ $>$ \hyperlink{class_jeu_a86c6895722d29422a5bfe449ec2887f9}{get\-Carte\-J2} ()
+\item 
+std\-::vector$<$ \hyperlink{class_carte}{Carte} $\ast$ $>$ \hyperlink{class_jeu_ac4c93bb98ab4e39bfb6f433a68892c56}{get\-Rcarte\-J1} ()
+\item 
+std\-::vector$<$ \hyperlink{class_carte}{Carte} $\ast$ $>$ \hyperlink{class_jeu_ad1639e6ab51ce0704f20b4b389888e4a}{get\-Rcarte\-J2} ()
+\item 
+int \hyperlink{class_jeu_afded871bc0c3104ce1f0196ab4449663}{get\-Joue} ()
+\item 
+void \hyperlink{class_jeu_a3c7a41b6e9acc74ab8286adc0f6c99fc}{set\-Joue} (int x)
+\item 
+int \hyperlink{class_jeu_aedcf65c5f258409cd5539c7f3132b7b8}{get\-Gagnant\-Combat} ()
+\item 
+void \hyperlink{class_jeu_a02280609f3dc7843923f8de198d42654}{set\-Gagnant\-Combat} (int x)
+\item 
+int \hyperlink{class_jeu_a1bc939a24ccb8035cab265d022e909e3}{get\-Combo} ()
+\item 
+void \hyperlink{class_jeu_a306805dc1c5101f60da1f47fbb6208a9}{set\-Combo} (int x)
+\item 
+int \hyperlink{class_jeu_a872cd7c640a9f400f9328d270df62949}{get\-Combo\-Type\-J1} ()
+\item 
+void \hyperlink{class_jeu_aaf27565623c1570e13daa67a65a999e9}{set\-Combo\-Type\-J1} (int x)
+\item 
+int \hyperlink{class_jeu_adb7a2e6e6bfe15ed1d720e884faca987}{get\-Combo\-Type\-J2} ()
+\item 
+void \hyperlink{class_jeu_a0d437ab069b7e94694fd3d567dd20e07}{set\-Combo\-Type\-J2} (int x)
+\item 
+\hyperlink{class_etat}{Etat} $\ast$ \hyperlink{class_jeu_a2f0816cea4f78387b7ec71aa5e1f1b14}{get\-Etat\-Courant} ()
+\item 
+void \hyperlink{class_jeu_afc4543470bc3a4f4dc84b0aad4295d2d}{set\-Etat\-Courant} (\hyperlink{class_etat}{Etat} $\ast$et)
+\item 
+\hyperlink{class_etat}{Etat} $\ast$ \hyperlink{class_jeu_ab70c1e2ede9fb55f99b433d650f05813}{get\-Etat\-Pioche} ()
+\item 
+\hyperlink{class_etat}{Etat} $\ast$ \hyperlink{class_jeu_aeaa2da8046a84766358d2c4422d093d1}{get\-Etat\-Choix\-J1} ()
+\item 
+\hyperlink{class_etat}{Etat} $\ast$ \hyperlink{class_jeu_a0e916d9f16d3e0eb073027e4d9d56ef0}{get\-Etat\-Choix\-J2} ()
+\item 
+\hyperlink{class_etat}{Etat} $\ast$ \hyperlink{class_jeu_afc4788d06bf24260783e70bce3455ca3}{get\-Etat\-Choix\-Win} ()
+\item 
+\hyperlink{class_etat}{Etat} $\ast$ \hyperlink{class_jeu_ae804c0bd49285e41a28299f41d5eaaba}{get\-Etat\-Calc\-Dmg} ()
+\item 
+\hyperlink{class_etat}{Etat} $\ast$ \hyperlink{class_jeu_a8f4efbf2847eafdd86cd178b8b17ba24}{get\-Etat\-Bluff} ()
+\item 
+\hyperlink{class_etat}{Etat} $\ast$ \hyperlink{class_jeu_a2d0de8666c9f02c0af9186ec7e51643e}{get\-Etat\-Combo} ()
+\item 
+\hyperlink{class_etat}{Etat} $\ast$ \hyperlink{class_jeu_aa9469a1ced32c683eae7bec567c170d3}{get\-Etat\-Clean\-Up} ()
+\item 
+\hyperlink{class_etat}{Etat} $\ast$ \hyperlink{class_jeu_a372dba23eee1d33eb24e8f2dc3c3b6f4}{get\-Etat\-Fin} ()
+\item 
+bool \hyperlink{class_jeu_a724b71e7405bf1f28142973e20902691}{get\-Fini} ()
+\item 
+void \hyperlink{class_jeu_a9f48a5d4b43894bc584972eadc7ec1a1}{set\-Fini} (bool f)
+\item 
+bool \hyperlink{class_jeu_af8a568254fd6935e8814f31580300f0e}{get\-Bluff} ()
+\item 
+void \hyperlink{class_jeu_ac3e1701f943f16436a15e423bd2c6e62}{set\-Bluff} (bool b)
+\item 
+void \hyperlink{class_jeu_aacd7585f3235e9e0da4bcbfc6eef5ba9}{add\-Carte\-J1} (\hyperlink{class_carte}{Carte} $\ast$c)
+\begin{DoxyCompactList}\small\item\em ajoute une carte à la liste des carte de J1 \end{DoxyCompactList}\item 
+void \hyperlink{class_jeu_ab723c1aa7efb0961d83a53862ebd5122}{add\-Carte\-J2} (\hyperlink{class_carte}{Carte} $\ast$c)
+\begin{DoxyCompactList}\small\item\em ajoute une carte à la liste des carte de J2 \end{DoxyCompactList}\item 
+void \hyperlink{class_jeu_a6e61d83c15d2bd2bb0068dc58c4248f0}{add\-Rcarte\-J1} (\hyperlink{class_carte}{Carte} $\ast$c)
+\begin{DoxyCompactList}\small\item\em ajoute une carte à la liste des carte à retourner de J1 \end{DoxyCompactList}\item 
+void \hyperlink{class_jeu_adae51a9577a485942e3d349fa43be0f4}{add\-Rcarte\-J2} (\hyperlink{class_carte}{Carte} $\ast$c)
+\begin{DoxyCompactList}\small\item\em ajoute une carte à la liste des carte à retourner de J2 \end{DoxyCompactList}\item 
+void \hyperlink{class_jeu_aa5e5d255f55ff79dc50a149840240219}{vidage} ()
+\item 
+void \hyperlink{class_jeu_abd1b3f4f3866299296c37d5def7bd509}{retourner\-To\-Main} (int i)
+\begin{DoxyCompactList}\small\item\em Retourne la dérnière carte jouer par le joueur i. \end{DoxyCompactList}\item 
+void \hyperlink{class_jeu_af710d22785038c25866e270821a0d164}{clear\-Carte\-J1} ()
+\begin{DoxyCompactList}\small\item\em vide le vector$<$\-Carte$\ast$$>$ carte\-J1\-\_\- \end{DoxyCompactList}\item 
+void \hyperlink{class_jeu_ae62fc97f873d2c033b0b647db617f8f4}{clear\-Carte\-J2} ()
+\begin{DoxyCompactList}\small\item\em vide le vector$<$\-Carte$\ast$$>$ carte\-J2\-\_\- \end{DoxyCompactList}\item 
+void \hyperlink{class_jeu_a890ea4e42ea493a8179fdfb94b6c2fac}{clear\-R\-Carte\-J1} ()
+\begin{DoxyCompactList}\small\item\em vide le vector$<$\-Carte$\ast$$>$ Rcarte\-J1\-\_\- \end{DoxyCompactList}\item 
+void \hyperlink{class_jeu_ad41dfbbdde90ba9579173af18ea2a670}{clear\-R\-Carte\-J2} ()
+\begin{DoxyCompactList}\small\item\em vide le vector$<$\-Carte$\ast$$>$ Rcarte\-J2\-\_\- \end{DoxyCompactList}\item 
+void \hyperlink{class_jeu_a5a74a90faa114fd22a09ed25b9fc8381}{plus\-Combo} ()
+\begin{DoxyCompactList}\small\item\em augmente de un le compteur de combo ( combo\-\_\-) \end{DoxyCompactList}\item 
+void \hyperlink{class_jeu_af3b060e950164595e1e75901c7c701ad}{action\-Effet} (int i)
+\begin{DoxyCompactList}\small\item\em applique l'effet de la derière carte jouer par le joueur i \end{DoxyCompactList}\item 
+\hyperlink{class_carte}{Carte} $\ast$ \hyperlink{class_jeu_a71d1539ad625597004b324e15fc9bf7f}{get\-Last\-Carte} (int j)
+\begin{DoxyCompactList}\small\item\em retourne la dérnière carte jouer par le joueur i \end{DoxyCompactList}\item 
+int \hyperlink{class_jeu_a2b0a504e0fc5a6e5a74f362ab26d9633}{get\-Good\-Combo\-Type} (int x)
+\begin{DoxyCompactList}\small\item\em retourne le type de combo du joueur i \end{DoxyCompactList}\item 
+void \hyperlink{class_jeu_aee83ada0589e3352ec854b12e1c6e265}{ajouter\-Obs} (\hyperlink{class_observeur}{Observeur} $\ast$o)
+\begin{DoxyCompactList}\small\item\em ajoute un observeur à jeu \end{DoxyCompactList}\item 
+void \hyperlink{class_jeu_adbb1ba10c900ec336d744dbfd5de7f8e}{supprimer\-Obs} (int i)
+\begin{DoxyCompactList}\small\item\em suprime un observeur du jeu \end{DoxyCompactList}\item 
+void \hyperlink{class_jeu_ad955ffee4ed18add167fa957386a9821}{notifier\-Obs} ()
+\begin{DoxyCompactList}\small\item\em notifie les observeur de jeu \end{DoxyCompactList}\item 
+void \hyperlink{class_jeu_a56770ec2fa7af1cd5dfe1f06ee8d291a}{notifier\-Obs} (\hyperlink{class_observeur}{Observeur} $\ast$o)
+\begin{DoxyCompactList}\small\item\em ajoute un observeur de jeu \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{class_jeu_acc5795ee00edf75516d3dfe65be3e6d6}{\index{Jeu@{Jeu}!Jeu@{Jeu}}
+\index{Jeu@{Jeu}!Jeu@{Jeu}}
+\subsubsection[{Jeu}]{\setlength{\rightskip}{0pt plus 5cm}Jeu\-::\-Jeu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_jeu_acc5795ee00edf75516d3dfe65be3e6d6}
+
+
+Constructeur. 
+
+les des observeurs
+
+Constructeur de la classe \hyperlink{class_jeu}{Jeu} 
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_jeu_af3b060e950164595e1e75901c7c701ad}{\index{Jeu@{Jeu}!action\-Effet@{action\-Effet}}
+\index{action\-Effet@{action\-Effet}!Jeu@{Jeu}}
+\subsubsection[{action\-Effet}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::action\-Effet (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{class_jeu_af3b060e950164595e1e75901c7c701ad}
+
+
+applique l'effet de la derière carte jouer par le joueur i 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em int} & i \-: le joueur concerner \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_jeu_aacd7585f3235e9e0da4bcbfc6eef5ba9}{\index{Jeu@{Jeu}!add\-Carte\-J1@{add\-Carte\-J1}}
+\index{add\-Carte\-J1@{add\-Carte\-J1}!Jeu@{Jeu}}
+\subsubsection[{add\-Carte\-J1}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::add\-Carte\-J1 (
+\begin{DoxyParamCaption}
+\item[{{\bf Carte} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_jeu_aacd7585f3235e9e0da4bcbfc6eef5ba9}
+
+
+ajoute une carte à la liste des carte de J1 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Carte$\ast$} & c \-: carte à rajouter \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_jeu_ab723c1aa7efb0961d83a53862ebd5122}{\index{Jeu@{Jeu}!add\-Carte\-J2@{add\-Carte\-J2}}
+\index{add\-Carte\-J2@{add\-Carte\-J2}!Jeu@{Jeu}}
+\subsubsection[{add\-Carte\-J2}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::add\-Carte\-J2 (
+\begin{DoxyParamCaption}
+\item[{{\bf Carte} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_jeu_ab723c1aa7efb0961d83a53862ebd5122}
+
+
+ajoute une carte à la liste des carte de J2 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Carte$\ast$} & c \-: carte à rajouter \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_jeu_a6e61d83c15d2bd2bb0068dc58c4248f0}{\index{Jeu@{Jeu}!add\-Rcarte\-J1@{add\-Rcarte\-J1}}
+\index{add\-Rcarte\-J1@{add\-Rcarte\-J1}!Jeu@{Jeu}}
+\subsubsection[{add\-Rcarte\-J1}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::add\-Rcarte\-J1 (
+\begin{DoxyParamCaption}
+\item[{{\bf Carte} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_jeu_a6e61d83c15d2bd2bb0068dc58c4248f0}
+
+
+ajoute une carte à la liste des carte à retourner de J1 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Carte$\ast$} & c \-: carte à rajouter \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_jeu_adae51a9577a485942e3d349fa43be0f4}{\index{Jeu@{Jeu}!add\-Rcarte\-J2@{add\-Rcarte\-J2}}
+\index{add\-Rcarte\-J2@{add\-Rcarte\-J2}!Jeu@{Jeu}}
+\subsubsection[{add\-Rcarte\-J2}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::add\-Rcarte\-J2 (
+\begin{DoxyParamCaption}
+\item[{{\bf Carte} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_jeu_adae51a9577a485942e3d349fa43be0f4}
+
+
+ajoute une carte à la liste des carte à retourner de J2 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Carte$\ast$} & c \-: carte à rajouter \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_jeu_aee83ada0589e3352ec854b12e1c6e265}{\index{Jeu@{Jeu}!ajouter\-Obs@{ajouter\-Obs}}
+\index{ajouter\-Obs@{ajouter\-Obs}!Jeu@{Jeu}}
+\subsubsection[{ajouter\-Obs}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::ajouter\-Obs (
+\begin{DoxyParamCaption}
+\item[{{\bf Observeur} $\ast$}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_jeu_aee83ada0589e3352ec854b12e1c6e265}
+
+
+ajoute un observeur à jeu 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Oberserveur} & $\ast$o \-: l'observeur à rajouté \\
+\hline
+\end{DoxyParams}
+
+
+Implémente \hyperlink{class_sujet_a77c41db2a06015ca931da1636e4dbc6d}{Sujet}.
+
+\hypertarget{class_jeu_af710d22785038c25866e270821a0d164}{\index{Jeu@{Jeu}!clear\-Carte\-J1@{clear\-Carte\-J1}}
+\index{clear\-Carte\-J1@{clear\-Carte\-J1}!Jeu@{Jeu}}
+\subsubsection[{clear\-Carte\-J1}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::clear\-Carte\-J1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_jeu_af710d22785038c25866e270821a0d164}
+
+
+vide le vector$<$\-Carte$\ast$$>$ carte\-J1\-\_\- 
+
+\hypertarget{class_jeu_ae62fc97f873d2c033b0b647db617f8f4}{\index{Jeu@{Jeu}!clear\-Carte\-J2@{clear\-Carte\-J2}}
+\index{clear\-Carte\-J2@{clear\-Carte\-J2}!Jeu@{Jeu}}
+\subsubsection[{clear\-Carte\-J2}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::clear\-Carte\-J2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_jeu_ae62fc97f873d2c033b0b647db617f8f4}
+
+
+vide le vector$<$\-Carte$\ast$$>$ carte\-J2\-\_\- 
+
+\hypertarget{class_jeu_a890ea4e42ea493a8179fdfb94b6c2fac}{\index{Jeu@{Jeu}!clear\-R\-Carte\-J1@{clear\-R\-Carte\-J1}}
+\index{clear\-R\-Carte\-J1@{clear\-R\-Carte\-J1}!Jeu@{Jeu}}
+\subsubsection[{clear\-R\-Carte\-J1}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::clear\-R\-Carte\-J1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_jeu_a890ea4e42ea493a8179fdfb94b6c2fac}
+
+
+vide le vector$<$\-Carte$\ast$$>$ Rcarte\-J1\-\_\- 
+
+\hypertarget{class_jeu_ad41dfbbdde90ba9579173af18ea2a670}{\index{Jeu@{Jeu}!clear\-R\-Carte\-J2@{clear\-R\-Carte\-J2}}
+\index{clear\-R\-Carte\-J2@{clear\-R\-Carte\-J2}!Jeu@{Jeu}}
+\subsubsection[{clear\-R\-Carte\-J2}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::clear\-R\-Carte\-J2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_jeu_ad41dfbbdde90ba9579173af18ea2a670}
+
+
+vide le vector$<$\-Carte$\ast$$>$ Rcarte\-J2\-\_\- 
+
+\hypertarget{class_jeu_af8a568254fd6935e8814f31580300f0e}{\index{Jeu@{Jeu}!get\-Bluff@{get\-Bluff}}
+\index{get\-Bluff@{get\-Bluff}!Jeu@{Jeu}}
+\subsubsection[{get\-Bluff}]{\setlength{\rightskip}{0pt plus 5cm}bool Jeu\-::get\-Bluff (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_af8a568254fd6935e8814f31580300f0e}
+\hypertarget{class_jeu_ab6e4e2510694715b5a97fdeb73387cc6}{\index{Jeu@{Jeu}!get\-Carte\-J1@{get\-Carte\-J1}}
+\index{get\-Carte\-J1@{get\-Carte\-J1}!Jeu@{Jeu}}
+\subsubsection[{get\-Carte\-J1}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Carte}$\ast$$>$ Jeu\-::get\-Carte\-J1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_ab6e4e2510694715b5a97fdeb73387cc6}
+\hypertarget{class_jeu_a86c6895722d29422a5bfe449ec2887f9}{\index{Jeu@{Jeu}!get\-Carte\-J2@{get\-Carte\-J2}}
+\index{get\-Carte\-J2@{get\-Carte\-J2}!Jeu@{Jeu}}
+\subsubsection[{get\-Carte\-J2}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Carte}$\ast$$>$ Jeu\-::get\-Carte\-J2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_a86c6895722d29422a5bfe449ec2887f9}
+\hypertarget{class_jeu_a1bc939a24ccb8035cab265d022e909e3}{\index{Jeu@{Jeu}!get\-Combo@{get\-Combo}}
+\index{get\-Combo@{get\-Combo}!Jeu@{Jeu}}
+\subsubsection[{get\-Combo}]{\setlength{\rightskip}{0pt plus 5cm}int Jeu\-::get\-Combo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_a1bc939a24ccb8035cab265d022e909e3}
+\hypertarget{class_jeu_a872cd7c640a9f400f9328d270df62949}{\index{Jeu@{Jeu}!get\-Combo\-Type\-J1@{get\-Combo\-Type\-J1}}
+\index{get\-Combo\-Type\-J1@{get\-Combo\-Type\-J1}!Jeu@{Jeu}}
+\subsubsection[{get\-Combo\-Type\-J1}]{\setlength{\rightskip}{0pt plus 5cm}int Jeu\-::get\-Combo\-Type\-J1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_a872cd7c640a9f400f9328d270df62949}
+\hypertarget{class_jeu_adb7a2e6e6bfe15ed1d720e884faca987}{\index{Jeu@{Jeu}!get\-Combo\-Type\-J2@{get\-Combo\-Type\-J2}}
+\index{get\-Combo\-Type\-J2@{get\-Combo\-Type\-J2}!Jeu@{Jeu}}
+\subsubsection[{get\-Combo\-Type\-J2}]{\setlength{\rightskip}{0pt plus 5cm}int Jeu\-::get\-Combo\-Type\-J2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_adb7a2e6e6bfe15ed1d720e884faca987}
+\hypertarget{class_jeu_a8f4efbf2847eafdd86cd178b8b17ba24}{\index{Jeu@{Jeu}!get\-Etat\-Bluff@{get\-Etat\-Bluff}}
+\index{get\-Etat\-Bluff@{get\-Etat\-Bluff}!Jeu@{Jeu}}
+\subsubsection[{get\-Etat\-Bluff}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Etat}$\ast$ Jeu\-::get\-Etat\-Bluff (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_a8f4efbf2847eafdd86cd178b8b17ba24}
+\hypertarget{class_jeu_ae804c0bd49285e41a28299f41d5eaaba}{\index{Jeu@{Jeu}!get\-Etat\-Calc\-Dmg@{get\-Etat\-Calc\-Dmg}}
+\index{get\-Etat\-Calc\-Dmg@{get\-Etat\-Calc\-Dmg}!Jeu@{Jeu}}
+\subsubsection[{get\-Etat\-Calc\-Dmg}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Etat}$\ast$ Jeu\-::get\-Etat\-Calc\-Dmg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_ae804c0bd49285e41a28299f41d5eaaba}
+\hypertarget{class_jeu_aeaa2da8046a84766358d2c4422d093d1}{\index{Jeu@{Jeu}!get\-Etat\-Choix\-J1@{get\-Etat\-Choix\-J1}}
+\index{get\-Etat\-Choix\-J1@{get\-Etat\-Choix\-J1}!Jeu@{Jeu}}
+\subsubsection[{get\-Etat\-Choix\-J1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Etat}$\ast$ Jeu\-::get\-Etat\-Choix\-J1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_aeaa2da8046a84766358d2c4422d093d1}
+\hypertarget{class_jeu_a0e916d9f16d3e0eb073027e4d9d56ef0}{\index{Jeu@{Jeu}!get\-Etat\-Choix\-J2@{get\-Etat\-Choix\-J2}}
+\index{get\-Etat\-Choix\-J2@{get\-Etat\-Choix\-J2}!Jeu@{Jeu}}
+\subsubsection[{get\-Etat\-Choix\-J2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Etat}$\ast$ Jeu\-::get\-Etat\-Choix\-J2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_a0e916d9f16d3e0eb073027e4d9d56ef0}
+\hypertarget{class_jeu_afc4788d06bf24260783e70bce3455ca3}{\index{Jeu@{Jeu}!get\-Etat\-Choix\-Win@{get\-Etat\-Choix\-Win}}
+\index{get\-Etat\-Choix\-Win@{get\-Etat\-Choix\-Win}!Jeu@{Jeu}}
+\subsubsection[{get\-Etat\-Choix\-Win}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Etat}$\ast$ Jeu\-::get\-Etat\-Choix\-Win (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_afc4788d06bf24260783e70bce3455ca3}
+\hypertarget{class_jeu_aa9469a1ced32c683eae7bec567c170d3}{\index{Jeu@{Jeu}!get\-Etat\-Clean\-Up@{get\-Etat\-Clean\-Up}}
+\index{get\-Etat\-Clean\-Up@{get\-Etat\-Clean\-Up}!Jeu@{Jeu}}
+\subsubsection[{get\-Etat\-Clean\-Up}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Etat}$\ast$ Jeu\-::get\-Etat\-Clean\-Up (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_aa9469a1ced32c683eae7bec567c170d3}
+\hypertarget{class_jeu_a2d0de8666c9f02c0af9186ec7e51643e}{\index{Jeu@{Jeu}!get\-Etat\-Combo@{get\-Etat\-Combo}}
+\index{get\-Etat\-Combo@{get\-Etat\-Combo}!Jeu@{Jeu}}
+\subsubsection[{get\-Etat\-Combo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Etat}$\ast$ Jeu\-::get\-Etat\-Combo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_a2d0de8666c9f02c0af9186ec7e51643e}
+\hypertarget{class_jeu_a2f0816cea4f78387b7ec71aa5e1f1b14}{\index{Jeu@{Jeu}!get\-Etat\-Courant@{get\-Etat\-Courant}}
+\index{get\-Etat\-Courant@{get\-Etat\-Courant}!Jeu@{Jeu}}
+\subsubsection[{get\-Etat\-Courant}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Etat}$\ast$ Jeu\-::get\-Etat\-Courant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_a2f0816cea4f78387b7ec71aa5e1f1b14}
+\hypertarget{class_jeu_a372dba23eee1d33eb24e8f2dc3c3b6f4}{\index{Jeu@{Jeu}!get\-Etat\-Fin@{get\-Etat\-Fin}}
+\index{get\-Etat\-Fin@{get\-Etat\-Fin}!Jeu@{Jeu}}
+\subsubsection[{get\-Etat\-Fin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Etat}$\ast$ Jeu\-::get\-Etat\-Fin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_a372dba23eee1d33eb24e8f2dc3c3b6f4}
+\hypertarget{class_jeu_ab70c1e2ede9fb55f99b433d650f05813}{\index{Jeu@{Jeu}!get\-Etat\-Pioche@{get\-Etat\-Pioche}}
+\index{get\-Etat\-Pioche@{get\-Etat\-Pioche}!Jeu@{Jeu}}
+\subsubsection[{get\-Etat\-Pioche}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Etat}$\ast$ Jeu\-::get\-Etat\-Pioche (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_ab70c1e2ede9fb55f99b433d650f05813}
+\hypertarget{class_jeu_a724b71e7405bf1f28142973e20902691}{\index{Jeu@{Jeu}!get\-Fini@{get\-Fini}}
+\index{get\-Fini@{get\-Fini}!Jeu@{Jeu}}
+\subsubsection[{get\-Fini}]{\setlength{\rightskip}{0pt plus 5cm}bool Jeu\-::get\-Fini (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_a724b71e7405bf1f28142973e20902691}
+\hypertarget{class_jeu_aedcf65c5f258409cd5539c7f3132b7b8}{\index{Jeu@{Jeu}!get\-Gagnant\-Combat@{get\-Gagnant\-Combat}}
+\index{get\-Gagnant\-Combat@{get\-Gagnant\-Combat}!Jeu@{Jeu}}
+\subsubsection[{get\-Gagnant\-Combat}]{\setlength{\rightskip}{0pt plus 5cm}int Jeu\-::get\-Gagnant\-Combat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_aedcf65c5f258409cd5539c7f3132b7b8}
+\hypertarget{class_jeu_a2b0a504e0fc5a6e5a74f362ab26d9633}{\index{Jeu@{Jeu}!get\-Good\-Combo\-Type@{get\-Good\-Combo\-Type}}
+\index{get\-Good\-Combo\-Type@{get\-Good\-Combo\-Type}!Jeu@{Jeu}}
+\subsubsection[{get\-Good\-Combo\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int Jeu\-::get\-Good\-Combo\-Type (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}}\label{class_jeu_a2b0a504e0fc5a6e5a74f362ab26d9633}
+
+
+retourne le type de combo du joueur i 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em int} & i \-: le joueur concerner \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int \-: le type de combo du joueur i 
+\end{DoxyReturn}
+\hypertarget{class_jeu_a56ed2a2cef42566e3c157cc11588e2ae}{\index{Jeu@{Jeu}!get\-J1@{get\-J1}}
+\index{get\-J1@{get\-J1}!Jeu@{Jeu}}
+\subsubsection[{get\-J1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Joueur}$\ast$ Jeu\-::get\-J1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_a56ed2a2cef42566e3c157cc11588e2ae}
+\hypertarget{class_jeu_afd1e01e7843d24cee637b41ffdfec9ad}{\index{Jeu@{Jeu}!get\-J2@{get\-J2}}
+\index{get\-J2@{get\-J2}!Jeu@{Jeu}}
+\subsubsection[{get\-J2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Joueur}$\ast$ Jeu\-::get\-J2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_afd1e01e7843d24cee637b41ffdfec9ad}
+\hypertarget{class_jeu_afded871bc0c3104ce1f0196ab4449663}{\index{Jeu@{Jeu}!get\-Joue@{get\-Joue}}
+\index{get\-Joue@{get\-Joue}!Jeu@{Jeu}}
+\subsubsection[{get\-Joue}]{\setlength{\rightskip}{0pt plus 5cm}int Jeu\-::get\-Joue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_afded871bc0c3104ce1f0196ab4449663}
+\hypertarget{class_jeu_a71d1539ad625597004b324e15fc9bf7f}{\index{Jeu@{Jeu}!get\-Last\-Carte@{get\-Last\-Carte}}
+\index{get\-Last\-Carte@{get\-Last\-Carte}!Jeu@{Jeu}}
+\subsubsection[{get\-Last\-Carte}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Carte}$\ast$ Jeu\-::get\-Last\-Carte (
+\begin{DoxyParamCaption}
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)}}\label{class_jeu_a71d1539ad625597004b324e15fc9bf7f}
+
+
+retourne la dérnière carte jouer par le joueur i 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em int} & i \-: le joueur concerner \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Carte$\ast$ \-: pointeur vers la carte 
+\end{DoxyReturn}
+\hypertarget{class_jeu_ac4c93bb98ab4e39bfb6f433a68892c56}{\index{Jeu@{Jeu}!get\-Rcarte\-J1@{get\-Rcarte\-J1}}
+\index{get\-Rcarte\-J1@{get\-Rcarte\-J1}!Jeu@{Jeu}}
+\subsubsection[{get\-Rcarte\-J1}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Carte}$\ast$$>$ Jeu\-::get\-Rcarte\-J1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_ac4c93bb98ab4e39bfb6f433a68892c56}
+\hypertarget{class_jeu_ad1639e6ab51ce0704f20b4b389888e4a}{\index{Jeu@{Jeu}!get\-Rcarte\-J2@{get\-Rcarte\-J2}}
+\index{get\-Rcarte\-J2@{get\-Rcarte\-J2}!Jeu@{Jeu}}
+\subsubsection[{get\-Rcarte\-J2}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Carte}$\ast$$>$ Jeu\-::get\-Rcarte\-J2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_ad1639e6ab51ce0704f20b4b389888e4a}
+\hypertarget{class_jeu_ad955ffee4ed18add167fa957386a9821}{\index{Jeu@{Jeu}!notifier\-Obs@{notifier\-Obs}}
+\index{notifier\-Obs@{notifier\-Obs}!Jeu@{Jeu}}
+\subsubsection[{notifier\-Obs}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::notifier\-Obs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_jeu_ad955ffee4ed18add167fa957386a9821}
+
+
+notifie les observeur de jeu 
+
+
+
+Implémente \hyperlink{class_sujet_a28b5d0a1f6a476bfab9e12825a417179}{Sujet}.
+
+\hypertarget{class_jeu_a56770ec2fa7af1cd5dfe1f06ee8d291a}{\index{Jeu@{Jeu}!notifier\-Obs@{notifier\-Obs}}
+\index{notifier\-Obs@{notifier\-Obs}!Jeu@{Jeu}}
+\subsubsection[{notifier\-Obs}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::notifier\-Obs (
+\begin{DoxyParamCaption}
+\item[{{\bf Observeur} $\ast$}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_jeu_a56770ec2fa7af1cd5dfe1f06ee8d291a}
+
+
+ajoute un observeur de jeu 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Oberserveur} & $\ast$o \-: l'observeur concerner \\
+\hline
+\end{DoxyParams}
+
+
+Implémente \hyperlink{class_sujet_a895ceaa449463bd41526ee642569fbaa}{Sujet}.
+
+\hypertarget{class_jeu_a5a74a90faa114fd22a09ed25b9fc8381}{\index{Jeu@{Jeu}!plus\-Combo@{plus\-Combo}}
+\index{plus\-Combo@{plus\-Combo}!Jeu@{Jeu}}
+\subsubsection[{plus\-Combo}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::plus\-Combo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_jeu_a5a74a90faa114fd22a09ed25b9fc8381}
+
+
+augmente de un le compteur de combo ( combo\-\_\-) 
+
+\hypertarget{class_jeu_abd1b3f4f3866299296c37d5def7bd509}{\index{Jeu@{Jeu}!retourner\-To\-Main@{retourner\-To\-Main}}
+\index{retourner\-To\-Main@{retourner\-To\-Main}!Jeu@{Jeu}}
+\subsubsection[{retourner\-To\-Main}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::retourner\-To\-Main (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{class_jeu_abd1b3f4f3866299296c37d5def7bd509}
+
+
+Retourne la dérnière carte jouer par le joueur i. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em int} & i \-: le joueur concerner \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_jeu_ac3e1701f943f16436a15e423bd2c6e62}{\index{Jeu@{Jeu}!set\-Bluff@{set\-Bluff}}
+\index{set\-Bluff@{set\-Bluff}!Jeu@{Jeu}}
+\subsubsection[{set\-Bluff}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::set\-Bluff (
+\begin{DoxyParamCaption}
+\item[{bool}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_ac3e1701f943f16436a15e423bd2c6e62}
+\hypertarget{class_jeu_a306805dc1c5101f60da1f47fbb6208a9}{\index{Jeu@{Jeu}!set\-Combo@{set\-Combo}}
+\index{set\-Combo@{set\-Combo}!Jeu@{Jeu}}
+\subsubsection[{set\-Combo}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::set\-Combo (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_a306805dc1c5101f60da1f47fbb6208a9}
+\hypertarget{class_jeu_aaf27565623c1570e13daa67a65a999e9}{\index{Jeu@{Jeu}!set\-Combo\-Type\-J1@{set\-Combo\-Type\-J1}}
+\index{set\-Combo\-Type\-J1@{set\-Combo\-Type\-J1}!Jeu@{Jeu}}
+\subsubsection[{set\-Combo\-Type\-J1}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::set\-Combo\-Type\-J1 (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_aaf27565623c1570e13daa67a65a999e9}
+\hypertarget{class_jeu_a0d437ab069b7e94694fd3d567dd20e07}{\index{Jeu@{Jeu}!set\-Combo\-Type\-J2@{set\-Combo\-Type\-J2}}
+\index{set\-Combo\-Type\-J2@{set\-Combo\-Type\-J2}!Jeu@{Jeu}}
+\subsubsection[{set\-Combo\-Type\-J2}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::set\-Combo\-Type\-J2 (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_a0d437ab069b7e94694fd3d567dd20e07}
+\hypertarget{class_jeu_afc4543470bc3a4f4dc84b0aad4295d2d}{\index{Jeu@{Jeu}!set\-Etat\-Courant@{set\-Etat\-Courant}}
+\index{set\-Etat\-Courant@{set\-Etat\-Courant}!Jeu@{Jeu}}
+\subsubsection[{set\-Etat\-Courant}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::set\-Etat\-Courant (
+\begin{DoxyParamCaption}
+\item[{{\bf Etat} $\ast$}]{et}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_afc4543470bc3a4f4dc84b0aad4295d2d}
+\hypertarget{class_jeu_a9f48a5d4b43894bc584972eadc7ec1a1}{\index{Jeu@{Jeu}!set\-Fini@{set\-Fini}}
+\index{set\-Fini@{set\-Fini}!Jeu@{Jeu}}
+\subsubsection[{set\-Fini}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::set\-Fini (
+\begin{DoxyParamCaption}
+\item[{bool}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_a9f48a5d4b43894bc584972eadc7ec1a1}
+\hypertarget{class_jeu_a02280609f3dc7843923f8de198d42654}{\index{Jeu@{Jeu}!set\-Gagnant\-Combat@{set\-Gagnant\-Combat}}
+\index{set\-Gagnant\-Combat@{set\-Gagnant\-Combat}!Jeu@{Jeu}}
+\subsubsection[{set\-Gagnant\-Combat}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::set\-Gagnant\-Combat (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_a02280609f3dc7843923f8de198d42654}
+\hypertarget{class_jeu_a74110004db819646a40323b1daa2c249}{\index{Jeu@{Jeu}!set\-J1@{set\-J1}}
+\index{set\-J1@{set\-J1}!Jeu@{Jeu}}
+\subsubsection[{set\-J1}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::set\-J1 (
+\begin{DoxyParamCaption}
+\item[{{\bf Joueur} $\ast$}]{j}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_a74110004db819646a40323b1daa2c249}
+\hypertarget{class_jeu_a37c63b56c95a83753c6f9521e1d355b4}{\index{Jeu@{Jeu}!set\-J2@{set\-J2}}
+\index{set\-J2@{set\-J2}!Jeu@{Jeu}}
+\subsubsection[{set\-J2}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::set\-J2 (
+\begin{DoxyParamCaption}
+\item[{{\bf Joueur} $\ast$}]{j}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_a37c63b56c95a83753c6f9521e1d355b4}
+\hypertarget{class_jeu_a3c7a41b6e9acc74ab8286adc0f6c99fc}{\index{Jeu@{Jeu}!set\-Joue@{set\-Joue}}
+\index{set\-Joue@{set\-Joue}!Jeu@{Jeu}}
+\subsubsection[{set\-Joue}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::set\-Joue (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jeu_a3c7a41b6e9acc74ab8286adc0f6c99fc}
+\hypertarget{class_jeu_adbb1ba10c900ec336d744dbfd5de7f8e}{\index{Jeu@{Jeu}!supprimer\-Obs@{supprimer\-Obs}}
+\index{supprimer\-Obs@{supprimer\-Obs}!Jeu@{Jeu}}
+\subsubsection[{supprimer\-Obs}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::supprimer\-Obs (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_jeu_adbb1ba10c900ec336d744dbfd5de7f8e}
+
+
+suprime un observeur du jeu 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em i} & \-: l'indice de l'observeur' \\
+\hline
+\end{DoxyParams}
+
+
+Implémente \hyperlink{class_sujet_a84f5d1246b19042199924f90a69ec68b}{Sujet}.
+
+\hypertarget{class_jeu_aa5e5d255f55ff79dc50a149840240219}{\index{Jeu@{Jeu}!vidage@{vidage}}
+\index{vidage@{vidage}!Jeu@{Jeu}}
+\subsubsection[{vidage}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::vidage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_jeu_aa5e5d255f55ff79dc50a149840240219}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \-:\begin{DoxyCompactItemize}
+\item 
+/home/figiel-\/paul/\-Bureau/\-Projet\-Poo/\-Projet\-P\-O\-O-\/\-A\-R\-A\-Y\-A-\/\-F\-I\-G\-I\-E\-L/include/\hyperlink{_jeu_8hpp}{Jeu.\-hpp}\end{DoxyCompactItemize}

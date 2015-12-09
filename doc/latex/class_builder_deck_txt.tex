@@ -1,0 +1,151 @@
+\hypertarget{class_builder_deck_txt}{\section{Référence de la classe Builder\-Deck\-Txt}
+\label{class_builder_deck_txt}\index{Builder\-Deck\-Txt@{Builder\-Deck\-Txt}}
+}
+
+
+Classe \hyperlink{class_builder_deck_txt}{Builder\-Deck\-Txt} qui permet de charger en memoire un deck composé de carte à partir de fichiers txt.  
+
+
+
+
+{\ttfamily \#include $<$Builder\-Deck\-Txt.\-hpp$>$}
+
+Graphe d'héritage de Builder\-Deck\-Txt\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_builder_deck_txt}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_builder_deck_txt_add0c11a25020168a94567526a2b3cbfc}{Builder\-Deck\-Txt} (std\-::string dossier)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\hyperlink{class_carte}{Carte} $\ast$ \hyperlink{class_builder_deck_txt_acfb3e111a06efeab6ad47a58edd227bb}{creer\-Carte} (std\-::string fichier)
+\begin{DoxyCompactList}\small\item\em Charge une carte à partir du chemin relatif de son fichier. \end{DoxyCompactList}\item 
+\hyperlink{class_champion}{Champion} $\ast$ \hyperlink{class_builder_deck_txt_a232ac1b449e28f535dc6141eac5bb722}{creer\-Champion} (std\-::string fichiercarte)
+\begin{DoxyCompactList}\small\item\em Charge un champion à partir du chemin relatif de son fichier. \end{DoxyCompactList}\item 
+void \hyperlink{class_builder_deck_txt_aa4b203ca9600dd92afb07f69d4dd7ec0}{creer\-Cartes} ()
+\begin{DoxyCompactList}\small\item\em Rempli le deck de toutes les cartes contenues dans dossier\-\_\-. \end{DoxyCompactList}\item 
+\hyperlink{class_deck}{Deck} $\ast$ \hyperlink{class_builder_deck_txt_a5f143e781d9d8a879945f96f770eab9a}{creer\-Deck} ()
+\begin{DoxyCompactList}\small\item\em Melange les cartes dans deck\-\_\- et le renvoie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Membres hérités additionnels}
+
+
+\subsection{Description détaillée}
+Classe \hyperlink{class_builder_deck_txt}{Builder\-Deck\-Txt} qui permet de charger en memoire un deck composé de carte à partir de fichiers txt. 
+
+\begin{DoxyDate}{Date}
+15/11/2015 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Auteur}
+paul\-\_\-figiel 
+\end{DoxyAuthor}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{class_builder_deck_txt_add0c11a25020168a94567526a2b3cbfc}{\index{Builder\-Deck\-Txt@{Builder\-Deck\-Txt}!Builder\-Deck\-Txt@{Builder\-Deck\-Txt}}
+\index{Builder\-Deck\-Txt@{Builder\-Deck\-Txt}!BuilderDeckTxt@{Builder\-Deck\-Txt}}
+\subsubsection[{Builder\-Deck\-Txt}]{\setlength{\rightskip}{0pt plus 5cm}Builder\-Deck\-Txt\-::\-Builder\-Deck\-Txt (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{dossier}
+\end{DoxyParamCaption}
+)}}\label{class_builder_deck_txt_add0c11a25020168a94567526a2b3cbfc}
+
+
+Constructeur. 
+
+Constructeur de la classe \hyperlink{class_builder_deck_txt}{Builder\-Deck\-Txt}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em dossier} & \-: chemin relatif du dossier ou se trouvent les cartes en format txt \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_builder_deck_txt_acfb3e111a06efeab6ad47a58edd227bb}{\index{Builder\-Deck\-Txt@{Builder\-Deck\-Txt}!creer\-Carte@{creer\-Carte}}
+\index{creer\-Carte@{creer\-Carte}!BuilderDeckTxt@{Builder\-Deck\-Txt}}
+\subsubsection[{creer\-Carte}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Carte}$\ast$ Builder\-Deck\-Txt\-::creer\-Carte (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{fichier}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_builder_deck_txt_acfb3e111a06efeab6ad47a58edd227bb}
+
+
+Charge une carte à partir du chemin relatif de son fichier. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em fichier} & \-: fichier de la carte \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\-: un pointeur sur la carte créé 
+\end{DoxyReturn}
+
+
+Implémente \hyperlink{class_builder_deck_a6318e704c6b8739fc6666dbc4ab61be2}{Builder\-Deck}.
+
+\hypertarget{class_builder_deck_txt_aa4b203ca9600dd92afb07f69d4dd7ec0}{\index{Builder\-Deck\-Txt@{Builder\-Deck\-Txt}!creer\-Cartes@{creer\-Cartes}}
+\index{creer\-Cartes@{creer\-Cartes}!BuilderDeckTxt@{Builder\-Deck\-Txt}}
+\subsubsection[{creer\-Cartes}]{\setlength{\rightskip}{0pt plus 5cm}void Builder\-Deck\-Txt\-::creer\-Cartes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_builder_deck_txt_aa4b203ca9600dd92afb07f69d4dd7ec0}
+
+
+Rempli le deck de toutes les cartes contenues dans dossier\-\_\-. 
+
+
+
+Implémente \hyperlink{class_builder_deck_a382f879b47ad1115f4357a3ff0f21e2b}{Builder\-Deck}.
+
+\hypertarget{class_builder_deck_txt_a232ac1b449e28f535dc6141eac5bb722}{\index{Builder\-Deck\-Txt@{Builder\-Deck\-Txt}!creer\-Champion@{creer\-Champion}}
+\index{creer\-Champion@{creer\-Champion}!BuilderDeckTxt@{Builder\-Deck\-Txt}}
+\subsubsection[{creer\-Champion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Champion}$\ast$ Builder\-Deck\-Txt\-::creer\-Champion (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{fichiercarte}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_builder_deck_txt_a232ac1b449e28f535dc6141eac5bb722}
+
+
+Charge un champion à partir du chemin relatif de son fichier. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em fichiercarte} & \-: chemin relatif de la carte champion \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\-: pointeur sur le champion créé 
+\end{DoxyReturn}
+
+
+Implémente \hyperlink{class_builder_deck_aeb26090c61c4729af8010b5c4e282389}{Builder\-Deck}.
+
+\hypertarget{class_builder_deck_txt_a5f143e781d9d8a879945f96f770eab9a}{\index{Builder\-Deck\-Txt@{Builder\-Deck\-Txt}!creer\-Deck@{creer\-Deck}}
+\index{creer\-Deck@{creer\-Deck}!BuilderDeckTxt@{Builder\-Deck\-Txt}}
+\subsubsection[{creer\-Deck}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Deck}$\ast$ Builder\-Deck\-Txt\-::creer\-Deck (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_builder_deck_txt_a5f143e781d9d8a879945f96f770eab9a}
+
+
+Melange les cartes dans deck\-\_\- et le renvoie. 
+
+\begin{DoxyReturn}{Renvoie}
+\-: pointeur sur le deck cree 
+\end{DoxyReturn}
+
+
+Implémente \hyperlink{class_builder_deck_a8d4db97ac54a8d341591304e3027e7be}{Builder\-Deck}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \-:\begin{DoxyCompactItemize}
+\item 
+/home/figiel-\/paul/\-Bureau/\-Projet\-Poo/\-Projet\-P\-O\-O-\/\-A\-R\-A\-Y\-A-\/\-F\-I\-G\-I\-E\-L/include/\hyperlink{_builder_deck_txt_8hpp}{Builder\-Deck\-Txt.\-hpp}\end{DoxyCompactItemize}

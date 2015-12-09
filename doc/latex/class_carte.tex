@@ -1,0 +1,607 @@
+\hypertarget{class_carte}{\section{Référence de la classe Carte}
+\label{class_carte}\index{Carte@{Carte}}
+}
+
+
+{\ttfamily \#include $<$Carte.\-hpp$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_carte_a06daaca86c31c80f8308f4a81d46dc9b}{Carte} ()
+\begin{DoxyCompactList}\small\item\em Constructeur vide. \end{DoxyCompactList}\item 
+\hyperlink{class_carte_a5a1e7bd0334c6cf52ba8991c3a019815}{Carte} (int id, std\-::string nom, int type, std\-::vector$<$ \hyperlink{class_effet}{Effet} $\ast$ $>$ Leffet, int num, int couleur, double F\-S, double dmg)
+\begin{DoxyCompactList}\small\item\em Constructeur de carte à 1 coté. \end{DoxyCompactList}\item 
+\hyperlink{class_carte_a9fbd39e6a9da16692854ce076ee1a007}{Carte} (int id, std\-::string nom, int type, int type2, std\-::vector$<$ \hyperlink{class_effet}{Effet} $\ast$ $>$ Leffet, std\-::vector$<$ \hyperlink{class_effet}{Effet} $\ast$ $>$ Leffet2, int num, int couleur, double F\-S, double F\-S2, double dmg, double dmg2)
+\begin{DoxyCompactList}\small\item\em Constructeur de carte à 1 coté. \end{DoxyCompactList}\item 
+\hyperlink{class_carte_a63300ff55c58b5d5b1674a3fc8f25910}{$\sim$\-Carte} ()
+\item 
+int \hyperlink{class_carte_ae51a40df8fb2ab5498ae67e165ceb5f2}{get\-Id} ()
+\item 
+void \hyperlink{class_carte_a1aad4c6854631a3de71210d33c15e258}{set\-I\-D} (int id)
+\item 
+std\-::string \hyperlink{class_carte_a7b68885ddbd8c8f6991e5447346913bc}{get\-Nom} ()
+\item 
+void \hyperlink{class_carte_a90596fd46a269874d7473afe9733869a}{set\-Nom} (std\-::string nom)
+\item 
+int \hyperlink{class_carte_aa58ee91b50b7e5e1d2483acb698b59f4}{get\-Type} ()
+\item 
+int \hyperlink{class_carte_a78fd9aadbd17a4649669117ada726dfa}{get\-Type2} ()
+\item 
+void \hyperlink{class_carte_a16726786b2df18980f82b9f19d72cd00}{set\-Type} (int type)
+\item 
+void \hyperlink{class_carte_a78d440deb46f085e53d29cbb81c39c0f}{set\-Type2} (int type)
+\item 
+std\-::vector$<$ \hyperlink{class_effet}{Effet} $\ast$ $>$ \hyperlink{class_carte_a4410810499a30afcdfe51a70db079dfa}{get\-Leffet} ()
+\item 
+std\-::vector$<$ \hyperlink{class_effet}{Effet} $\ast$ $>$ \hyperlink{class_carte_ae66d95ae0ba845fe4b5601c36b68cabd}{get\-Leffet2} ()
+\item 
+void \hyperlink{class_carte_a92a0d5cda40ca72720524937f88f497b}{set\-Leffet} (std\-::vector$<$ \hyperlink{class_effet}{Effet} $\ast$ $>$ Leffet)
+\item 
+void \hyperlink{class_carte_a1fc20e7a2df33a2ca24ebea22c18f074}{set\-Leffet2} (std\-::vector$<$ \hyperlink{class_effet}{Effet} $\ast$ $>$ Leffet)
+\item 
+int \hyperlink{class_carte_ae4ede142122a382b2b6648906c4cd37a}{get\-Num} ()
+\item 
+void \hyperlink{class_carte_a6d5eb0a01948dc48a9c86b7c5083be29}{set\-Num} (int num)
+\item 
+int \hyperlink{class_carte_a87f5a4affacf484c8e1f308abf4ec514}{get\-Couleur} ()
+\item 
+void \hyperlink{class_carte_a8736424ac59160d97300befe55b12eea}{set\-Couleur} (int coul)
+\item 
+bool \hyperlink{class_carte_a4564309a6927eb31e2e0641d1fc80315}{get\-Retournable} ()
+\item 
+void \hyperlink{class_carte_a53c600ae84b2c9033cede1e147e7de60}{set\-Retournable} (bool r)
+\item 
+double \hyperlink{class_carte_aac84bc0e598a0c5180ff74e945963a3a}{get\-Fstartup} ()
+\item 
+double \hyperlink{class_carte_a759d6b7a8b08cf7a6d1e0e5f4e10c28c}{get\-Fstartup2} ()
+\item 
+double \hyperlink{class_carte_ac742ba23680cb680376984a3b89dcce1}{get\-Face} ()
+\item 
+void \hyperlink{class_carte_a72278c63fcebe0f1fb38e6f6a49244e9}{set\-Face} (int x)
+\item 
+void \hyperlink{class_carte_ab3e508c3af45a3e5b38a397b003cc250}{set\-Fstartup} (int F\-S)
+\item 
+void \hyperlink{class_carte_a82c6e252c3225604e23977e3453af623}{set\-Fstartup2} (int F\-S)
+\item 
+double \hyperlink{class_carte_a6b831afaa8d2f723ecd642b92de536fb}{get\-Dmg} ()
+\item 
+double \hyperlink{class_carte_ac6e5febd328ba89c73d755b7edfc61ae}{get\-Dmg2} ()
+\item 
+void \hyperlink{class_carte_a496ea294465e9ba361ec759b2472da7e}{set\-Dmg} (double dmg)
+\item 
+void \hyperlink{class_carte_aedb1a92861dec58f566818795efc1e04}{set\-Dmg2} (double dmg2)
+\item 
+int \hyperlink{class_carte_ad1f2b50c5c627c11547282e88a912d44}{get\-Good\-Type} ()
+\begin{DoxyCompactList}\small\item\em Retourne le type de la carte selon son coté ( type\-\_\- si recto type2\-\_\- pour verso) \end{DoxyCompactList}\item 
+int \hyperlink{class_carte_a03c8b823ad97a064f6415eea63dcdd3d}{get\-Good\-Fstartup} ()
+\begin{DoxyCompactList}\small\item\em Retourne le type de les frame de startup de la carte selon son coté ( Fstartup\-\_\- si recto Fstartup2\-\_\- pour verso) \end{DoxyCompactList}\item 
+std\-::vector$<$ \hyperlink{class_effet}{Effet} $\ast$ $>$ \hyperlink{class_carte_aca394e9c23d6b9a8ab7d35e9362295f0}{get\-Good\-Leffet} ()
+\begin{DoxyCompactList}\small\item\em Retourne la bonne liste d'effet de la carte selon son coté ( Leffet\-\_\- si recto Leffet2\-\_\- pour verso) \end{DoxyCompactList}\item 
+double \hyperlink{class_carte_a3f437815a1d95bb70a9ede79c9f53348}{get\-Good\-Dmg} ()
+\begin{DoxyCompactList}\small\item\em Retourne les dommages de la carte selon son coté ( dmg\-\_\- si recto dmg2\-\_\- pour verso) \end{DoxyCompactList}\item 
+void \hyperlink{class_carte_ac59034763b08ced32db5d82d080f3ddc}{add\-Effet} (\hyperlink{class_effet}{Effet} $\ast$new\-Effet)
+\begin{DoxyCompactList}\small\item\em rajoute un effet à Leffet\-\_\- de la carte \end{DoxyCompactList}\item 
+void \hyperlink{class_carte_a3f2cf87d69031210310f6b9eff20fe81}{add\-Effet2} (\hyperlink{class_effet}{Effet} $\ast$new\-Effet)
+\begin{DoxyCompactList}\small\item\em rajoute un effet à Leffet2\-\_\- de la carte \end{DoxyCompactList}\item 
+void \hyperlink{class_carte_a22cc2da2c3819aeadd1e09e88dfbedcf}{action\-Effet} (\hyperlink{class_jeu}{Jeu} $\ast$jeu, int j)
+\begin{DoxyCompactList}\small\item\em apelle action\-Effet de \hyperlink{class_effet}{Effet} sur chaque effet de la carte en prennant en compte le coté ou est tourner la carte \end{DoxyCompactList}\item 
+void \hyperlink{class_carte_a007f478e6e0efb44fb4421a94bdacf65}{afficher} ()
+\begin{DoxyCompactList}\small\item\em affiche les stats de la carte \end{DoxyCompactList}\item 
+bool \hyperlink{class_carte_a54e8a949b343e2c77f3ad8bbbdf0b89a}{changer\-Face} ()
+\item 
+std\-::string \hyperlink{class_carte_a7f41044fea15a5a73c85e9fbee83114c}{convertion\-Type} (int x)
+\begin{DoxyCompactList}\small\item\em convertie les entier 0, 1, ect... indiquant le type de la carte en string \-: coup,choppe ect... pour l'affichage' \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_carte_a9d6b3e60bcd0d08ce097e87ee7e70d3b}{convertion\-Num} ()
+\begin{DoxyCompactList}\small\item\em convertie les entier 0, 1, ect... indiquant le numéro de la carte en string \-: 2,3... valet,dame,roi, as \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_carte_a0d9210299570093ca0842df066da50f4}{convertion\-Face} ()
+\begin{DoxyCompactList}\small\item\em convertie les entier 0, 1 indiquant le coté de la carte en string \-: recto, verso \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_carte_a9898b43ffbbb68f886dc57f9d72c5f8c}{convertion\-Couleur} ()
+\begin{DoxyCompactList}\small\item\em convertie les entier 0, 1, ect... indiquant la couleur de la carte en string \-: coeur,pique... \end{DoxyCompactList}\item 
+bool \hyperlink{class_carte_a86d9ef30147380af813336d7fd529521}{equals} (\hyperlink{class_carte}{Carte} $\ast$c)
+\begin{DoxyCompactList}\small\item\em regarde si 2 carte sont les même selon leur id \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{class_carte_a06daaca86c31c80f8308f4a81d46dc9b}{\index{Carte@{Carte}!Carte@{Carte}}
+\index{Carte@{Carte}!Carte@{Carte}}
+\subsubsection[{Carte}]{\setlength{\rightskip}{0pt plus 5cm}Carte\-::\-Carte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_a06daaca86c31c80f8308f4a81d46dc9b}
+
+
+Constructeur vide. 
+
+Constructeur de la classe \hyperlink{class_carte}{Carte} \hypertarget{class_carte_a5a1e7bd0334c6cf52ba8991c3a019815}{\index{Carte@{Carte}!Carte@{Carte}}
+\index{Carte@{Carte}!Carte@{Carte}}
+\subsubsection[{Carte}]{\setlength{\rightskip}{0pt plus 5cm}Carte\-::\-Carte (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{std\-::string}]{nom, }
+\item[{int}]{type, }
+\item[{std\-::vector$<$ {\bf Effet} $\ast$ $>$}]{Leffet, }
+\item[{int}]{num, }
+\item[{int}]{couleur, }
+\item[{double}]{F\-S, }
+\item[{double}]{dmg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_a5a1e7bd0334c6cf52ba8991c3a019815}
+
+
+Constructeur de carte à 1 coté. 
+
+Constructeur de la classe \hyperlink{class_carte}{Carte}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em id} & \-: id de la carte \\
+\hline
+{\em nom} & \-: nom de la carte \\
+\hline
+{\em Leffet} & \-: liste des effets de la carte \\
+\hline
+{\em } & type \-: type de la carte \\
+\hline
+{\em num} & \-: numéro de la carte \\
+\hline
+{\em couleur} & \-: couleur de la carte \\
+\hline
+{\em F\-S} & \-: framed de startup de la carte \\
+\hline
+{\em dmg} & \-: dommage de la carte \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_carte_a9fbd39e6a9da16692854ce076ee1a007}{\index{Carte@{Carte}!Carte@{Carte}}
+\index{Carte@{Carte}!Carte@{Carte}}
+\subsubsection[{Carte}]{\setlength{\rightskip}{0pt plus 5cm}Carte\-::\-Carte (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{std\-::string}]{nom, }
+\item[{int}]{type, }
+\item[{int}]{type2, }
+\item[{std\-::vector$<$ {\bf Effet} $\ast$ $>$}]{Leffet, }
+\item[{std\-::vector$<$ {\bf Effet} $\ast$ $>$}]{Leffet2, }
+\item[{int}]{num, }
+\item[{int}]{couleur, }
+\item[{double}]{F\-S, }
+\item[{double}]{F\-S2, }
+\item[{double}]{dmg, }
+\item[{double}]{dmg2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_a9fbd39e6a9da16692854ce076ee1a007}
+
+
+Constructeur de carte à 1 coté. 
+
+Constructeur de la classe \hyperlink{class_carte}{Carte}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em id} & \-: id de la carte \\
+\hline
+{\em nom} & \-: nom de la carte \\
+\hline
+{\em Leffet} & \-: liste des effets de la carte coté recto \\
+\hline
+{\em Leffet2} & \-: liste des effets de la carte coté verso \\
+\hline
+{\em } & type \-: type de la carte coté recto \\
+\hline
+{\em } & type2 \-: type de la carte coté verso \\
+\hline
+{\em num} & \-: numéro de la carte \\
+\hline
+{\em couleur} & \-: couleur de la carte \\
+\hline
+{\em F\-S} & \-: framed de startup de la carte coté recto \\
+\hline
+{\em F\-S2} & \-: framed de startup de la carte coté verso \\
+\hline
+{\em dmg} & \-: dommage de la carte coté recto \\
+\hline
+{\em dmg2} & \-: dommage de la carte coté verso \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_carte_a63300ff55c58b5d5b1674a3fc8f25910}{\index{Carte@{Carte}!$\sim$\-Carte@{$\sim$\-Carte}}
+\index{$\sim$\-Carte@{$\sim$\-Carte}!Carte@{Carte}}
+\subsubsection[{$\sim$\-Carte}]{\setlength{\rightskip}{0pt plus 5cm}Carte\-::$\sim$\-Carte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_carte_a63300ff55c58b5d5b1674a3fc8f25910}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_carte_a22cc2da2c3819aeadd1e09e88dfbedcf}{\index{Carte@{Carte}!action\-Effet@{action\-Effet}}
+\index{action\-Effet@{action\-Effet}!Carte@{Carte}}
+\subsubsection[{action\-Effet}]{\setlength{\rightskip}{0pt plus 5cm}void Carte\-::action\-Effet (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu} $\ast$}]{jeu, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)}}\label{class_carte_a22cc2da2c3819aeadd1e09e88dfbedcf}
+
+
+apelle action\-Effet de \hyperlink{class_effet}{Effet} sur chaque effet de la carte en prennant en compte le coté ou est tourner la carte 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \hyperlink{class_jeu}{Jeu}} & $\ast$jeu \-: Le jeu \\
+\hline
+{\em int} & j \-: un entier indiquant qu'elle joueur joue la carte \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_carte_ac59034763b08ced32db5d82d080f3ddc}{\index{Carte@{Carte}!add\-Effet@{add\-Effet}}
+\index{add\-Effet@{add\-Effet}!Carte@{Carte}}
+\subsubsection[{add\-Effet}]{\setlength{\rightskip}{0pt plus 5cm}void Carte\-::add\-Effet (
+\begin{DoxyParamCaption}
+\item[{{\bf Effet} $\ast$}]{new\-Effet}
+\end{DoxyParamCaption}
+)}}\label{class_carte_ac59034763b08ced32db5d82d080f3ddc}
+
+
+rajoute un effet à Leffet\-\_\- de la carte 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em new\-Effet} & \-: l'effet à rajouté \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_carte_a3f2cf87d69031210310f6b9eff20fe81}{\index{Carte@{Carte}!add\-Effet2@{add\-Effet2}}
+\index{add\-Effet2@{add\-Effet2}!Carte@{Carte}}
+\subsubsection[{add\-Effet2}]{\setlength{\rightskip}{0pt plus 5cm}void Carte\-::add\-Effet2 (
+\begin{DoxyParamCaption}
+\item[{{\bf Effet} $\ast$}]{new\-Effet}
+\end{DoxyParamCaption}
+)}}\label{class_carte_a3f2cf87d69031210310f6b9eff20fe81}
+
+
+rajoute un effet à Leffet2\-\_\- de la carte 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em new\-Effet} & \-: l'effet à rajouté \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_carte_a007f478e6e0efb44fb4421a94bdacf65}{\index{Carte@{Carte}!afficher@{afficher}}
+\index{afficher@{afficher}!Carte@{Carte}}
+\subsubsection[{afficher}]{\setlength{\rightskip}{0pt plus 5cm}void Carte\-::afficher (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_carte_a007f478e6e0efb44fb4421a94bdacf65}
+
+
+affiche les stats de la carte 
+
+\hypertarget{class_carte_a54e8a949b343e2c77f3ad8bbbdf0b89a}{\index{Carte@{Carte}!changer\-Face@{changer\-Face}}
+\index{changer\-Face@{changer\-Face}!Carte@{Carte}}
+\subsubsection[{changer\-Face}]{\setlength{\rightskip}{0pt plus 5cm}bool Carte\-::changer\-Face (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_carte_a54e8a949b343e2c77f3ad8bbbdf0b89a}
+la carte sur son autre coté si possible \hypertarget{class_carte_a9898b43ffbbb68f886dc57f9d72c5f8c}{\index{Carte@{Carte}!convertion\-Couleur@{convertion\-Couleur}}
+\index{convertion\-Couleur@{convertion\-Couleur}!Carte@{Carte}}
+\subsubsection[{convertion\-Couleur}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Carte\-::convertion\-Couleur (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_carte_a9898b43ffbbb68f886dc57f9d72c5f8c}
+
+
+convertie les entier 0, 1, ect... indiquant la couleur de la carte en string \-: coeur,pique... 
+
+un string indiquant la couleurla carte \hypertarget{class_carte_a0d9210299570093ca0842df066da50f4}{\index{Carte@{Carte}!convertion\-Face@{convertion\-Face}}
+\index{convertion\-Face@{convertion\-Face}!Carte@{Carte}}
+\subsubsection[{convertion\-Face}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Carte\-::convertion\-Face (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_carte_a0d9210299570093ca0842df066da50f4}
+
+
+convertie les entier 0, 1 indiquant le coté de la carte en string \-: recto, verso 
+
+un string indiquant le coté de la carte ( recto / verso) \hypertarget{class_carte_a9d6b3e60bcd0d08ce097e87ee7e70d3b}{\index{Carte@{Carte}!convertion\-Num@{convertion\-Num}}
+\index{convertion\-Num@{convertion\-Num}!Carte@{Carte}}
+\subsubsection[{convertion\-Num}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Carte\-::convertion\-Num (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_carte_a9d6b3e60bcd0d08ce097e87ee7e70d3b}
+
+
+convertie les entier 0, 1, ect... indiquant le numéro de la carte en string \-: 2,3... valet,dame,roi, as 
+
+un string indiquant le numéro de la carte \hypertarget{class_carte_a7f41044fea15a5a73c85e9fbee83114c}{\index{Carte@{Carte}!convertion\-Type@{convertion\-Type}}
+\index{convertion\-Type@{convertion\-Type}!Carte@{Carte}}
+\subsubsection[{convertion\-Type}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Carte\-::convertion\-Type (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}}\label{class_carte_a7f41044fea15a5a73c85e9fbee83114c}
+
+
+convertie les entier 0, 1, ect... indiquant le type de la carte en string \-: coup,choppe ect... pour l'affichage' 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em entier} & x \-: indique de qe quel coté on veut indiqué le type  un string indiquant le type de la carte \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_carte_a86d9ef30147380af813336d7fd529521}{\index{Carte@{Carte}!equals@{equals}}
+\index{equals@{equals}!Carte@{Carte}}
+\subsubsection[{equals}]{\setlength{\rightskip}{0pt plus 5cm}bool Carte\-::equals (
+\begin{DoxyParamCaption}
+\item[{{\bf Carte} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_carte_a86d9ef30147380af813336d7fd529521}
+
+
+regarde si 2 carte sont les même selon leur id 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em c} & \-: pointeur vers la seconde carte  true si l'id des deux cartes sont la même sinon retourne fasle \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_carte_a87f5a4affacf484c8e1f308abf4ec514}{\index{Carte@{Carte}!get\-Couleur@{get\-Couleur}}
+\index{get\-Couleur@{get\-Couleur}!Carte@{Carte}}
+\subsubsection[{get\-Couleur}]{\setlength{\rightskip}{0pt plus 5cm}int Carte\-::get\-Couleur (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_a87f5a4affacf484c8e1f308abf4ec514}
+\hypertarget{class_carte_a6b831afaa8d2f723ecd642b92de536fb}{\index{Carte@{Carte}!get\-Dmg@{get\-Dmg}}
+\index{get\-Dmg@{get\-Dmg}!Carte@{Carte}}
+\subsubsection[{get\-Dmg}]{\setlength{\rightskip}{0pt plus 5cm}double Carte\-::get\-Dmg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_a6b831afaa8d2f723ecd642b92de536fb}
+\hypertarget{class_carte_ac6e5febd328ba89c73d755b7edfc61ae}{\index{Carte@{Carte}!get\-Dmg2@{get\-Dmg2}}
+\index{get\-Dmg2@{get\-Dmg2}!Carte@{Carte}}
+\subsubsection[{get\-Dmg2}]{\setlength{\rightskip}{0pt plus 5cm}double Carte\-::get\-Dmg2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_ac6e5febd328ba89c73d755b7edfc61ae}
+\hypertarget{class_carte_ac742ba23680cb680376984a3b89dcce1}{\index{Carte@{Carte}!get\-Face@{get\-Face}}
+\index{get\-Face@{get\-Face}!Carte@{Carte}}
+\subsubsection[{get\-Face}]{\setlength{\rightskip}{0pt plus 5cm}double Carte\-::get\-Face (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_ac742ba23680cb680376984a3b89dcce1}
+\hypertarget{class_carte_aac84bc0e598a0c5180ff74e945963a3a}{\index{Carte@{Carte}!get\-Fstartup@{get\-Fstartup}}
+\index{get\-Fstartup@{get\-Fstartup}!Carte@{Carte}}
+\subsubsection[{get\-Fstartup}]{\setlength{\rightskip}{0pt plus 5cm}double Carte\-::get\-Fstartup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_aac84bc0e598a0c5180ff74e945963a3a}
+\hypertarget{class_carte_a759d6b7a8b08cf7a6d1e0e5f4e10c28c}{\index{Carte@{Carte}!get\-Fstartup2@{get\-Fstartup2}}
+\index{get\-Fstartup2@{get\-Fstartup2}!Carte@{Carte}}
+\subsubsection[{get\-Fstartup2}]{\setlength{\rightskip}{0pt plus 5cm}double Carte\-::get\-Fstartup2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_a759d6b7a8b08cf7a6d1e0e5f4e10c28c}
+\hypertarget{class_carte_a3f437815a1d95bb70a9ede79c9f53348}{\index{Carte@{Carte}!get\-Good\-Dmg@{get\-Good\-Dmg}}
+\index{get\-Good\-Dmg@{get\-Good\-Dmg}!Carte@{Carte}}
+\subsubsection[{get\-Good\-Dmg}]{\setlength{\rightskip}{0pt plus 5cm}double Carte\-::get\-Good\-Dmg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_carte_a3f437815a1d95bb70a9ede79c9f53348}
+
+
+Retourne les dommages de la carte selon son coté ( dmg\-\_\- si recto dmg2\-\_\- pour verso) 
+
+\begin{DoxyReturn}{Renvoie}
+\-: un double indiquand les dommages de la carte 
+\end{DoxyReturn}
+\hypertarget{class_carte_a03c8b823ad97a064f6415eea63dcdd3d}{\index{Carte@{Carte}!get\-Good\-Fstartup@{get\-Good\-Fstartup}}
+\index{get\-Good\-Fstartup@{get\-Good\-Fstartup}!Carte@{Carte}}
+\subsubsection[{get\-Good\-Fstartup}]{\setlength{\rightskip}{0pt plus 5cm}int Carte\-::get\-Good\-Fstartup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_carte_a03c8b823ad97a064f6415eea63dcdd3d}
+
+
+Retourne le type de les frame de startup de la carte selon son coté ( Fstartup\-\_\- si recto Fstartup2\-\_\- pour verso) 
+
+\begin{DoxyReturn}{Renvoie}
+\-: un int indiquant les frame de startup de la carte 
+\end{DoxyReturn}
+\hypertarget{class_carte_aca394e9c23d6b9a8ab7d35e9362295f0}{\index{Carte@{Carte}!get\-Good\-Leffet@{get\-Good\-Leffet}}
+\index{get\-Good\-Leffet@{get\-Good\-Leffet}!Carte@{Carte}}
+\subsubsection[{get\-Good\-Leffet}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Effet}$\ast$$>$ Carte\-::get\-Good\-Leffet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_carte_aca394e9c23d6b9a8ab7d35e9362295f0}
+
+
+Retourne la bonne liste d'effet de la carte selon son coté ( Leffet\-\_\- si recto Leffet2\-\_\- pour verso) 
+
+\begin{DoxyReturn}{Renvoie}
+\-: un vector$<$\-Effet$\ast$$>$ 
+\end{DoxyReturn}
+\hypertarget{class_carte_ad1f2b50c5c627c11547282e88a912d44}{\index{Carte@{Carte}!get\-Good\-Type@{get\-Good\-Type}}
+\index{get\-Good\-Type@{get\-Good\-Type}!Carte@{Carte}}
+\subsubsection[{get\-Good\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int Carte\-::get\-Good\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_carte_ad1f2b50c5c627c11547282e88a912d44}
+
+
+Retourne le type de la carte selon son coté ( type\-\_\- si recto type2\-\_\- pour verso) 
+
+\begin{DoxyReturn}{Renvoie}
+\-: un int indiquant le type de la carte 
+\end{DoxyReturn}
+\hypertarget{class_carte_ae51a40df8fb2ab5498ae67e165ceb5f2}{\index{Carte@{Carte}!get\-Id@{get\-Id}}
+\index{get\-Id@{get\-Id}!Carte@{Carte}}
+\subsubsection[{get\-Id}]{\setlength{\rightskip}{0pt plus 5cm}int Carte\-::get\-Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_ae51a40df8fb2ab5498ae67e165ceb5f2}
+\hypertarget{class_carte_a4410810499a30afcdfe51a70db079dfa}{\index{Carte@{Carte}!get\-Leffet@{get\-Leffet}}
+\index{get\-Leffet@{get\-Leffet}!Carte@{Carte}}
+\subsubsection[{get\-Leffet}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Effet}$\ast$$>$ Carte\-::get\-Leffet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_a4410810499a30afcdfe51a70db079dfa}
+\hypertarget{class_carte_ae66d95ae0ba845fe4b5601c36b68cabd}{\index{Carte@{Carte}!get\-Leffet2@{get\-Leffet2}}
+\index{get\-Leffet2@{get\-Leffet2}!Carte@{Carte}}
+\subsubsection[{get\-Leffet2}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Effet}$\ast$$>$ Carte\-::get\-Leffet2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_ae66d95ae0ba845fe4b5601c36b68cabd}
+\hypertarget{class_carte_a7b68885ddbd8c8f6991e5447346913bc}{\index{Carte@{Carte}!get\-Nom@{get\-Nom}}
+\index{get\-Nom@{get\-Nom}!Carte@{Carte}}
+\subsubsection[{get\-Nom}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Carte\-::get\-Nom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_a7b68885ddbd8c8f6991e5447346913bc}
+\hypertarget{class_carte_ae4ede142122a382b2b6648906c4cd37a}{\index{Carte@{Carte}!get\-Num@{get\-Num}}
+\index{get\-Num@{get\-Num}!Carte@{Carte}}
+\subsubsection[{get\-Num}]{\setlength{\rightskip}{0pt plus 5cm}int Carte\-::get\-Num (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_ae4ede142122a382b2b6648906c4cd37a}
+\hypertarget{class_carte_a4564309a6927eb31e2e0641d1fc80315}{\index{Carte@{Carte}!get\-Retournable@{get\-Retournable}}
+\index{get\-Retournable@{get\-Retournable}!Carte@{Carte}}
+\subsubsection[{get\-Retournable}]{\setlength{\rightskip}{0pt plus 5cm}bool Carte\-::get\-Retournable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_a4564309a6927eb31e2e0641d1fc80315}
+\hypertarget{class_carte_aa58ee91b50b7e5e1d2483acb698b59f4}{\index{Carte@{Carte}!get\-Type@{get\-Type}}
+\index{get\-Type@{get\-Type}!Carte@{Carte}}
+\subsubsection[{get\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int Carte\-::get\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_aa58ee91b50b7e5e1d2483acb698b59f4}
+\hypertarget{class_carte_a78fd9aadbd17a4649669117ada726dfa}{\index{Carte@{Carte}!get\-Type2@{get\-Type2}}
+\index{get\-Type2@{get\-Type2}!Carte@{Carte}}
+\subsubsection[{get\-Type2}]{\setlength{\rightskip}{0pt plus 5cm}int Carte\-::get\-Type2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_a78fd9aadbd17a4649669117ada726dfa}
+\hypertarget{class_carte_a8736424ac59160d97300befe55b12eea}{\index{Carte@{Carte}!set\-Couleur@{set\-Couleur}}
+\index{set\-Couleur@{set\-Couleur}!Carte@{Carte}}
+\subsubsection[{set\-Couleur}]{\setlength{\rightskip}{0pt plus 5cm}void Carte\-::set\-Couleur (
+\begin{DoxyParamCaption}
+\item[{int}]{coul}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_a8736424ac59160d97300befe55b12eea}
+\hypertarget{class_carte_a496ea294465e9ba361ec759b2472da7e}{\index{Carte@{Carte}!set\-Dmg@{set\-Dmg}}
+\index{set\-Dmg@{set\-Dmg}!Carte@{Carte}}
+\subsubsection[{set\-Dmg}]{\setlength{\rightskip}{0pt plus 5cm}void Carte\-::set\-Dmg (
+\begin{DoxyParamCaption}
+\item[{double}]{dmg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_a496ea294465e9ba361ec759b2472da7e}
+\hypertarget{class_carte_aedb1a92861dec58f566818795efc1e04}{\index{Carte@{Carte}!set\-Dmg2@{set\-Dmg2}}
+\index{set\-Dmg2@{set\-Dmg2}!Carte@{Carte}}
+\subsubsection[{set\-Dmg2}]{\setlength{\rightskip}{0pt plus 5cm}void Carte\-::set\-Dmg2 (
+\begin{DoxyParamCaption}
+\item[{double}]{dmg2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_aedb1a92861dec58f566818795efc1e04}
+\hypertarget{class_carte_a72278c63fcebe0f1fb38e6f6a49244e9}{\index{Carte@{Carte}!set\-Face@{set\-Face}}
+\index{set\-Face@{set\-Face}!Carte@{Carte}}
+\subsubsection[{set\-Face}]{\setlength{\rightskip}{0pt plus 5cm}void Carte\-::set\-Face (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_a72278c63fcebe0f1fb38e6f6a49244e9}
+\hypertarget{class_carte_ab3e508c3af45a3e5b38a397b003cc250}{\index{Carte@{Carte}!set\-Fstartup@{set\-Fstartup}}
+\index{set\-Fstartup@{set\-Fstartup}!Carte@{Carte}}
+\subsubsection[{set\-Fstartup}]{\setlength{\rightskip}{0pt plus 5cm}void Carte\-::set\-Fstartup (
+\begin{DoxyParamCaption}
+\item[{int}]{F\-S}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_ab3e508c3af45a3e5b38a397b003cc250}
+\hypertarget{class_carte_a82c6e252c3225604e23977e3453af623}{\index{Carte@{Carte}!set\-Fstartup2@{set\-Fstartup2}}
+\index{set\-Fstartup2@{set\-Fstartup2}!Carte@{Carte}}
+\subsubsection[{set\-Fstartup2}]{\setlength{\rightskip}{0pt plus 5cm}void Carte\-::set\-Fstartup2 (
+\begin{DoxyParamCaption}
+\item[{int}]{F\-S}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_a82c6e252c3225604e23977e3453af623}
+\hypertarget{class_carte_a1aad4c6854631a3de71210d33c15e258}{\index{Carte@{Carte}!set\-I\-D@{set\-I\-D}}
+\index{set\-I\-D@{set\-I\-D}!Carte@{Carte}}
+\subsubsection[{set\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}void Carte\-::set\-I\-D (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_a1aad4c6854631a3de71210d33c15e258}
+\hypertarget{class_carte_a92a0d5cda40ca72720524937f88f497b}{\index{Carte@{Carte}!set\-Leffet@{set\-Leffet}}
+\index{set\-Leffet@{set\-Leffet}!Carte@{Carte}}
+\subsubsection[{set\-Leffet}]{\setlength{\rightskip}{0pt plus 5cm}void Carte\-::set\-Leffet (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf Effet} $\ast$ $>$}]{Leffet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_a92a0d5cda40ca72720524937f88f497b}
+\hypertarget{class_carte_a1fc20e7a2df33a2ca24ebea22c18f074}{\index{Carte@{Carte}!set\-Leffet2@{set\-Leffet2}}
+\index{set\-Leffet2@{set\-Leffet2}!Carte@{Carte}}
+\subsubsection[{set\-Leffet2}]{\setlength{\rightskip}{0pt plus 5cm}void Carte\-::set\-Leffet2 (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf Effet} $\ast$ $>$}]{Leffet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_a1fc20e7a2df33a2ca24ebea22c18f074}
+\hypertarget{class_carte_a90596fd46a269874d7473afe9733869a}{\index{Carte@{Carte}!set\-Nom@{set\-Nom}}
+\index{set\-Nom@{set\-Nom}!Carte@{Carte}}
+\subsubsection[{set\-Nom}]{\setlength{\rightskip}{0pt plus 5cm}void Carte\-::set\-Nom (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{nom}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_a90596fd46a269874d7473afe9733869a}
+\hypertarget{class_carte_a6d5eb0a01948dc48a9c86b7c5083be29}{\index{Carte@{Carte}!set\-Num@{set\-Num}}
+\index{set\-Num@{set\-Num}!Carte@{Carte}}
+\subsubsection[{set\-Num}]{\setlength{\rightskip}{0pt plus 5cm}void Carte\-::set\-Num (
+\begin{DoxyParamCaption}
+\item[{int}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_a6d5eb0a01948dc48a9c86b7c5083be29}
+\hypertarget{class_carte_a53c600ae84b2c9033cede1e147e7de60}{\index{Carte@{Carte}!set\-Retournable@{set\-Retournable}}
+\index{set\-Retournable@{set\-Retournable}!Carte@{Carte}}
+\subsubsection[{set\-Retournable}]{\setlength{\rightskip}{0pt plus 5cm}void Carte\-::set\-Retournable (
+\begin{DoxyParamCaption}
+\item[{bool}]{r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_a53c600ae84b2c9033cede1e147e7de60}
+\hypertarget{class_carte_a16726786b2df18980f82b9f19d72cd00}{\index{Carte@{Carte}!set\-Type@{set\-Type}}
+\index{set\-Type@{set\-Type}!Carte@{Carte}}
+\subsubsection[{set\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void Carte\-::set\-Type (
+\begin{DoxyParamCaption}
+\item[{int}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_a16726786b2df18980f82b9f19d72cd00}
+\hypertarget{class_carte_a78d440deb46f085e53d29cbb81c39c0f}{\index{Carte@{Carte}!set\-Type2@{set\-Type2}}
+\index{set\-Type2@{set\-Type2}!Carte@{Carte}}
+\subsubsection[{set\-Type2}]{\setlength{\rightskip}{0pt plus 5cm}void Carte\-::set\-Type2 (
+\begin{DoxyParamCaption}
+\item[{int}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_carte_a78d440deb46f085e53d29cbb81c39c0f}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \-:\begin{DoxyCompactItemize}
+\item 
+/home/figiel-\/paul/\-Bureau/\-Projet\-Poo/\-Projet\-P\-O\-O-\/\-A\-R\-A\-Y\-A-\/\-F\-I\-G\-I\-E\-L/include/\hyperlink{_carte_8hpp}{Carte.\-hpp}\end{DoxyCompactItemize}

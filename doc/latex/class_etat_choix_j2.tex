@@ -1,0 +1,149 @@
+\hypertarget{class_etat_choix_j2}{\section{Référence de la classe Etat\-Choix\-J2}
+\label{class_etat_choix_j2}\index{Etat\-Choix\-J2@{Etat\-Choix\-J2}}
+}
+
+
+{\ttfamily \#include $<$Etat\-Choix\-J2.\-hpp$>$}
+
+Graphe d'héritage de Etat\-Choix\-J2\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_etat_choix_j2}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_etat_choix_j2_a03b6c1b78ae155873b16335eaba68ea7}{Etat\-Choix\-J2} (\hyperlink{class_jeu}{Jeu} $\ast$jeu)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+void \hyperlink{class_etat_choix_j2_a93667fd195d816e8d3e8e26d16a86848}{verification} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_etat_choix_j2}{Etat\-Choix\-J2} \-: aplique les effet de la carte jouer par J2. \end{DoxyCompactList}\item 
+void \hyperlink{class_etat_choix_j2_ab0066e2aa95ddfe577d0e9ba4ae5441e}{Info\-Carte} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_etat_choix_j2}{Etat\-Choix\-J2} \-: demande un numéro et affiche les infos de la carte corespondante dans la main du joueur 2. \end{DoxyCompactList}\item 
+void \hyperlink{class_etat_choix_j2_a2fe8000154f582684c9a0162bb860b9f}{retourner\-Carte} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_etat_choix_j2}{Etat\-Choix\-J2} \-: demande un numéro et retourne la carte corespondante de la main du joueur 2. \end{DoxyCompactList}\item 
+void \hyperlink{class_etat_choix_j2_a674ef9e896f33d70cf8937b4591faae9}{jouer\-Carte} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_etat_choix_j2}{Etat\-Choix\-J2} \-: demande un numéro et joue la carte corespondante de la main du joueur 2 ( demande confirmation) \end{DoxyCompactList}\item 
+void \hyperlink{class_etat_choix_j2_af09ee4f38957e7fe8232db7dcfccd573}{confirmation} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_etat_choix_j2}{Etat\-Choix\-J2} \-: si le joueur 2 confirme appelle vérification et passe à \hyperlink{class_etat_choix_win}{Etat\-Choix\-Win}. \end{DoxyCompactList}\item 
+void \hyperlink{class_etat_choix_j2_a076a02ef80e3dded9fb3df17dd23542a}{annuler\-Action} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_etat_choix_j2}{Etat\-Choix\-J2} \-: si le joueur 2 ne annule son action retourne la carte qu'il vient de joueur dans sa main. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{class_etat_choix_j2_a03b6c1b78ae155873b16335eaba68ea7}{\index{Etat\-Choix\-J2@{Etat\-Choix\-J2}!Etat\-Choix\-J2@{Etat\-Choix\-J2}}
+\index{Etat\-Choix\-J2@{Etat\-Choix\-J2}!EtatChoixJ2@{Etat\-Choix\-J2}}
+\subsubsection[{Etat\-Choix\-J2}]{\setlength{\rightskip}{0pt plus 5cm}Etat\-Choix\-J2\-::\-Etat\-Choix\-J2 (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu} $\ast$}]{jeu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_etat_choix_j2_a03b6c1b78ae155873b16335eaba68ea7}
+
+
+Constructeur. 
+
+Constructeur de la classe \hyperlink{class_etat_choix_j2}{Etat\-Choix\-J2}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em jeu} & \-: pointeur vers le jeu \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_etat_choix_j2_a076a02ef80e3dded9fb3df17dd23542a}{\index{Etat\-Choix\-J2@{Etat\-Choix\-J2}!annuler\-Action@{annuler\-Action}}
+\index{annuler\-Action@{annuler\-Action}!EtatChoixJ2@{Etat\-Choix\-J2}}
+\subsubsection[{annuler\-Action}]{\setlength{\rightskip}{0pt plus 5cm}void Etat\-Choix\-J2\-::annuler\-Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_etat_choix_j2_a076a02ef80e3dded9fb3df17dd23542a}
+
+
+\hyperlink{class_etat_choix_j2}{Etat\-Choix\-J2} \-: si le joueur 2 ne annule son action retourne la carte qu'il vient de joueur dans sa main. 
+
+
+
+Implémente \hyperlink{class_etat_ac47332db984da58192bbb1c45f1702a8}{Etat}.
+
+\hypertarget{class_etat_choix_j2_af09ee4f38957e7fe8232db7dcfccd573}{\index{Etat\-Choix\-J2@{Etat\-Choix\-J2}!confirmation@{confirmation}}
+\index{confirmation@{confirmation}!EtatChoixJ2@{Etat\-Choix\-J2}}
+\subsubsection[{confirmation}]{\setlength{\rightskip}{0pt plus 5cm}void Etat\-Choix\-J2\-::confirmation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_etat_choix_j2_af09ee4f38957e7fe8232db7dcfccd573}
+
+
+\hyperlink{class_etat_choix_j2}{Etat\-Choix\-J2} \-: si le joueur 2 confirme appelle vérification et passe à \hyperlink{class_etat_choix_win}{Etat\-Choix\-Win}. 
+
+
+
+Implémente \hyperlink{class_etat_a65c2e505cda8cac2989b3a0c17a70278}{Etat}.
+
+\hypertarget{class_etat_choix_j2_ab0066e2aa95ddfe577d0e9ba4ae5441e}{\index{Etat\-Choix\-J2@{Etat\-Choix\-J2}!Info\-Carte@{Info\-Carte}}
+\index{Info\-Carte@{Info\-Carte}!EtatChoixJ2@{Etat\-Choix\-J2}}
+\subsubsection[{Info\-Carte}]{\setlength{\rightskip}{0pt plus 5cm}void Etat\-Choix\-J2\-::\-Info\-Carte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_etat_choix_j2_ab0066e2aa95ddfe577d0e9ba4ae5441e}
+
+
+\hyperlink{class_etat_choix_j2}{Etat\-Choix\-J2} \-: demande un numéro et affiche les infos de la carte corespondante dans la main du joueur 2. 
+
+
+
+Implémente \hyperlink{class_etat_afd99ba60265bc0a82029d5fa2368acfa}{Etat}.
+
+\hypertarget{class_etat_choix_j2_a674ef9e896f33d70cf8937b4591faae9}{\index{Etat\-Choix\-J2@{Etat\-Choix\-J2}!jouer\-Carte@{jouer\-Carte}}
+\index{jouer\-Carte@{jouer\-Carte}!EtatChoixJ2@{Etat\-Choix\-J2}}
+\subsubsection[{jouer\-Carte}]{\setlength{\rightskip}{0pt plus 5cm}void Etat\-Choix\-J2\-::jouer\-Carte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_etat_choix_j2_a674ef9e896f33d70cf8937b4591faae9}
+
+
+\hyperlink{class_etat_choix_j2}{Etat\-Choix\-J2} \-: demande un numéro et joue la carte corespondante de la main du joueur 2 ( demande confirmation) 
+
+
+
+Implémente \hyperlink{class_etat_aaeffe08c27b2b64560726f5df95e6f3a}{Etat}.
+
+\hypertarget{class_etat_choix_j2_a2fe8000154f582684c9a0162bb860b9f}{\index{Etat\-Choix\-J2@{Etat\-Choix\-J2}!retourner\-Carte@{retourner\-Carte}}
+\index{retourner\-Carte@{retourner\-Carte}!EtatChoixJ2@{Etat\-Choix\-J2}}
+\subsubsection[{retourner\-Carte}]{\setlength{\rightskip}{0pt plus 5cm}void Etat\-Choix\-J2\-::retourner\-Carte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_etat_choix_j2_a2fe8000154f582684c9a0162bb860b9f}
+
+
+\hyperlink{class_etat_choix_j2}{Etat\-Choix\-J2} \-: demande un numéro et retourne la carte corespondante de la main du joueur 2. 
+
+
+
+Implémente \hyperlink{class_etat_a3d2fe662ffd20147763a25c4e06b56e9}{Etat}.
+
+\hypertarget{class_etat_choix_j2_a93667fd195d816e8d3e8e26d16a86848}{\index{Etat\-Choix\-J2@{Etat\-Choix\-J2}!verification@{verification}}
+\index{verification@{verification}!EtatChoixJ2@{Etat\-Choix\-J2}}
+\subsubsection[{verification}]{\setlength{\rightskip}{0pt plus 5cm}void Etat\-Choix\-J2\-::verification (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_etat_choix_j2_a93667fd195d816e8d3e8e26d16a86848}
+
+
+\hyperlink{class_etat_choix_j2}{Etat\-Choix\-J2} \-: aplique les effet de la carte jouer par J2. 
+
+
+
+Implémente \hyperlink{class_etat_aaf949c7b45217b76ff68414e61ef0d2a}{Etat}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \-:\begin{DoxyCompactItemize}
+\item 
+/home/figiel-\/paul/\-Bureau/\-Projet\-Poo/\-Projet\-P\-O\-O-\/\-A\-R\-A\-Y\-A-\/\-F\-I\-G\-I\-E\-L/include/\hyperlink{_etat_choix_j2_8hpp}{Etat\-Choix\-J2.\-hpp}\end{DoxyCompactItemize}

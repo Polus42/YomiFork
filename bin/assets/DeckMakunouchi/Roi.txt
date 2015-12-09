@@ -1,0 +1,7 @@
+id_=25
+nom_=Coup au menton
+num_=13
+type_=0
+Leffet_=EffetBoost
+Fstartup_=2.1
+dmg_=10

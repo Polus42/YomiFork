@@ -1,0 +1,5 @@
+id_=13
+hpMax_=140
+comboMax_=3
+effet_=EffetEndurant
+nom_=Makunouchi

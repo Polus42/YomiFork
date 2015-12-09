@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Projet : Jeu de cartes - POO:  Fichier source de /home/figiel-paul/Bureau/ProjetPoo/ProjetPOO-ARAYA-FIGIEL/include/Champion.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Projet : Jeu de cartes - POO
+   &#160;<span id="projectnumber">V3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Champion.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_champion_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include&lt;math.h&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef CHAMPION_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CHAMPION_HPP</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">class </span><a class="code" href="class_effet.html">Effet</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="class_jeu.html">Jeu</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_champion.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_champion.html">Champion</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">private</span> :</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">int</span> id_;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">int</span> hp_;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">int</span> hpMax_;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">int</span> comboMax_;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_effet.html">Effet</a> * effet_;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    std::string nom_;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span> :</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_champion.html#ae95b91cab1878f14d2692507b27963dd">   27</a></span>&#160;    <a class="code" href="class_champion.html#ae95b91cab1878f14d2692507b27963dd">Champion</a>()</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_champion.html#aa5f98a45358bc35fefe11fd95331a72a">   43</a></span>&#160;    <a class="code" href="class_champion.html#aa5f98a45358bc35fefe11fd95331a72a">Champion</a> ( <span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">int</span> hpMax, <span class="keywordtype">int</span> comboMax, <a class="code" href="class_effet.html">Effet</a> *effet, std::string nom) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        id_=id;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        hpMax_=hpMax;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        hp_=hpMax;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        comboMax_=comboMax;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        effet_=effet;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        nom_=nom;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_champion.html#a08af66438808b888a6a18ac0479bf8ec">   54</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_champion.html#a08af66438808b888a6a18ac0479bf8ec">getId</a>(){<span class="keywordflow">return</span> id_;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_champion.html#a7c714b2422172c3586162d906c9408a4">   56</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_champion.html#a7c714b2422172c3586162d906c9408a4">getHp</a>(){<span class="keywordflow">return</span> hp_;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_champion.html#a9924480ad2ca158c837d2f6c93aed31a">   58</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_champion.html#a9924480ad2ca158c837d2f6c93aed31a">getHpMax</a>(){<span class="keywordflow">return</span> hpMax_;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_champion.html#aade05c286155a85bcf24c0d3cd14dce8">   60</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_champion.html#aade05c286155a85bcf24c0d3cd14dce8">getComboMax</a>(){<span class="keywordflow">return</span> comboMax_;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_champion.html#a95a19dc8dd87fd90422a55adb1e5a061">   62</a></span>&#160;    <a class="code" href="class_effet.html">Effet</a> *<a class="code" href="class_champion.html#a95a19dc8dd87fd90422a55adb1e5a061">getEffet</a>(){<span class="keywordflow">return</span> effet_;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_champion.html#a923eb539fde9268b66b742fed8a89e2d">   64</a></span>&#160;    std::string <a class="code" href="class_champion.html#a923eb539fde9268b66b742fed8a89e2d">getNom</a>(){<span class="keywordflow">return</span> nom_;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_champion.html#a0e0f7a973941033778e0022d7da51454">   66</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_champion.html#a0e0f7a973941033778e0022d7da51454">setID</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>) { id_=id;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_champion.html#ae3e1217d86f764db9793509c831af8d8">   68</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_champion.html#ae3e1217d86f764db9793509c831af8d8">setHp</a>(<span class="keywordtype">int</span> HP) { hp_=HP;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_champion.html#ad6f8e1ab08c6e9e70b15375e9738ea95">   70</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_champion.html#ad6f8e1ab08c6e9e70b15375e9738ea95">setHpMax</a>(<span class="keywordtype">int</span> HP) {hpMax_=HP;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_champion.html#a10905adb000426394cff1db83c4d2528">   72</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_champion.html#a10905adb000426394cff1db83c4d2528">SetComboMax</a>( <span class="keywordtype">int</span> cb){ comboMax_=cb;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_champion.html#a0cbbde97fc9073f762757475670f90ab">   74</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_champion.html#a0cbbde97fc9073f762757475670f90ab">setEffet</a>(<a class="code" href="class_effet.html">Effet</a> *effet) { effet_=effet;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_champion.html#a527c5fe237ec56d5de324495991af324">   76</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_champion.html#a527c5fe237ec56d5de324495991af324">setNom</a>(std::string nom) { nom_=nom;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;   <span class="comment">// FIN set et get---------------------------------------------------</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_champion.html#a538328b848a20b87e21354b7eaa3ff31">dmgTaken</a>( <span class="keywordtype">double</span> dmg);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_champion.html#afe42df2e0d2209ddecb7cefdcf8cc043">heal</a> ( <span class="keywordtype">int</span> <a class="code" href="class_champion.html#afe42df2e0d2209ddecb7cefdcf8cc043">heal</a>);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_champion.html#aba83d201d13910d59584ffbf7a70b185">actionEffet</a>(<a class="code" href="class_jeu.html">Jeu</a> *jeu, <span class="keywordtype">int</span> j);  </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_champion_html_ad6f8e1ab08c6e9e70b15375e9738ea95"><div class="ttname"><a href="class_champion.html#ad6f8e1ab08c6e9e70b15375e9738ea95">Champion::setHpMax</a></div><div class="ttdeci">void setHpMax(int HP)</div><div class="ttdef"><b>Definition:</b> Champion.hpp:70</div></div>
+<div class="ttc" id="class_jeu_html"><div class="ttname"><a href="class_jeu.html">Jeu</a></div><div class="ttdef"><b>Definition:</b> Jeu.hpp:11</div></div>
+<div class="ttc" id="class_champion_html_ae3e1217d86f764db9793509c831af8d8"><div class="ttname"><a href="class_champion.html#ae3e1217d86f764db9793509c831af8d8">Champion::setHp</a></div><div class="ttdeci">void setHp(int HP)</div><div class="ttdef"><b>Definition:</b> Champion.hpp:68</div></div>
+<div class="ttc" id="class_champion_html_a7c714b2422172c3586162d906c9408a4"><div class="ttname"><a href="class_champion.html#a7c714b2422172c3586162d906c9408a4">Champion::getHp</a></div><div class="ttdeci">int getHp()</div><div class="ttdef"><b>Definition:</b> Champion.hpp:56</div></div>
+<div class="ttc" id="class_champion_html_a95a19dc8dd87fd90422a55adb1e5a061"><div class="ttname"><a href="class_champion.html#a95a19dc8dd87fd90422a55adb1e5a061">Champion::getEffet</a></div><div class="ttdeci">Effet * getEffet()</div><div class="ttdef"><b>Definition:</b> Champion.hpp:62</div></div>
+<div class="ttc" id="class_champion_html_a527c5fe237ec56d5de324495991af324"><div class="ttname"><a href="class_champion.html#a527c5fe237ec56d5de324495991af324">Champion::setNom</a></div><div class="ttdeci">void setNom(std::string nom)</div><div class="ttdef"><b>Definition:</b> Champion.hpp:76</div></div>
+<div class="ttc" id="class_effet_html"><div class="ttname"><a href="class_effet.html">Effet</a></div><div class="ttdef"><b>Definition:</b> Effet.hpp:9</div></div>
+<div class="ttc" id="class_champion_html_a538328b848a20b87e21354b7eaa3ff31"><div class="ttname"><a href="class_champion.html#a538328b848a20b87e21354b7eaa3ff31">Champion::dmgTaken</a></div><div class="ttdeci">void dmgTaken(double dmg)</div><div class="ttdoc">inflige des dégâts au champion. Les dommage sont convertie en entier ( floor) </div></div>
+<div class="ttc" id="class_champion_html_a0cbbde97fc9073f762757475670f90ab"><div class="ttname"><a href="class_champion.html#a0cbbde97fc9073f762757475670f90ab">Champion::setEffet</a></div><div class="ttdeci">void setEffet(Effet *effet)</div><div class="ttdef"><b>Definition:</b> Champion.hpp:74</div></div>
+<div class="ttc" id="class_champion_html_afe42df2e0d2209ddecb7cefdcf8cc043"><div class="ttname"><a href="class_champion.html#afe42df2e0d2209ddecb7cefdcf8cc043">Champion::heal</a></div><div class="ttdeci">void heal(int heal)</div><div class="ttdoc">soigne le champion </div></div>
+<div class="ttc" id="class_champion_html_aa5f98a45358bc35fefe11fd95331a72a"><div class="ttname"><a href="class_champion.html#aa5f98a45358bc35fefe11fd95331a72a">Champion::Champion</a></div><div class="ttdeci">Champion(int id, int hpMax, int comboMax, Effet *effet, std::string nom)</div><div class="ttdoc">Constructeur. </div><div class="ttdef"><b>Definition:</b> Champion.hpp:43</div></div>
+<div class="ttc" id="class_champion_html_aba83d201d13910d59584ffbf7a70b185"><div class="ttname"><a href="class_champion.html#aba83d201d13910d59584ffbf7a70b185">Champion::actionEffet</a></div><div class="ttdeci">void actionEffet(Jeu *jeu, int j)</div><div class="ttdoc">aplique l&#39;effet du champion </div></div>
+<div class="ttc" id="class_champion_html_a0e0f7a973941033778e0022d7da51454"><div class="ttname"><a href="class_champion.html#a0e0f7a973941033778e0022d7da51454">Champion::setID</a></div><div class="ttdeci">void setID(int id)</div><div class="ttdef"><b>Definition:</b> Champion.hpp:66</div></div>
+<div class="ttc" id="class_champion_html_a923eb539fde9268b66b742fed8a89e2d"><div class="ttname"><a href="class_champion.html#a923eb539fde9268b66b742fed8a89e2d">Champion::getNom</a></div><div class="ttdeci">std::string getNom()</div><div class="ttdef"><b>Definition:</b> Champion.hpp:64</div></div>
+<div class="ttc" id="class_champion_html_aade05c286155a85bcf24c0d3cd14dce8"><div class="ttname"><a href="class_champion.html#aade05c286155a85bcf24c0d3cd14dce8">Champion::getComboMax</a></div><div class="ttdeci">int getComboMax()</div><div class="ttdef"><b>Definition:</b> Champion.hpp:60</div></div>
+<div class="ttc" id="class_champion_html_ae95b91cab1878f14d2692507b27963dd"><div class="ttname"><a href="class_champion.html#ae95b91cab1878f14d2692507b27963dd">Champion::Champion</a></div><div class="ttdeci">Champion()</div><div class="ttdoc">Constructeur vide. </div><div class="ttdef"><b>Definition:</b> Champion.hpp:27</div></div>
+<div class="ttc" id="class_champion_html_a10905adb000426394cff1db83c4d2528"><div class="ttname"><a href="class_champion.html#a10905adb000426394cff1db83c4d2528">Champion::SetComboMax</a></div><div class="ttdeci">void SetComboMax(int cb)</div><div class="ttdef"><b>Definition:</b> Champion.hpp:72</div></div>
+<div class="ttc" id="class_champion_html_a9924480ad2ca158c837d2f6c93aed31a"><div class="ttname"><a href="class_champion.html#a9924480ad2ca158c837d2f6c93aed31a">Champion::getHpMax</a></div><div class="ttdeci">int getHpMax()</div><div class="ttdef"><b>Definition:</b> Champion.hpp:58</div></div>
+<div class="ttc" id="class_champion_html"><div class="ttname"><a href="class_champion.html">Champion</a></div><div class="ttdef"><b>Definition:</b> Champion.hpp:8</div></div>
+<div class="ttc" id="class_champion_html_a08af66438808b888a6a18ac0479bf8ec"><div class="ttname"><a href="class_champion.html#a08af66438808b888a6a18ac0479bf8ec">Champion::getId</a></div><div class="ttdeci">int getId()</div><div class="ttdef"><b>Definition:</b> Champion.hpp:54</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche 22 Novembre 2015 15:17:00 pour Projet : Jeu de cartes - POO par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

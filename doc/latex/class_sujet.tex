@@ -1,0 +1,123 @@
+\hypertarget{class_sujet}{\section{Référence de la classe Sujet}
+\label{class_sujet}\index{Sujet@{Sujet}}
+}
+
+
+Classe \hyperlink{class_sujet}{Sujet} qui sert de base pour implementer des classes observées.  
+
+
+
+
+{\ttfamily \#include $<$Sujet.\-hpp$>$}
+
+Graphe d'héritage de Sujet\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sujet}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_sujet_a77c41db2a06015ca931da1636e4dbc6d}{ajouter\-Obs} (\hyperlink{class_observeur}{Observeur} $\ast$o)=0
+\begin{DoxyCompactList}\small\item\em Permet d'ajouter un observeur au sujet. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_sujet_a84f5d1246b19042199924f90a69ec68b}{supprimer\-Obs} (int i)=0
+\begin{DoxyCompactList}\small\item\em Permet de supprimer un observeur au sujet. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_sujet_a28b5d0a1f6a476bfab9e12825a417179}{notifier\-Obs} ()=0
+\begin{DoxyCompactList}\small\item\em Permet de notifier tous les observateurs du changement du sujet. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_sujet_a895ceaa449463bd41526ee642569fbaa}{notifier\-Obs} (\hyperlink{class_observeur}{Observeur} $\ast$o)=0
+\begin{DoxyCompactList}\small\item\em Permet de notifier un observeur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Classe \hyperlink{class_sujet}{Sujet} qui sert de base pour implementer des classes observées. 
+
+\begin{DoxyDate}{Date}
+15/11/2015 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Auteur}
+paul\-\_\-figiel 
+\end{DoxyAuthor}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_sujet_a77c41db2a06015ca931da1636e4dbc6d}{\index{Sujet@{Sujet}!ajouter\-Obs@{ajouter\-Obs}}
+\index{ajouter\-Obs@{ajouter\-Obs}!Sujet@{Sujet}}
+\subsubsection[{ajouter\-Obs}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Sujet\-::ajouter\-Obs (
+\begin{DoxyParamCaption}
+\item[{{\bf Observeur} $\ast$}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_sujet_a77c41db2a06015ca931da1636e4dbc6d}
+
+
+Permet d'ajouter un observeur au sujet. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em o} & \-: observeur à ajouter \\
+\hline
+\end{DoxyParams}
+
+
+Implémenté dans \hyperlink{class_jeu_aee83ada0589e3352ec854b12e1c6e265}{Jeu}.
+
+\hypertarget{class_sujet_a28b5d0a1f6a476bfab9e12825a417179}{\index{Sujet@{Sujet}!notifier\-Obs@{notifier\-Obs}}
+\index{notifier\-Obs@{notifier\-Obs}!Sujet@{Sujet}}
+\subsubsection[{notifier\-Obs}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Sujet\-::notifier\-Obs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_sujet_a28b5d0a1f6a476bfab9e12825a417179}
+
+
+Permet de notifier tous les observateurs du changement du sujet. 
+
+
+
+Implémenté dans \hyperlink{class_jeu_ad955ffee4ed18add167fa957386a9821}{Jeu}.
+
+\hypertarget{class_sujet_a895ceaa449463bd41526ee642569fbaa}{\index{Sujet@{Sujet}!notifier\-Obs@{notifier\-Obs}}
+\index{notifier\-Obs@{notifier\-Obs}!Sujet@{Sujet}}
+\subsubsection[{notifier\-Obs}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Sujet\-::notifier\-Obs (
+\begin{DoxyParamCaption}
+\item[{{\bf Observeur} $\ast$}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_sujet_a895ceaa449463bd41526ee642569fbaa}
+
+
+Permet de notifier un observeur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em o} & \-: observeur à notifier \\
+\hline
+\end{DoxyParams}
+
+
+Implémenté dans \hyperlink{class_jeu_a56770ec2fa7af1cd5dfe1f06ee8d291a}{Jeu}.
+
+\hypertarget{class_sujet_a84f5d1246b19042199924f90a69ec68b}{\index{Sujet@{Sujet}!supprimer\-Obs@{supprimer\-Obs}}
+\index{supprimer\-Obs@{supprimer\-Obs}!Sujet@{Sujet}}
+\subsubsection[{supprimer\-Obs}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Sujet\-::supprimer\-Obs (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_sujet_a84f5d1246b19042199924f90a69ec68b}
+
+
+Permet de supprimer un observeur au sujet. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em o} & \-: indice de l'observateur à supprimer \\
+\hline
+\end{DoxyParams}
+
+
+Implémenté dans \hyperlink{class_jeu_adbb1ba10c900ec336d744dbfd5de7f8e}{Jeu}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \-:\begin{DoxyCompactItemize}
+\item 
+/home/figiel-\/paul/\-Bureau/\-Projet\-Poo/\-Projet\-P\-O\-O-\/\-A\-R\-A\-Y\-A-\/\-F\-I\-G\-I\-E\-L/include/\hyperlink{_sujet_8hpp}{Sujet.\-hpp}\end{DoxyCompactItemize}

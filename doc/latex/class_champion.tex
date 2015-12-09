@@ -1,0 +1,231 @@
+\hypertarget{class_champion}{\section{Référence de la classe Champion}
+\label{class_champion}\index{Champion@{Champion}}
+}
+
+
+{\ttfamily \#include $<$Champion.\-hpp$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_champion_ae95b91cab1878f14d2692507b27963dd}{Champion} ()
+\begin{DoxyCompactList}\small\item\em Constructeur vide. \end{DoxyCompactList}\item 
+\hyperlink{class_champion_aa5f98a45358bc35fefe11fd95331a72a}{Champion} (int id, int hp\-Max, int combo\-Max, \hyperlink{class_effet}{Effet} $\ast$effet, std\-::string nom)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+int \hyperlink{class_champion_a08af66438808b888a6a18ac0479bf8ec}{get\-Id} ()
+\item 
+int \hyperlink{class_champion_a7c714b2422172c3586162d906c9408a4}{get\-Hp} ()
+\item 
+int \hyperlink{class_champion_a9924480ad2ca158c837d2f6c93aed31a}{get\-Hp\-Max} ()
+\item 
+int \hyperlink{class_champion_aade05c286155a85bcf24c0d3cd14dce8}{get\-Combo\-Max} ()
+\item 
+\hyperlink{class_effet}{Effet} $\ast$ \hyperlink{class_champion_a95a19dc8dd87fd90422a55adb1e5a061}{get\-Effet} ()
+\item 
+std\-::string \hyperlink{class_champion_a923eb539fde9268b66b742fed8a89e2d}{get\-Nom} ()
+\item 
+void \hyperlink{class_champion_a0e0f7a973941033778e0022d7da51454}{set\-I\-D} (int id)
+\item 
+void \hyperlink{class_champion_ae3e1217d86f764db9793509c831af8d8}{set\-Hp} (int H\-P)
+\item 
+void \hyperlink{class_champion_ad6f8e1ab08c6e9e70b15375e9738ea95}{set\-Hp\-Max} (int H\-P)
+\item 
+void \hyperlink{class_champion_a10905adb000426394cff1db83c4d2528}{Set\-Combo\-Max} (int cb)
+\item 
+void \hyperlink{class_champion_a0cbbde97fc9073f762757475670f90ab}{set\-Effet} (\hyperlink{class_effet}{Effet} $\ast$effet)
+\item 
+void \hyperlink{class_champion_a527c5fe237ec56d5de324495991af324}{set\-Nom} (std\-::string nom)
+\item 
+void \hyperlink{class_champion_a538328b848a20b87e21354b7eaa3ff31}{dmg\-Taken} (double dmg)
+\begin{DoxyCompactList}\small\item\em inflige des dégâts au champion. Les dommage sont convertie en entier ( floor) \end{DoxyCompactList}\item 
+void \hyperlink{class_champion_afe42df2e0d2209ddecb7cefdcf8cc043}{heal} (int heal)
+\begin{DoxyCompactList}\small\item\em soigne le champion \end{DoxyCompactList}\item 
+void \hyperlink{class_champion_aba83d201d13910d59584ffbf7a70b185}{action\-Effet} (\hyperlink{class_jeu}{Jeu} $\ast$jeu, int j)
+\begin{DoxyCompactList}\small\item\em aplique l'effet du champion \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{class_champion_ae95b91cab1878f14d2692507b27963dd}{\index{Champion@{Champion}!Champion@{Champion}}
+\index{Champion@{Champion}!Champion@{Champion}}
+\subsubsection[{Champion}]{\setlength{\rightskip}{0pt plus 5cm}Champion\-::\-Champion (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_champion_ae95b91cab1878f14d2692507b27963dd}
+
+
+Constructeur vide. 
+
+Constructeur de la classe \hyperlink{class_champion}{Champion} \hypertarget{class_champion_aa5f98a45358bc35fefe11fd95331a72a}{\index{Champion@{Champion}!Champion@{Champion}}
+\index{Champion@{Champion}!Champion@{Champion}}
+\subsubsection[{Champion}]{\setlength{\rightskip}{0pt plus 5cm}Champion\-::\-Champion (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{int}]{hp\-Max, }
+\item[{int}]{combo\-Max, }
+\item[{{\bf Effet} $\ast$}]{effet, }
+\item[{std\-::string}]{nom}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_champion_aa5f98a45358bc35fefe11fd95331a72a}
+
+
+Constructeur. 
+
+Constructeur de la classe \hyperlink{class_affichage}{Affichage}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em id} & \-: id du champion \\
+\hline
+{\em hpmax} & hp max du champion \\
+\hline
+{\em combo\-Max} & \-: combo max du champion \\
+\hline
+{\em $\ast$effet} & \-: effet du champion \\
+\hline
+{\em nom} & \-: nom du champion \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_champion_aba83d201d13910d59584ffbf7a70b185}{\index{Champion@{Champion}!action\-Effet@{action\-Effet}}
+\index{action\-Effet@{action\-Effet}!Champion@{Champion}}
+\subsubsection[{action\-Effet}]{\setlength{\rightskip}{0pt plus 5cm}void Champion\-::action\-Effet (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu} $\ast$}]{jeu, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)}}\label{class_champion_aba83d201d13910d59584ffbf7a70b185}
+
+
+aplique l'effet du champion 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Jeu$\ast$} & jeu \-: le jeu et \\
+\hline
+{\em int} & j \-: indique à quel joueur appartient le champion \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_champion_a538328b848a20b87e21354b7eaa3ff31}{\index{Champion@{Champion}!dmg\-Taken@{dmg\-Taken}}
+\index{dmg\-Taken@{dmg\-Taken}!Champion@{Champion}}
+\subsubsection[{dmg\-Taken}]{\setlength{\rightskip}{0pt plus 5cm}void Champion\-::dmg\-Taken (
+\begin{DoxyParamCaption}
+\item[{double}]{dmg}
+\end{DoxyParamCaption}
+)}}\label{class_champion_a538328b848a20b87e21354b7eaa3ff31}
+
+
+inflige des dégâts au champion. Les dommage sont convertie en entier ( floor) 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em double} & dmg \-: les dommages subit \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_champion_aade05c286155a85bcf24c0d3cd14dce8}{\index{Champion@{Champion}!get\-Combo\-Max@{get\-Combo\-Max}}
+\index{get\-Combo\-Max@{get\-Combo\-Max}!Champion@{Champion}}
+\subsubsection[{get\-Combo\-Max}]{\setlength{\rightskip}{0pt plus 5cm}int Champion\-::get\-Combo\-Max (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_champion_aade05c286155a85bcf24c0d3cd14dce8}
+\hypertarget{class_champion_a95a19dc8dd87fd90422a55adb1e5a061}{\index{Champion@{Champion}!get\-Effet@{get\-Effet}}
+\index{get\-Effet@{get\-Effet}!Champion@{Champion}}
+\subsubsection[{get\-Effet}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Effet}$\ast$ Champion\-::get\-Effet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_champion_a95a19dc8dd87fd90422a55adb1e5a061}
+\hypertarget{class_champion_a7c714b2422172c3586162d906c9408a4}{\index{Champion@{Champion}!get\-Hp@{get\-Hp}}
+\index{get\-Hp@{get\-Hp}!Champion@{Champion}}
+\subsubsection[{get\-Hp}]{\setlength{\rightskip}{0pt plus 5cm}int Champion\-::get\-Hp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_champion_a7c714b2422172c3586162d906c9408a4}
+\hypertarget{class_champion_a9924480ad2ca158c837d2f6c93aed31a}{\index{Champion@{Champion}!get\-Hp\-Max@{get\-Hp\-Max}}
+\index{get\-Hp\-Max@{get\-Hp\-Max}!Champion@{Champion}}
+\subsubsection[{get\-Hp\-Max}]{\setlength{\rightskip}{0pt plus 5cm}int Champion\-::get\-Hp\-Max (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_champion_a9924480ad2ca158c837d2f6c93aed31a}
+\hypertarget{class_champion_a08af66438808b888a6a18ac0479bf8ec}{\index{Champion@{Champion}!get\-Id@{get\-Id}}
+\index{get\-Id@{get\-Id}!Champion@{Champion}}
+\subsubsection[{get\-Id}]{\setlength{\rightskip}{0pt plus 5cm}int Champion\-::get\-Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_champion_a08af66438808b888a6a18ac0479bf8ec}
+\hypertarget{class_champion_a923eb539fde9268b66b742fed8a89e2d}{\index{Champion@{Champion}!get\-Nom@{get\-Nom}}
+\index{get\-Nom@{get\-Nom}!Champion@{Champion}}
+\subsubsection[{get\-Nom}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Champion\-::get\-Nom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_champion_a923eb539fde9268b66b742fed8a89e2d}
+\hypertarget{class_champion_afe42df2e0d2209ddecb7cefdcf8cc043}{\index{Champion@{Champion}!heal@{heal}}
+\index{heal@{heal}!Champion@{Champion}}
+\subsubsection[{heal}]{\setlength{\rightskip}{0pt plus 5cm}void Champion\-::heal (
+\begin{DoxyParamCaption}
+\item[{int}]{heal}
+\end{DoxyParamCaption}
+)}}\label{class_champion_afe42df2e0d2209ddecb7cefdcf8cc043}
+
+
+soigne le champion 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em int} & heal \-: les hp soigner \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_champion_a10905adb000426394cff1db83c4d2528}{\index{Champion@{Champion}!Set\-Combo\-Max@{Set\-Combo\-Max}}
+\index{Set\-Combo\-Max@{Set\-Combo\-Max}!Champion@{Champion}}
+\subsubsection[{Set\-Combo\-Max}]{\setlength{\rightskip}{0pt plus 5cm}void Champion\-::\-Set\-Combo\-Max (
+\begin{DoxyParamCaption}
+\item[{int}]{cb}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_champion_a10905adb000426394cff1db83c4d2528}
+\hypertarget{class_champion_a0cbbde97fc9073f762757475670f90ab}{\index{Champion@{Champion}!set\-Effet@{set\-Effet}}
+\index{set\-Effet@{set\-Effet}!Champion@{Champion}}
+\subsubsection[{set\-Effet}]{\setlength{\rightskip}{0pt plus 5cm}void Champion\-::set\-Effet (
+\begin{DoxyParamCaption}
+\item[{{\bf Effet} $\ast$}]{effet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_champion_a0cbbde97fc9073f762757475670f90ab}
+\hypertarget{class_champion_ae3e1217d86f764db9793509c831af8d8}{\index{Champion@{Champion}!set\-Hp@{set\-Hp}}
+\index{set\-Hp@{set\-Hp}!Champion@{Champion}}
+\subsubsection[{set\-Hp}]{\setlength{\rightskip}{0pt plus 5cm}void Champion\-::set\-Hp (
+\begin{DoxyParamCaption}
+\item[{int}]{H\-P}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_champion_ae3e1217d86f764db9793509c831af8d8}
+\hypertarget{class_champion_ad6f8e1ab08c6e9e70b15375e9738ea95}{\index{Champion@{Champion}!set\-Hp\-Max@{set\-Hp\-Max}}
+\index{set\-Hp\-Max@{set\-Hp\-Max}!Champion@{Champion}}
+\subsubsection[{set\-Hp\-Max}]{\setlength{\rightskip}{0pt plus 5cm}void Champion\-::set\-Hp\-Max (
+\begin{DoxyParamCaption}
+\item[{int}]{H\-P}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_champion_ad6f8e1ab08c6e9e70b15375e9738ea95}
+\hypertarget{class_champion_a0e0f7a973941033778e0022d7da51454}{\index{Champion@{Champion}!set\-I\-D@{set\-I\-D}}
+\index{set\-I\-D@{set\-I\-D}!Champion@{Champion}}
+\subsubsection[{set\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}void Champion\-::set\-I\-D (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_champion_a0e0f7a973941033778e0022d7da51454}
+\hypertarget{class_champion_a527c5fe237ec56d5de324495991af324}{\index{Champion@{Champion}!set\-Nom@{set\-Nom}}
+\index{set\-Nom@{set\-Nom}!Champion@{Champion}}
+\subsubsection[{set\-Nom}]{\setlength{\rightskip}{0pt plus 5cm}void Champion\-::set\-Nom (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{nom}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_champion_a527c5fe237ec56d5de324495991af324}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \-:\begin{DoxyCompactItemize}
+\item 
+/home/figiel-\/paul/\-Bureau/\-Projet\-Poo/\-Projet\-P\-O\-O-\/\-A\-R\-A\-Y\-A-\/\-F\-I\-G\-I\-E\-L/include/\hyperlink{_champion_8hpp}{Champion.\-hpp}\end{DoxyCompactItemize}

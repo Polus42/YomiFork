@@ -1,0 +1,8 @@
+id_=9
+nom_=Compilateur pas à jour
+num_=11
+retournable_=0
+type_=1
+Leffet_=EffetYolo
+Fstartup_=0.7
+dmg_=7

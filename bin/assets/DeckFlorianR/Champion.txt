@@ -1,0 +1,5 @@
+id_=42
+hpMax_=150
+comboMax_=2
+effet_=EffetTheAnswer
+nom_=FlorianR

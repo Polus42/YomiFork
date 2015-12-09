@@ -1,0 +1,11 @@
+id_=5
+nom_=get/set
+num_=7
+retournable_=1
+type_=2
+Leffet_=EffetReturn
+Fstartup_=0
+dmg_=1
+type2_=0
+Fstartup2_=0.4
+dmg2_=5

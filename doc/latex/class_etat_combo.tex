@@ -1,0 +1,149 @@
+\hypertarget{class_etat_combo}{\section{Référence de la classe Etat\-Combo}
+\label{class_etat_combo}\index{Etat\-Combo@{Etat\-Combo}}
+}
+
+
+{\ttfamily \#include $<$Etat\-Combo.\-hpp$>$}
+
+Graphe d'héritage de Etat\-Combo\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_etat_combo}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_etat_combo_a182fe8d470e0851c869e4407c04f0e01}{Etat\-Combo} (\hyperlink{class_jeu}{Jeu} $\ast$jeu)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+void \hyperlink{class_etat_combo_a0a299d7c93ef09787eb0a402708475f0}{verification} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_etat_combo}{Etat\-Combo} \-: aplique les effets de la carte jouer. \end{DoxyCompactList}\item 
+void \hyperlink{class_etat_combo_a56b4cbe699ca50fc0e6ad4695a744bdf}{Info\-Carte} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_etat_combo}{Etat\-Combo} \-: demande un numéro et affiche les infos de la carte corespondante de la main du joueur qui combo. \end{DoxyCompactList}\item 
+void \hyperlink{class_etat_combo_a79944dfd6e471b633ad99cd2f3b70b02}{retourner\-Carte} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_etat_combo}{Etat\-Combo} \-: demande un numéro et retourne la carte corespondante de la main du joueur qui combo. \end{DoxyCompactList}\item 
+void \hyperlink{class_etat_combo_a6d7b6c040664a4c41380aca95f05f42c}{jouer\-Carte} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_etat_combo}{Etat\-Combo} \-: demande un numéro et joue la carte corespondante de la main du joueur qui combo.( demande confirmation) \end{DoxyCompactList}\item 
+void \hyperlink{class_etat_combo_a26ed3a79035572c4471aab88377470c5}{confirmation} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_etat_combo}{Etat\-Combo} \-: si le joueur décide de confirmer qu'il veut jouer la carte qu'il vient de posé appelle vérification et passe à \hyperlink{class_etat_calc_dmg}{Etat\-Calc\-Dmg} ou reste dans \hyperlink{class_etat_combo}{Etat\-Combo} selon les cas. \end{DoxyCompactList}\item 
+void \hyperlink{class_etat_combo_a18e6acc9e6e6a9db9a217d9aa044d778}{annuler\-Action} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_etat_combo}{Etat\-Combo} \-: si le joueur décide de confirmer qu'il ne veut pas jouer la carte qu'il vient de posé la renvoie dans sa main. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{class_etat_combo_a182fe8d470e0851c869e4407c04f0e01}{\index{Etat\-Combo@{Etat\-Combo}!Etat\-Combo@{Etat\-Combo}}
+\index{Etat\-Combo@{Etat\-Combo}!EtatCombo@{Etat\-Combo}}
+\subsubsection[{Etat\-Combo}]{\setlength{\rightskip}{0pt plus 5cm}Etat\-Combo\-::\-Etat\-Combo (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu} $\ast$}]{jeu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_etat_combo_a182fe8d470e0851c869e4407c04f0e01}
+
+
+Constructeur. 
+
+Constructeur de la classe \hyperlink{class_etat_combo}{Etat\-Combo}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em jeu} & \-: pointeur vers le jeu \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_etat_combo_a18e6acc9e6e6a9db9a217d9aa044d778}{\index{Etat\-Combo@{Etat\-Combo}!annuler\-Action@{annuler\-Action}}
+\index{annuler\-Action@{annuler\-Action}!EtatCombo@{Etat\-Combo}}
+\subsubsection[{annuler\-Action}]{\setlength{\rightskip}{0pt plus 5cm}void Etat\-Combo\-::annuler\-Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_etat_combo_a18e6acc9e6e6a9db9a217d9aa044d778}
+
+
+\hyperlink{class_etat_combo}{Etat\-Combo} \-: si le joueur décide de confirmer qu'il ne veut pas jouer la carte qu'il vient de posé la renvoie dans sa main. 
+
+
+
+Implémente \hyperlink{class_etat_ac47332db984da58192bbb1c45f1702a8}{Etat}.
+
+\hypertarget{class_etat_combo_a26ed3a79035572c4471aab88377470c5}{\index{Etat\-Combo@{Etat\-Combo}!confirmation@{confirmation}}
+\index{confirmation@{confirmation}!EtatCombo@{Etat\-Combo}}
+\subsubsection[{confirmation}]{\setlength{\rightskip}{0pt plus 5cm}void Etat\-Combo\-::confirmation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_etat_combo_a26ed3a79035572c4471aab88377470c5}
+
+
+\hyperlink{class_etat_combo}{Etat\-Combo} \-: si le joueur décide de confirmer qu'il veut jouer la carte qu'il vient de posé appelle vérification et passe à \hyperlink{class_etat_calc_dmg}{Etat\-Calc\-Dmg} ou reste dans \hyperlink{class_etat_combo}{Etat\-Combo} selon les cas. 
+
+
+
+Implémente \hyperlink{class_etat_a65c2e505cda8cac2989b3a0c17a70278}{Etat}.
+
+\hypertarget{class_etat_combo_a56b4cbe699ca50fc0e6ad4695a744bdf}{\index{Etat\-Combo@{Etat\-Combo}!Info\-Carte@{Info\-Carte}}
+\index{Info\-Carte@{Info\-Carte}!EtatCombo@{Etat\-Combo}}
+\subsubsection[{Info\-Carte}]{\setlength{\rightskip}{0pt plus 5cm}void Etat\-Combo\-::\-Info\-Carte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_etat_combo_a56b4cbe699ca50fc0e6ad4695a744bdf}
+
+
+\hyperlink{class_etat_combo}{Etat\-Combo} \-: demande un numéro et affiche les infos de la carte corespondante de la main du joueur qui combo. 
+
+
+
+Implémente \hyperlink{class_etat_afd99ba60265bc0a82029d5fa2368acfa}{Etat}.
+
+\hypertarget{class_etat_combo_a6d7b6c040664a4c41380aca95f05f42c}{\index{Etat\-Combo@{Etat\-Combo}!jouer\-Carte@{jouer\-Carte}}
+\index{jouer\-Carte@{jouer\-Carte}!EtatCombo@{Etat\-Combo}}
+\subsubsection[{jouer\-Carte}]{\setlength{\rightskip}{0pt plus 5cm}void Etat\-Combo\-::jouer\-Carte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_etat_combo_a6d7b6c040664a4c41380aca95f05f42c}
+
+
+\hyperlink{class_etat_combo}{Etat\-Combo} \-: demande un numéro et joue la carte corespondante de la main du joueur qui combo.( demande confirmation) 
+
+
+
+Implémente \hyperlink{class_etat_aaeffe08c27b2b64560726f5df95e6f3a}{Etat}.
+
+\hypertarget{class_etat_combo_a79944dfd6e471b633ad99cd2f3b70b02}{\index{Etat\-Combo@{Etat\-Combo}!retourner\-Carte@{retourner\-Carte}}
+\index{retourner\-Carte@{retourner\-Carte}!EtatCombo@{Etat\-Combo}}
+\subsubsection[{retourner\-Carte}]{\setlength{\rightskip}{0pt plus 5cm}void Etat\-Combo\-::retourner\-Carte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_etat_combo_a79944dfd6e471b633ad99cd2f3b70b02}
+
+
+\hyperlink{class_etat_combo}{Etat\-Combo} \-: demande un numéro et retourne la carte corespondante de la main du joueur qui combo. 
+
+
+
+Implémente \hyperlink{class_etat_a3d2fe662ffd20147763a25c4e06b56e9}{Etat}.
+
+\hypertarget{class_etat_combo_a0a299d7c93ef09787eb0a402708475f0}{\index{Etat\-Combo@{Etat\-Combo}!verification@{verification}}
+\index{verification@{verification}!EtatCombo@{Etat\-Combo}}
+\subsubsection[{verification}]{\setlength{\rightskip}{0pt plus 5cm}void Etat\-Combo\-::verification (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_etat_combo_a0a299d7c93ef09787eb0a402708475f0}
+
+
+\hyperlink{class_etat_combo}{Etat\-Combo} \-: aplique les effets de la carte jouer. 
+
+
+
+Implémente \hyperlink{class_etat_aaf949c7b45217b76ff68414e61ef0d2a}{Etat}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \-:\begin{DoxyCompactItemize}
+\item 
+/home/figiel-\/paul/\-Bureau/\-Projet\-Poo/\-Projet\-P\-O\-O-\/\-A\-R\-A\-Y\-A-\/\-F\-I\-G\-I\-E\-L/include/\hyperlink{_etat_combo_8hpp}{Etat\-Combo.\-hpp}\end{DoxyCompactItemize}

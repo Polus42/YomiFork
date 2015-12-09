@@ -1,0 +1,12 @@
+id_=20
+nom_=Headbutt/Marchet sur le pied
+num_=8
+retournable_=1
+type_=0
+Leffet_=EffetFinisher
+Fstartup_=1
+dmg_=7
+type2_=1
+Leffet2_=EffetLink
+Fstartup2_=0.5
+dmg2_=1

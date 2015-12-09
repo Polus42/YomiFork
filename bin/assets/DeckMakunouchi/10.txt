@@ -1,0 +1,8 @@
+id_=22
+nom_=Combinaison
+num_=10
+retournable_=0
+type_=0
+Leffet_=EffetBoost
+Fstartup_=2.5
+dmg_=6

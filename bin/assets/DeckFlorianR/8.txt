@@ -1,0 +1,9 @@
+id_=6
+nom_=coder en c++
+num_=8
+retournable_=0
+type_=0
+Leffet_=EffetLink
+Leffet_=EffetBoost
+Fstartup_=4
+dmg_=6

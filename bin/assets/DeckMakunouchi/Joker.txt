@@ -1,0 +1,7 @@
+id_=777
+nom_=Joker
+num_=0
+retournable_=0
+type_=4
+Fstartup_=0
+dmg_=0

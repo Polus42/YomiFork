@@ -1,0 +1,13 @@
+id_=0
+nom_=Hello World/allumer l'ordi
+num_=2
+retournable_=1
+type_=0
+Leffet_=EffetReturn
+Fstartup_=0.5
+dmg_=3
+type2_=2
+Leffet2_=EffetReturn
+Fstartup2_=0
+dmg2_=0
+

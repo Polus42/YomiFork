@@ -1,0 +1,12 @@
+id_=19
+nom_=Coup au corps/ Devié coup
+num_=2
+retournable_=1
+type_=0
+Leffet_=EffetBoost
+Fstartup_=2.3
+dmg_=6
+type2_=2
+Leffet2_=EffetReturn
+Fstartup2_=0
+dmg2_=0

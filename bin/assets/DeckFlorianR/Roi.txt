@@ -1,0 +1,9 @@
+id_=11
+nom_=Segmentation fault
+num_=13
+retournable_=0
+type_=0
+Leffet_=EffetYolo
+Leffet_=EffetFinisher
+Fstartup_=0.1
+dmg_=8

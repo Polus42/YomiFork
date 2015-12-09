@@ -1,0 +1,139 @@
+\hypertarget{class_deck}{\section{Référence de la classe Deck}
+\label{class_deck}\index{Deck@{Deck}}
+}
+
+
+{\ttfamily \#include $<$Deck.\-hpp$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_deck_a57ae1cb4ac6fd61c249cefb2db85eb99}{Deck} ()
+\begin{DoxyCompactList}\small\item\em Constructeur vide. \end{DoxyCompactList}\item 
+std\-::vector$<$ \hyperlink{class_carte}{Carte} $\ast$ $>$ \hyperlink{class_deck_ab3f7a58ffccaeed56fb76939978396b9}{get\-Liste\-Cartes} ()
+\item 
+void \hyperlink{class_deck_a428e9abf1bf8c7cf6acb9371361759ef}{set\-Liste\-Cartes} (std\-::vector$<$ \hyperlink{class_carte}{Carte} $\ast$ $>$ l)
+\item 
+\hyperlink{class_champion}{Champion} $\ast$ \hyperlink{class_deck_a17dd89315d08272505adbc12ca857aec}{get\-Champion} ()
+\item 
+\hyperlink{class_carte}{Carte} $\ast$ \hyperlink{class_deck_a400a064a590119f8809d7a19e4f6704c}{piocher} ()
+\begin{DoxyCompactList}\small\item\em Pioche une carte et la suprime du deck. \end{DoxyCompactList}\item 
+void \hyperlink{class_deck_a3e12ffedb0635987a189e9a982dc5661}{add\-Carte} (\hyperlink{class_carte}{Carte} $\ast$c)
+\begin{DoxyCompactList}\small\item\em rajoue une carte au deck \end{DoxyCompactList}\item 
+void \hyperlink{class_deck_a773e994efea1dab3ee65f974ce6e6e39}{add\-Champion} (\hyperlink{class_champion}{Champion} $\ast$ch)
+\begin{DoxyCompactList}\small\item\em rajoue un champion au deck \end{DoxyCompactList}\item 
+void \hyperlink{class_deck_a561639507d28e89d055136368801da46}{clear} ()
+\begin{DoxyCompactList}\small\item\em supprime toutes les carte du deck ( clear le vecteur$<$\-Carte$\ast$$>$) \end{DoxyCompactList}\item 
+void \hyperlink{class_deck_ae5a1e52ab00ae5924f2bc6b730dba3eb}{shuffle} ()
+\begin{DoxyCompactList}\small\item\em Mélange le deck. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{class_deck_a57ae1cb4ac6fd61c249cefb2db85eb99}{\index{Deck@{Deck}!Deck@{Deck}}
+\index{Deck@{Deck}!Deck@{Deck}}
+\subsubsection[{Deck}]{\setlength{\rightskip}{0pt plus 5cm}Deck\-::\-Deck (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_deck_a57ae1cb4ac6fd61c249cefb2db85eb99}
+
+
+Constructeur vide. 
+
+Constructeur de la classe \hyperlink{class_deck}{Deck} 
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_deck_a3e12ffedb0635987a189e9a982dc5661}{\index{Deck@{Deck}!add\-Carte@{add\-Carte}}
+\index{add\-Carte@{add\-Carte}!Deck@{Deck}}
+\subsubsection[{add\-Carte}]{\setlength{\rightskip}{0pt plus 5cm}void Deck\-::add\-Carte (
+\begin{DoxyParamCaption}
+\item[{{\bf Carte} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_deck_a3e12ffedb0635987a189e9a982dc5661}
+
+
+rajoue une carte au deck 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \hyperlink{class_carte}{Carte}} & $\ast$c \-: pointeur vers la carte à rajouté \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_deck_a773e994efea1dab3ee65f974ce6e6e39}{\index{Deck@{Deck}!add\-Champion@{add\-Champion}}
+\index{add\-Champion@{add\-Champion}!Deck@{Deck}}
+\subsubsection[{add\-Champion}]{\setlength{\rightskip}{0pt plus 5cm}void Deck\-::add\-Champion (
+\begin{DoxyParamCaption}
+\item[{{\bf Champion} $\ast$}]{ch}
+\end{DoxyParamCaption}
+)}}\label{class_deck_a773e994efea1dab3ee65f974ce6e6e39}
+
+
+rajoue un champion au deck 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \hyperlink{class_champion}{Champion}} & $\ast$ch \-: pointeur vers le champion à rajouté \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_deck_a561639507d28e89d055136368801da46}{\index{Deck@{Deck}!clear@{clear}}
+\index{clear@{clear}!Deck@{Deck}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void Deck\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_deck_a561639507d28e89d055136368801da46}
+
+
+supprime toutes les carte du deck ( clear le vecteur$<$\-Carte$\ast$$>$) 
+
+\hypertarget{class_deck_a17dd89315d08272505adbc12ca857aec}{\index{Deck@{Deck}!get\-Champion@{get\-Champion}}
+\index{get\-Champion@{get\-Champion}!Deck@{Deck}}
+\subsubsection[{get\-Champion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Champion}$\ast$ Deck\-::get\-Champion (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_deck_a17dd89315d08272505adbc12ca857aec}
+\hypertarget{class_deck_ab3f7a58ffccaeed56fb76939978396b9}{\index{Deck@{Deck}!get\-Liste\-Cartes@{get\-Liste\-Cartes}}
+\index{get\-Liste\-Cartes@{get\-Liste\-Cartes}!Deck@{Deck}}
+\subsubsection[{get\-Liste\-Cartes}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Carte}$\ast$$>$ Deck\-::get\-Liste\-Cartes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_deck_ab3f7a58ffccaeed56fb76939978396b9}
+\hypertarget{class_deck_a400a064a590119f8809d7a19e4f6704c}{\index{Deck@{Deck}!piocher@{piocher}}
+\index{piocher@{piocher}!Deck@{Deck}}
+\subsubsection[{piocher}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Carte}$\ast$ Deck\-::piocher (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_deck_a400a064a590119f8809d7a19e4f6704c}
+
+
+Pioche une carte et la suprime du deck. 
+
+\begin{DoxyReturn}{Renvoie}
+\-: un pointeur vers la carte piocher 
+\end{DoxyReturn}
+\hypertarget{class_deck_a428e9abf1bf8c7cf6acb9371361759ef}{\index{Deck@{Deck}!set\-Liste\-Cartes@{set\-Liste\-Cartes}}
+\index{set\-Liste\-Cartes@{set\-Liste\-Cartes}!Deck@{Deck}}
+\subsubsection[{set\-Liste\-Cartes}]{\setlength{\rightskip}{0pt plus 5cm}void Deck\-::set\-Liste\-Cartes (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf Carte} $\ast$ $>$}]{l}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_deck_a428e9abf1bf8c7cf6acb9371361759ef}
+\hypertarget{class_deck_ae5a1e52ab00ae5924f2bc6b730dba3eb}{\index{Deck@{Deck}!shuffle@{shuffle}}
+\index{shuffle@{shuffle}!Deck@{Deck}}
+\subsubsection[{shuffle}]{\setlength{\rightskip}{0pt plus 5cm}void Deck\-::shuffle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_deck_ae5a1e52ab00ae5924f2bc6b730dba3eb}
+
+
+Mélange le deck. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \-:\begin{DoxyCompactItemize}
+\item 
+/home/figiel-\/paul/\-Bureau/\-Projet\-Poo/\-Projet\-P\-O\-O-\/\-A\-R\-A\-Y\-A-\/\-F\-I\-G\-I\-E\-L/include/\hyperlink{_deck_8hpp}{Deck.\-hpp}\end{DoxyCompactItemize}

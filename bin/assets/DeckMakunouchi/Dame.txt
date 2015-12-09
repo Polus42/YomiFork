@@ -1,0 +1,7 @@
+id_=24
+nom_=Shoryu... euh uppercut
+num_=12
+retournable_=0
+type_=0
+Fstartup_=0.1
+dmg_=8

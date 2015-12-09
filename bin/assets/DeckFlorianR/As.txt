@@ -1,0 +1,12 @@
+id_=12
+nom_=42,42,42 ...
+num_=1
+retournable_=1
+type_=0
+Leffet_=EffetBoost
+Fstartup_=0.7
+dmg_=10
+type2_=1
+Leffet2_=EffetBoost
+Fstartup2_=0.7
+dmg2_=10

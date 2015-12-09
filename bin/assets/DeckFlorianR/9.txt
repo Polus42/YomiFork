@@ -1,0 +1,9 @@
+id_=7
+nom_=Coder Sans compiler
+num_=9
+retournable_=0
+type_=0
+Leffet_=EffetFinisher
+Lefffet_=EffetYolo
+Fstartup_=7
+dmg_=8

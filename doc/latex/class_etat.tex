@@ -1,0 +1,126 @@
+\hypertarget{class_etat}{\section{Référence de la classe Etat}
+\label{class_etat}\index{Etat@{Etat}}
+}
+
+
+{\ttfamily \#include $<$Etat.\-hpp$>$}
+
+Graphe d'héritage de Etat\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=11.000000cm]{class_etat}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_etat_aaf949c7b45217b76ff68414e61ef0d2a}{verification} ()=0
+\begin{DoxyCompactList}\small\item\em procéde au diverse vérification (varie selon l'état). \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_etat_afd99ba60265bc0a82029d5fa2368acfa}{Info\-Carte} ()=0
+\begin{DoxyCompactList}\small\item\em affiche l'info d'une carte (varie selon l'état). \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_etat_a3d2fe662ffd20147763a25c4e06b56e9}{retourner\-Carte} ()=0
+\begin{DoxyCompactList}\small\item\em retourne la dérnière carte jouer dans la main de son propriétaire (varie selon l'état). \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_etat_aaeffe08c27b2b64560726f5df95e6f3a}{jouer\-Carte} ()=0
+\begin{DoxyCompactList}\small\item\em joue une carte (varie selon l'état). \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_etat_a65c2e505cda8cac2989b3a0c17a70278}{confirmation} ()=0
+\begin{DoxyCompactList}\small\item\em confirme l'action (varie selon l'état). \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_etat_ac47332db984da58192bbb1c45f1702a8}{annuler\-Action} ()=0
+\begin{DoxyCompactList}\small\item\em annule l'action (varie selon l'état). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_etat_ac47332db984da58192bbb1c45f1702a8}{\index{Etat@{Etat}!annuler\-Action@{annuler\-Action}}
+\index{annuler\-Action@{annuler\-Action}!Etat@{Etat}}
+\subsubsection[{annuler\-Action}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Etat\-::annuler\-Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_etat_ac47332db984da58192bbb1c45f1702a8}
+
+
+annule l'action (varie selon l'état). 
+
+
+
+Implémenté dans \hyperlink{class_etat_bluff_ac570a417e0c4d1e766ff29b8f02eac0a}{Etat\-Bluff}, \hyperlink{class_etat_calc_dmg_af9ef4c658d2591d25e03fabaa5d9bca1}{Etat\-Calc\-Dmg}, \hyperlink{class_etat_choix_j2_a076a02ef80e3dded9fb3df17dd23542a}{Etat\-Choix\-J2}, \hyperlink{class_etat_choix_j1_af6a16d04020f3079a6a02e5cae8860ec}{Etat\-Choix\-J1}, \hyperlink{class_etat_clean_up_a7163c116050f238c7bcd43a7e9bae974}{Etat\-Clean\-Up}, \hyperlink{class_etat_pioche_a5c22d5a85ff1d59eb5facecee39e960b}{Etat\-Pioche}, \hyperlink{class_etat_choix_win_ae321052d630a6a679f6347c36f580ea7}{Etat\-Choix\-Win}, \hyperlink{class_etat_combo_a18e6acc9e6e6a9db9a217d9aa044d778}{Etat\-Combo}, \hyperlink{class_etat_fin_aa1ec559bd55dce76286b32b4cb293857}{Etat\-Fin}, et \hyperlink{class_etat_choix_perso_a1a67ae6bf8cf6cd9c79afd84b1961385}{Etat\-Choix\-Perso}.
+
+\hypertarget{class_etat_a65c2e505cda8cac2989b3a0c17a70278}{\index{Etat@{Etat}!confirmation@{confirmation}}
+\index{confirmation@{confirmation}!Etat@{Etat}}
+\subsubsection[{confirmation}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Etat\-::confirmation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_etat_a65c2e505cda8cac2989b3a0c17a70278}
+
+
+confirme l'action (varie selon l'état). 
+
+
+
+Implémenté dans \hyperlink{class_etat_choix_j2_af09ee4f38957e7fe8232db7dcfccd573}{Etat\-Choix\-J2}, \hyperlink{class_etat_bluff_a7933ee4cc543982cdfe62bfe1a50c765}{Etat\-Bluff}, \hyperlink{class_etat_calc_dmg_a6b33fa83c3897ce65ed53b6b345615c1}{Etat\-Calc\-Dmg}, \hyperlink{class_etat_choix_j1_a7c9397632889bb66bdd5a635ab7ad3cb}{Etat\-Choix\-J1}, \hyperlink{class_etat_clean_up_a4c0dbb8c302a500052eccdc66c6a28b4}{Etat\-Clean\-Up}, \hyperlink{class_etat_pioche_ab3394a63db70d706b48501969edc7880}{Etat\-Pioche}, \hyperlink{class_etat_choix_win_aef8d0abe059050e7a7e3e598c87de992}{Etat\-Choix\-Win}, \hyperlink{class_etat_combo_a26ed3a79035572c4471aab88377470c5}{Etat\-Combo}, \hyperlink{class_etat_fin_a218360ae56a421d500329f53c893822e}{Etat\-Fin}, et \hyperlink{class_etat_choix_perso_a60ea227168029d7741f2919d73b8d2cc}{Etat\-Choix\-Perso}.
+
+\hypertarget{class_etat_afd99ba60265bc0a82029d5fa2368acfa}{\index{Etat@{Etat}!Info\-Carte@{Info\-Carte}}
+\index{Info\-Carte@{Info\-Carte}!Etat@{Etat}}
+\subsubsection[{Info\-Carte}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Etat\-::\-Info\-Carte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_etat_afd99ba60265bc0a82029d5fa2368acfa}
+
+
+affiche l'info d'une carte (varie selon l'état). 
+
+
+
+Implémenté dans \hyperlink{class_etat_choix_j2_ab0066e2aa95ddfe577d0e9ba4ae5441e}{Etat\-Choix\-J2}, \hyperlink{class_etat_choix_j1_aeb4984f144a61f1a98120dc844364212}{Etat\-Choix\-J1}, \hyperlink{class_etat_bluff_a9a50082e841c2ef7781795d546d77b3e}{Etat\-Bluff}, \hyperlink{class_etat_calc_dmg_a3d68b599faab01efda64cf48a336ec29}{Etat\-Calc\-Dmg}, \hyperlink{class_etat_clean_up_aac0dacd1f4945a971ec72319c979a786}{Etat\-Clean\-Up}, \hyperlink{class_etat_pioche_aa4379e774a3cfa7f3ce7f6668363f04f}{Etat\-Pioche}, \hyperlink{class_etat_choix_win_af5143e3b6e6c80633b48fcbc9fa52be2}{Etat\-Choix\-Win}, \hyperlink{class_etat_combo_a56b4cbe699ca50fc0e6ad4695a744bdf}{Etat\-Combo}, \hyperlink{class_etat_fin_a60377a6cd48de413cb14445f8e9683bb}{Etat\-Fin}, et \hyperlink{class_etat_choix_perso_a10dcb32108b4d457bd58ad45abf6706a}{Etat\-Choix\-Perso}.
+
+\hypertarget{class_etat_aaeffe08c27b2b64560726f5df95e6f3a}{\index{Etat@{Etat}!jouer\-Carte@{jouer\-Carte}}
+\index{jouer\-Carte@{jouer\-Carte}!Etat@{Etat}}
+\subsubsection[{jouer\-Carte}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Etat\-::jouer\-Carte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_etat_aaeffe08c27b2b64560726f5df95e6f3a}
+
+
+joue une carte (varie selon l'état). 
+
+
+
+Implémenté dans \hyperlink{class_etat_choix_j2_a674ef9e896f33d70cf8937b4591faae9}{Etat\-Choix\-J2}, \hyperlink{class_etat_bluff_a087b8aa9f445736eba04d9811b3ec8e8}{Etat\-Bluff}, \hyperlink{class_etat_calc_dmg_a67193b64493418f62457259688fbe402}{Etat\-Calc\-Dmg}, \hyperlink{class_etat_choix_j1_a5aa86ab5766846edd95a5f82943855a1}{Etat\-Choix\-J1}, \hyperlink{class_etat_clean_up_a3be20ce132ee978e5412ae54f36e4a78}{Etat\-Clean\-Up}, \hyperlink{class_etat_pioche_a951f62c333a41232cb4c09738925e7db}{Etat\-Pioche}, \hyperlink{class_etat_choix_win_a32f02c55bfbf8b580dee3bd95ce1921e}{Etat\-Choix\-Win}, \hyperlink{class_etat_combo_a6d7b6c040664a4c41380aca95f05f42c}{Etat\-Combo}, \hyperlink{class_etat_fin_a8120a04c2f2e3632683a79a6b2fd524a}{Etat\-Fin}, et \hyperlink{class_etat_choix_perso_a31908b4127aeff26b214d470ef22eacb}{Etat\-Choix\-Perso}.
+
+\hypertarget{class_etat_a3d2fe662ffd20147763a25c4e06b56e9}{\index{Etat@{Etat}!retourner\-Carte@{retourner\-Carte}}
+\index{retourner\-Carte@{retourner\-Carte}!Etat@{Etat}}
+\subsubsection[{retourner\-Carte}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Etat\-::retourner\-Carte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_etat_a3d2fe662ffd20147763a25c4e06b56e9}
+
+
+retourne la dérnière carte jouer dans la main de son propriétaire (varie selon l'état). 
+
+
+
+Implémenté dans \hyperlink{class_etat_choix_j2_a2fe8000154f582684c9a0162bb860b9f}{Etat\-Choix\-J2}, \hyperlink{class_etat_bluff_ad5f658d6e71112d9489927104cc4da4c}{Etat\-Bluff}, \hyperlink{class_etat_choix_j1_a923857828b87f0bde7661e4f7a17efee}{Etat\-Choix\-J1}, \hyperlink{class_etat_calc_dmg_a5b089ca3e4773afc4503106effe36866}{Etat\-Calc\-Dmg}, \hyperlink{class_etat_clean_up_a955f6fb5a4cffdbdca4348b90d59ad78}{Etat\-Clean\-Up}, \hyperlink{class_etat_pioche_ab139c9695f98b2e45df5fdc8f494ea80}{Etat\-Pioche}, \hyperlink{class_etat_choix_win_a583e3a7b7d7e922a74a4609d31c277ee}{Etat\-Choix\-Win}, \hyperlink{class_etat_combo_a79944dfd6e471b633ad99cd2f3b70b02}{Etat\-Combo}, \hyperlink{class_etat_fin_a7772020d9101b4ebac666c498f023215}{Etat\-Fin}, et \hyperlink{class_etat_choix_perso_a5a9e8efb87e8ebb31c0f4db269e938a9}{Etat\-Choix\-Perso}.
+
+\hypertarget{class_etat_aaf949c7b45217b76ff68414e61ef0d2a}{\index{Etat@{Etat}!verification@{verification}}
+\index{verification@{verification}!Etat@{Etat}}
+\subsubsection[{verification}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Etat\-::verification (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_etat_aaf949c7b45217b76ff68414e61ef0d2a}
+
+
+procéde au diverse vérification (varie selon l'état). 
+
+
+
+Implémenté dans \hyperlink{class_etat_choix_j2_a93667fd195d816e8d3e8e26d16a86848}{Etat\-Choix\-J2}, \hyperlink{class_etat_choix_j1_afb7b74d31ac30f1993cd6ae35ff72733}{Etat\-Choix\-J1}, \hyperlink{class_etat_bluff_a87a7f546cb71b52ac869ac41439d49bf}{Etat\-Bluff}, \hyperlink{class_etat_pioche_af429306bdc936b19982b604a686a230d}{Etat\-Pioche}, \hyperlink{class_etat_calc_dmg_abddaaca7a79022a6521e893003240de1}{Etat\-Calc\-Dmg}, \hyperlink{class_etat_clean_up_a58245fa6e240c4c4f20d1a1fca868571}{Etat\-Clean\-Up}, \hyperlink{class_etat_fin_af5b612f37d0d38878b7380c7c44c8373}{Etat\-Fin}, \hyperlink{class_etat_choix_win_ae4b933e5eb219ad05263447db0d970e2}{Etat\-Choix\-Win}, \hyperlink{class_etat_combo_a0a299d7c93ef09787eb0a402708475f0}{Etat\-Combo}, et \hyperlink{class_etat_choix_perso_a18678f06f60115999dd92b8b88dbe7dd}{Etat\-Choix\-Perso}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \-:\begin{DoxyCompactItemize}
+\item 
+/home/figiel-\/paul/\-Bureau/\-Projet\-Poo/\-Projet\-P\-O\-O-\/\-A\-R\-A\-Y\-A-\/\-F\-I\-G\-I\-E\-L/include/\hyperlink{_etat_8hpp}{Etat.\-hpp}\end{DoxyCompactItemize}

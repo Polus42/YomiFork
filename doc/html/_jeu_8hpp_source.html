@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Projet : Jeu de cartes - POO:  Fichier source de /home/figiel-paul/Bureau/ProjetPoo/ProjetPOO-ARAYA-FIGIEL/include/Jeu.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Projet : Jeu de cartes - POO
+   &#160;<span id="projectnumber">V3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Jeu.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_jeu_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include&lt;iostream&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include&lt;vector&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sujet_8hpp.html">Sujet.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef JEU_HPP</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="_jeu_8hpp.html#a6569f0b1a6abcdee888e24b4c0734c8e">    6</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define JEU_HPP</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span><span class="keyword">class </span><a class="code" href="class_joueur.html">Joueur</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="class_etat.html">Etat</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span><a class="code" href="class_carte.html">Carte</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span><a class="code" href="class_etat_pioche.html">EtatPioche</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_jeu.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_jeu.html">Jeu</a> : <a class="code" href="class_sujet.html">Sujet</a>{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">private</span> :</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_joueur.html">Joueur</a> *j1_;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_joueur.html">Joueur</a> *j2_;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">int</span> joue_;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">// indique le joueur que est entrain de jouer</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_etat.html">Etat</a> *etatPioche_;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_etat.html">Etat</a> *etatChoixJ1_;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_etat.html">Etat</a> *etatChoixJ2_;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_etat.html">Etat</a> *etatChoixWin_;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_etat.html">Etat</a> *etatChoixPerso_;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_etat.html">Etat</a> *etatCalcDmg_;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_etat.html">Etat</a> *etatBluff_;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_etat.html">Etat</a> *etatCombo_;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_etat.html">Etat</a> *etatCleanUp_;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_etat.html">Etat</a> *etatFin_;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_etat.html">Etat</a> *etatCourant_;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">int</span> gagnantCombat_;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;     <span class="comment">// 0 = match nul, 1 = J1 gagne, 2 = J2 gagne</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::vector&lt;Carte*&gt; carteJ1_;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// carte jouer ce tour par J1</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    std::vector&lt;Carte*&gt; carteJ2_;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// pareil pour J2</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    std::vector&lt;Carte*&gt; RcarteJ1_; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// carte qui doivent retourner dans la main du joueur 1 à la fin du tour</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    std::vector&lt;Carte*&gt; RcarteJ2_;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// Pareil pour J2</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">int</span> combo_; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// compteur de combo remis à 9 à chaque début de tour</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">int</span> comboTypeJ1_;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// indique quel type de combo on peut faire ( quel carte on peut jouer pour continuer le combo). C&#39;est affecter par les effet style link ou finisher.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// 0= combo classique; 1=on peut n&#39;importe quel carte, 2= on arrête quoi qu&#39;il arrive.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">int</span> comboTypeJ2_;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">bool</span> bluff_; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//indique si un joueur a bluffé (avec un jocker)ce tour ci </span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">bool</span> fini_; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// flase= partie non finie ; true= partie finie</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// ----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// Implementation de la classe sujet</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    std::vector&lt;Observeur*&gt; listeObs_;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">public</span> :</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="class_jeu.html#acc5795ee00edf75516d3dfe65be3e6d6">Jeu</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">//set et get--------------------------------- </span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">//tout les get des etat de la liste des état à rajouter plustard</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_jeu.html#a56ed2a2cef42566e3c157cc11588e2ae">   73</a></span>&#160;    <a class="code" href="class_joueur.html">Joueur</a>* <a class="code" href="class_jeu.html#a56ed2a2cef42566e3c157cc11588e2ae">getJ1</a>(){<span class="keywordflow">return</span> j1_;}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_jeu.html#a74110004db819646a40323b1daa2c249">   75</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#a74110004db819646a40323b1daa2c249">setJ1</a>(<a class="code" href="class_joueur.html">Joueur</a>* j){j1_=j; }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_jeu.html#afd1e01e7843d24cee637b41ffdfec9ad">   77</a></span>&#160;    <a class="code" href="class_joueur.html">Joueur</a>* <a class="code" href="class_jeu.html#afd1e01e7843d24cee637b41ffdfec9ad">getJ2</a>(){<span class="keywordflow">return</span> j2_;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_jeu.html#a37c63b56c95a83753c6f9521e1d355b4">   79</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#a37c63b56c95a83753c6f9521e1d355b4">setJ2</a>(<a class="code" href="class_joueur.html">Joueur</a>* j){j2_=j; }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">//Etat *getEtatCourant(){return etatCourant_;}</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">//void setEtatCourant(Etat et){ etatCourant_=&amp;et;}  il faut defnir les etats conrets avant</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_jeu.html#ab6e4e2510694715b5a97fdeb73387cc6">   84</a></span>&#160;    std::vector&lt;Carte*&gt; <a class="code" href="class_jeu.html#ab6e4e2510694715b5a97fdeb73387cc6">getCarteJ1</a>(){<span class="keywordflow">return</span> carteJ1_;}</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_jeu.html#a86c6895722d29422a5bfe449ec2887f9">   85</a></span>&#160;    std::vector&lt;Carte*&gt; <a class="code" href="class_jeu.html#a86c6895722d29422a5bfe449ec2887f9">getCarteJ2</a>(){<span class="keywordflow">return</span> carteJ2_;}</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="class_jeu.html#ac4c93bb98ab4e39bfb6f433a68892c56">   86</a></span>&#160;    std::vector&lt;Carte*&gt; <a class="code" href="class_jeu.html#ac4c93bb98ab4e39bfb6f433a68892c56">getRcarteJ1</a>(){<span class="keywordflow">return</span> RcarteJ1_;}</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_jeu.html#ad1639e6ab51ce0704f20b4b389888e4a">   87</a></span>&#160;    std::vector&lt;Carte*&gt; <a class="code" href="class_jeu.html#ad1639e6ab51ce0704f20b4b389888e4a">getRcarteJ2</a>(){<span class="keywordflow">return</span> RcarteJ1_;}</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="class_jeu.html#afded871bc0c3104ce1f0196ab4449663">   89</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_jeu.html#afded871bc0c3104ce1f0196ab4449663">getJoue</a>(){<span class="keywordflow">return</span> joue_;}</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="class_jeu.html#a3c7a41b6e9acc74ab8286adc0f6c99fc">   90</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#a3c7a41b6e9acc74ab8286adc0f6c99fc">setJoue</a>(<span class="keywordtype">int</span> x){joue_=x;}</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_jeu.html#aedcf65c5f258409cd5539c7f3132b7b8">   92</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_jeu.html#aedcf65c5f258409cd5539c7f3132b7b8">getGagnantCombat</a>(){<span class="keywordflow">return</span> gagnantCombat_;}</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="class_jeu.html#a02280609f3dc7843923f8de198d42654">   93</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#a02280609f3dc7843923f8de198d42654">setGagnantCombat</a>(<span class="keywordtype">int</span> x){gagnantCombat_=x;}</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="class_jeu.html#a1bc939a24ccb8035cab265d022e909e3">   95</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_jeu.html#a1bc939a24ccb8035cab265d022e909e3">getCombo</a>(){<span class="keywordflow">return</span> combo_;}</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="class_jeu.html#a306805dc1c5101f60da1f47fbb6208a9">   96</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#a306805dc1c5101f60da1f47fbb6208a9">setCombo</a>(<span class="keywordtype">int</span> x){combo_=x;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="class_jeu.html#a872cd7c640a9f400f9328d270df62949">   98</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_jeu.html#a872cd7c640a9f400f9328d270df62949">getComboTypeJ1</a>(){<span class="keywordflow">return</span> comboTypeJ1_;}</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="class_jeu.html#aaf27565623c1570e13daa67a65a999e9">   99</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#aaf27565623c1570e13daa67a65a999e9">setComboTypeJ1</a>(<span class="keywordtype">int</span> x){comboTypeJ1_=x;}</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    </div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_jeu.html#adb7a2e6e6bfe15ed1d720e884faca987">  101</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_jeu.html#adb7a2e6e6bfe15ed1d720e884faca987">getComboTypeJ2</a>(){<span class="keywordflow">return</span> comboTypeJ2_;}</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="class_jeu.html#a0d437ab069b7e94694fd3d567dd20e07">  102</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#a0d437ab069b7e94694fd3d567dd20e07">setComboTypeJ2</a>(<span class="keywordtype">int</span> x){comboTypeJ2_=x;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    </div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="class_jeu.html#a2f0816cea4f78387b7ec71aa5e1f1b14">  104</a></span>&#160;    <a class="code" href="class_etat.html">Etat</a> *<a class="code" href="class_jeu.html#a2f0816cea4f78387b7ec71aa5e1f1b14">getEtatCourant</a>(){<span class="keywordflow">return</span> etatCourant_;}</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="class_jeu.html#afc4543470bc3a4f4dc84b0aad4295d2d">  105</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#afc4543470bc3a4f4dc84b0aad4295d2d">setEtatCourant</a>(<a class="code" href="class_etat.html">Etat</a> *et){etatCourant_=et;}</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    </div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="class_jeu.html#ab70c1e2ede9fb55f99b433d650f05813">  107</a></span>&#160;    <a class="code" href="class_etat.html">Etat</a> *<a class="code" href="class_jeu.html#ab70c1e2ede9fb55f99b433d650f05813">getEtatPioche</a>(){<span class="keywordflow">return</span> etatPioche_;}</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="class_jeu.html#aeaa2da8046a84766358d2c4422d093d1">  108</a></span>&#160;    <a class="code" href="class_etat.html">Etat</a> *<a class="code" href="class_jeu.html#aeaa2da8046a84766358d2c4422d093d1">getEtatChoixJ1</a>(){<span class="keywordflow">return</span> etatChoixJ1_;}</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="class_jeu.html#a0e916d9f16d3e0eb073027e4d9d56ef0">  109</a></span>&#160;    <a class="code" href="class_etat.html">Etat</a> *<a class="code" href="class_jeu.html#a0e916d9f16d3e0eb073027e4d9d56ef0">getEtatChoixJ2</a>(){<span class="keywordflow">return</span> etatChoixJ2_;} </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    </div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="class_jeu.html#afc4788d06bf24260783e70bce3455ca3">  111</a></span>&#160;    <a class="code" href="class_etat.html">Etat</a> *<a class="code" href="class_jeu.html#afc4788d06bf24260783e70bce3455ca3">getEtatChoixWin</a>(){<span class="keywordflow">return</span> etatChoixWin_;}</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="class_jeu.html#ae804c0bd49285e41a28299f41d5eaaba">  112</a></span>&#160;    <a class="code" href="class_etat.html">Etat</a> *<a class="code" href="class_jeu.html#ae804c0bd49285e41a28299f41d5eaaba">getEtatCalcDmg</a>(){<span class="keywordflow">return</span> etatCalcDmg_;}</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="class_jeu.html#a8f4efbf2847eafdd86cd178b8b17ba24">  113</a></span>&#160;    <a class="code" href="class_etat.html">Etat</a> *<a class="code" href="class_jeu.html#a8f4efbf2847eafdd86cd178b8b17ba24">getEtatBluff</a>(){<span class="keywordflow">return</span> etatBluff_;}</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="class_jeu.html#a2d0de8666c9f02c0af9186ec7e51643e">  114</a></span>&#160;    <a class="code" href="class_etat.html">Etat</a> *<a class="code" href="class_jeu.html#a2d0de8666c9f02c0af9186ec7e51643e">getEtatCombo</a>(){<span class="keywordflow">return</span> etatCombo_;}</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="class_jeu.html#aa9469a1ced32c683eae7bec567c170d3">  115</a></span>&#160;    <a class="code" href="class_etat.html">Etat</a> *<a class="code" href="class_jeu.html#aa9469a1ced32c683eae7bec567c170d3">getEtatCleanUp</a>(){<span class="keywordflow">return</span> etatCleanUp_;}</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="class_jeu.html#a372dba23eee1d33eb24e8f2dc3c3b6f4">  116</a></span>&#160;    <a class="code" href="class_etat.html">Etat</a> *<a class="code" href="class_jeu.html#a372dba23eee1d33eb24e8f2dc3c3b6f4">getEtatFin</a>(){<span class="keywordflow">return</span> etatFin_;}</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    </div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="class_jeu.html#a724b71e7405bf1f28142973e20902691">  118</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_jeu.html#a724b71e7405bf1f28142973e20902691">getFini</a>(){<span class="keywordflow">return</span> fini_;}</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="class_jeu.html#a9f48a5d4b43894bc584972eadc7ec1a1">  119</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#a9f48a5d4b43894bc584972eadc7ec1a1">setFini</a>(<span class="keywordtype">bool</span> f){fini_=f;}</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    </div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="class_jeu.html#af8a568254fd6935e8814f31580300f0e">  121</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_jeu.html#af8a568254fd6935e8814f31580300f0e">getBluff</a>(){<span class="keywordflow">return</span> bluff_;}</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="class_jeu.html#ac3e1701f943f16436a15e423bd2c6e62">  122</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#ac3e1701f943f16436a15e423bd2c6e62">setBluff</a>(<span class="keywordtype">bool</span> b){bluff_=b;}</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="comment">// Les autres fonction----------------------------------------------</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">// C&#39;est 2 fonction ajoute une carte dans les vector des cartes jouer par les joueur à la fin</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#aacd7585f3235e9e0da4bcbfc6eef5ba9">addCarteJ1</a>(<a class="code" href="class_carte.html">Carte</a> *c);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#ab723c1aa7efb0961d83a53862ebd5122">addCarteJ2</a>(<a class="code" href="class_carte.html">Carte</a> *c);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="comment">// Pareil mais pour les 2 autre vector</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#a6e61d83c15d2bd2bb0068dc58c4248f0">addRcarteJ1</a>(<a class="code" href="class_carte.html">Carte</a> *c);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#adae51a9577a485942e3d349fa43be0f4">addRcarteJ2</a>(<a class="code" href="class_carte.html">Carte</a> *c);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#aa5e5d255f55ff79dc50a149840240219">vidage</a>(); <span class="comment">// Vide tout les vector et remet les autres valeur comme il faut pour un nouveau tour</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#abd1b3f4f3866299296c37d5def7bd509">retournerToMain</a>(<span class="keywordtype">int</span> i); <span class="comment">// retourne en main la carte du joueur corespondant au numéro choisi</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#af710d22785038c25866e270821a0d164">clearCarteJ1</a>();</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#ae62fc97f873d2c033b0b647db617f8f4">clearCarteJ2</a>();</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#a890ea4e42ea493a8179fdfb94b6c2fac">clearRCarteJ1</a>();</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#ad41dfbbdde90ba9579173af18ea2a670">clearRCarteJ2</a>();</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#a5a74a90faa114fd22a09ed25b9fc8381">plusCombo</a>(); <span class="comment">// Rajoute 1 au compteur de combo ex : combo_=1 ---&gt; combo_=2</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#af3b060e950164595e1e75901c7c701ad">actionEffet</a>(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <a class="code" href="class_carte.html">Carte</a>* <a class="code" href="class_jeu.html#a71d1539ad625597004b324e15fc9bf7f">getLastCarte</a>(<span class="keywordtype">int</span> j);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_jeu.html#a2b0a504e0fc5a6e5a74f362ab26d9633">getGoodComboType</a>(<span class="keywordtype">int</span> x);<span class="comment">// Va cherche le combo type correspondant à l&#39;entier x (1=J1 ...)</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    </div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="comment">// --------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="comment">// Implementation de la classe sujet</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#aee83ada0589e3352ec854b12e1c6e265">ajouterObs</a>(<a class="code" href="class_observeur.html">Observeur</a> *o);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#adbb1ba10c900ec336d744dbfd5de7f8e">supprimerObs</a>(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#ad955ffee4ed18add167fa957386a9821">notifierObs</a>();</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#ad955ffee4ed18add167fa957386a9821">notifierObs</a>(<a class="code" href="class_observeur.html">Observeur</a> *o);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;};</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_jeu_html_afc4543470bc3a4f4dc84b0aad4295d2d"><div class="ttname"><a href="class_jeu.html#afc4543470bc3a4f4dc84b0aad4295d2d">Jeu::setEtatCourant</a></div><div class="ttdeci">void setEtatCourant(Etat *et)</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:105</div></div>
+<div class="ttc" id="class_sujet_html"><div class="ttname"><a href="class_sujet.html">Sujet</a></div><div class="ttdoc">Classe Sujet qui sert de base pour implementer des classes observées. </div><div class="ttdef"><b>Definition:</b> Sujet.hpp:19</div></div>
+<div class="ttc" id="class_jeu_html_a872cd7c640a9f400f9328d270df62949"><div class="ttname"><a href="class_jeu.html#a872cd7c640a9f400f9328d270df62949">Jeu::getComboTypeJ1</a></div><div class="ttdeci">int getComboTypeJ1()</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:98</div></div>
+<div class="ttc" id="class_jeu_html_a86c6895722d29422a5bfe449ec2887f9"><div class="ttname"><a href="class_jeu.html#a86c6895722d29422a5bfe449ec2887f9">Jeu::getCarteJ2</a></div><div class="ttdeci">std::vector&lt; Carte * &gt; getCarteJ2()</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:85</div></div>
+<div class="ttc" id="class_jeu_html_adbb1ba10c900ec336d744dbfd5de7f8e"><div class="ttname"><a href="class_jeu.html#adbb1ba10c900ec336d744dbfd5de7f8e">Jeu::supprimerObs</a></div><div class="ttdeci">void supprimerObs(int i)</div><div class="ttdoc">suprime un observeur du jeu </div></div>
+<div class="ttc" id="class_jeu_html"><div class="ttname"><a href="class_jeu.html">Jeu</a></div><div class="ttdef"><b>Definition:</b> Jeu.hpp:11</div></div>
+<div class="ttc" id="class_jeu_html_aacd7585f3235e9e0da4bcbfc6eef5ba9"><div class="ttname"><a href="class_jeu.html#aacd7585f3235e9e0da4bcbfc6eef5ba9">Jeu::addCarteJ1</a></div><div class="ttdeci">void addCarteJ1(Carte *c)</div><div class="ttdoc">ajoute une carte à la liste des carte de J1 </div></div>
+<div class="ttc" id="class_jeu_html_aeaa2da8046a84766358d2c4422d093d1"><div class="ttname"><a href="class_jeu.html#aeaa2da8046a84766358d2c4422d093d1">Jeu::getEtatChoixJ1</a></div><div class="ttdeci">Etat * getEtatChoixJ1()</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:108</div></div>
+<div class="ttc" id="class_jeu_html_ac3e1701f943f16436a15e423bd2c6e62"><div class="ttname"><a href="class_jeu.html#ac3e1701f943f16436a15e423bd2c6e62">Jeu::setBluff</a></div><div class="ttdeci">void setBluff(bool b)</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:122</div></div>
+<div class="ttc" id="class_jeu_html_ad1639e6ab51ce0704f20b4b389888e4a"><div class="ttname"><a href="class_jeu.html#ad1639e6ab51ce0704f20b4b389888e4a">Jeu::getRcarteJ2</a></div><div class="ttdeci">std::vector&lt; Carte * &gt; getRcarteJ2()</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:87</div></div>
+<div class="ttc" id="class_jeu_html_a0d437ab069b7e94694fd3d567dd20e07"><div class="ttname"><a href="class_jeu.html#a0d437ab069b7e94694fd3d567dd20e07">Jeu::setComboTypeJ2</a></div><div class="ttdeci">void setComboTypeJ2(int x)</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:102</div></div>
+<div class="ttc" id="class_observeur_html"><div class="ttname"><a href="class_observeur.html">Observeur</a></div><div class="ttdoc">Classe Observeur qui sert de base pour implementer des classes qui observent un sujet. </div><div class="ttdef"><b>Definition:</b> Observeur.hpp:18</div></div>
+<div class="ttc" id="class_jeu_html_ab6e4e2510694715b5a97fdeb73387cc6"><div class="ttname"><a href="class_jeu.html#ab6e4e2510694715b5a97fdeb73387cc6">Jeu::getCarteJ1</a></div><div class="ttdeci">std::vector&lt; Carte * &gt; getCarteJ1()</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:84</div></div>
+<div class="ttc" id="class_jeu_html_afd1e01e7843d24cee637b41ffdfec9ad"><div class="ttname"><a href="class_jeu.html#afd1e01e7843d24cee637b41ffdfec9ad">Jeu::getJ2</a></div><div class="ttdeci">Joueur * getJ2()</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:77</div></div>
+<div class="ttc" id="class_jeu_html_aa9469a1ced32c683eae7bec567c170d3"><div class="ttname"><a href="class_jeu.html#aa9469a1ced32c683eae7bec567c170d3">Jeu::getEtatCleanUp</a></div><div class="ttdeci">Etat * getEtatCleanUp()</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:115</div></div>
+<div class="ttc" id="class_jeu_html_af3b060e950164595e1e75901c7c701ad"><div class="ttname"><a href="class_jeu.html#af3b060e950164595e1e75901c7c701ad">Jeu::actionEffet</a></div><div class="ttdeci">void actionEffet(int i)</div><div class="ttdoc">applique l&#39;effet de la derière carte jouer par le joueur i </div></div>
+<div class="ttc" id="class_jeu_html_ac4c93bb98ab4e39bfb6f433a68892c56"><div class="ttname"><a href="class_jeu.html#ac4c93bb98ab4e39bfb6f433a68892c56">Jeu::getRcarteJ1</a></div><div class="ttdeci">std::vector&lt; Carte * &gt; getRcarteJ1()</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:86</div></div>
+<div class="ttc" id="class_jeu_html_a306805dc1c5101f60da1f47fbb6208a9"><div class="ttname"><a href="class_jeu.html#a306805dc1c5101f60da1f47fbb6208a9">Jeu::setCombo</a></div><div class="ttdeci">void setCombo(int x)</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:96</div></div>
+<div class="ttc" id="class_jeu_html_a9f48a5d4b43894bc584972eadc7ec1a1"><div class="ttname"><a href="class_jeu.html#a9f48a5d4b43894bc584972eadc7ec1a1">Jeu::setFini</a></div><div class="ttdeci">void setFini(bool f)</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:119</div></div>
+<div class="ttc" id="class_jeu_html_aaf27565623c1570e13daa67a65a999e9"><div class="ttname"><a href="class_jeu.html#aaf27565623c1570e13daa67a65a999e9">Jeu::setComboTypeJ1</a></div><div class="ttdeci">void setComboTypeJ1(int x)</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:99</div></div>
+<div class="ttc" id="class_joueur_html"><div class="ttname"><a href="class_joueur.html">Joueur</a></div><div class="ttdef"><b>Definition:</b> Joueur.hpp:12</div></div>
+<div class="ttc" id="class_jeu_html_a74110004db819646a40323b1daa2c249"><div class="ttname"><a href="class_jeu.html#a74110004db819646a40323b1daa2c249">Jeu::setJ1</a></div><div class="ttdeci">void setJ1(Joueur *j)</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:75</div></div>
+<div class="ttc" id="class_carte_html"><div class="ttname"><a href="class_carte.html">Carte</a></div><div class="ttdef"><b>Definition:</b> Carte.hpp:9</div></div>
+<div class="ttc" id="class_jeu_html_a1bc939a24ccb8035cab265d022e909e3"><div class="ttname"><a href="class_jeu.html#a1bc939a24ccb8035cab265d022e909e3">Jeu::getCombo</a></div><div class="ttdeci">int getCombo()</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:95</div></div>
+<div class="ttc" id="class_jeu_html_ad955ffee4ed18add167fa957386a9821"><div class="ttname"><a href="class_jeu.html#ad955ffee4ed18add167fa957386a9821">Jeu::notifierObs</a></div><div class="ttdeci">void notifierObs()</div><div class="ttdoc">notifie les observeur de jeu </div></div>
+<div class="ttc" id="class_jeu_html_af710d22785038c25866e270821a0d164"><div class="ttname"><a href="class_jeu.html#af710d22785038c25866e270821a0d164">Jeu::clearCarteJ1</a></div><div class="ttdeci">void clearCarteJ1()</div><div class="ttdoc">vide le vector&lt;Carte*&gt; carteJ1_ </div></div>
+<div class="ttc" id="class_jeu_html_af8a568254fd6935e8814f31580300f0e"><div class="ttname"><a href="class_jeu.html#af8a568254fd6935e8814f31580300f0e">Jeu::getBluff</a></div><div class="ttdeci">bool getBluff()</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:121</div></div>
+<div class="ttc" id="class_jeu_html_a2f0816cea4f78387b7ec71aa5e1f1b14"><div class="ttname"><a href="class_jeu.html#a2f0816cea4f78387b7ec71aa5e1f1b14">Jeu::getEtatCourant</a></div><div class="ttdeci">Etat * getEtatCourant()</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:104</div></div>
+<div class="ttc" id="class_etat_pioche_html"><div class="ttname"><a href="class_etat_pioche.html">EtatPioche</a></div><div class="ttdef"><b>Definition:</b> EtatPioche.hpp:11</div></div>
+<div class="ttc" id="class_jeu_html_afc4788d06bf24260783e70bce3455ca3"><div class="ttname"><a href="class_jeu.html#afc4788d06bf24260783e70bce3455ca3">Jeu::getEtatChoixWin</a></div><div class="ttdeci">Etat * getEtatChoixWin()</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:111</div></div>
+<div class="ttc" id="class_jeu_html_afded871bc0c3104ce1f0196ab4449663"><div class="ttname"><a href="class_jeu.html#afded871bc0c3104ce1f0196ab4449663">Jeu::getJoue</a></div><div class="ttdeci">int getJoue()</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:89</div></div>
+<div class="ttc" id="class_jeu_html_a5a74a90faa114fd22a09ed25b9fc8381"><div class="ttname"><a href="class_jeu.html#a5a74a90faa114fd22a09ed25b9fc8381">Jeu::plusCombo</a></div><div class="ttdeci">void plusCombo()</div><div class="ttdoc">augmente de un le compteur de combo ( combo_) </div></div>
+<div class="ttc" id="_sujet_8hpp_html"><div class="ttname"><a href="_sujet_8hpp.html">Sujet.hpp</a></div><div class="ttdoc">Interface pour un sujet. </div></div>
+<div class="ttc" id="class_jeu_html_aa5e5d255f55ff79dc50a149840240219"><div class="ttname"><a href="class_jeu.html#aa5e5d255f55ff79dc50a149840240219">Jeu::vidage</a></div><div class="ttdeci">void vidage()</div></div>
+<div class="ttc" id="class_jeu_html_ae804c0bd49285e41a28299f41d5eaaba"><div class="ttname"><a href="class_jeu.html#ae804c0bd49285e41a28299f41d5eaaba">Jeu::getEtatCalcDmg</a></div><div class="ttdeci">Etat * getEtatCalcDmg()</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:112</div></div>
+<div class="ttc" id="class_jeu_html_a372dba23eee1d33eb24e8f2dc3c3b6f4"><div class="ttname"><a href="class_jeu.html#a372dba23eee1d33eb24e8f2dc3c3b6f4">Jeu::getEtatFin</a></div><div class="ttdeci">Etat * getEtatFin()</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:116</div></div>
+<div class="ttc" id="class_jeu_html_ae62fc97f873d2c033b0b647db617f8f4"><div class="ttname"><a href="class_jeu.html#ae62fc97f873d2c033b0b647db617f8f4">Jeu::clearCarteJ2</a></div><div class="ttdeci">void clearCarteJ2()</div><div class="ttdoc">vide le vector&lt;Carte*&gt; carteJ2_ </div></div>
+<div class="ttc" id="class_jeu_html_a3c7a41b6e9acc74ab8286adc0f6c99fc"><div class="ttname"><a href="class_jeu.html#a3c7a41b6e9acc74ab8286adc0f6c99fc">Jeu::setJoue</a></div><div class="ttdeci">void setJoue(int x)</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:90</div></div>
+<div class="ttc" id="class_jeu_html_abd1b3f4f3866299296c37d5def7bd509"><div class="ttname"><a href="class_jeu.html#abd1b3f4f3866299296c37d5def7bd509">Jeu::retournerToMain</a></div><div class="ttdeci">void retournerToMain(int i)</div><div class="ttdoc">Retourne la dérnière carte jouer par le joueur i. </div></div>
+<div class="ttc" id="class_jeu_html_a6e61d83c15d2bd2bb0068dc58c4248f0"><div class="ttname"><a href="class_jeu.html#a6e61d83c15d2bd2bb0068dc58c4248f0">Jeu::addRcarteJ1</a></div><div class="ttdeci">void addRcarteJ1(Carte *c)</div><div class="ttdoc">ajoute une carte à la liste des carte à retourner de J1 </div></div>
+<div class="ttc" id="class_jeu_html_a2d0de8666c9f02c0af9186ec7e51643e"><div class="ttname"><a href="class_jeu.html#a2d0de8666c9f02c0af9186ec7e51643e">Jeu::getEtatCombo</a></div><div class="ttdeci">Etat * getEtatCombo()</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:114</div></div>
+<div class="ttc" id="class_jeu_html_ad41dfbbdde90ba9579173af18ea2a670"><div class="ttname"><a href="class_jeu.html#ad41dfbbdde90ba9579173af18ea2a670">Jeu::clearRCarteJ2</a></div><div class="ttdeci">void clearRCarteJ2()</div><div class="ttdoc">vide le vector&lt;Carte*&gt; RcarteJ2_ </div></div>
+<div class="ttc" id="class_jeu_html_ab70c1e2ede9fb55f99b433d650f05813"><div class="ttname"><a href="class_jeu.html#ab70c1e2ede9fb55f99b433d650f05813">Jeu::getEtatPioche</a></div><div class="ttdeci">Etat * getEtatPioche()</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:107</div></div>
+<div class="ttc" id="class_jeu_html_a890ea4e42ea493a8179fdfb94b6c2fac"><div class="ttname"><a href="class_jeu.html#a890ea4e42ea493a8179fdfb94b6c2fac">Jeu::clearRCarteJ1</a></div><div class="ttdeci">void clearRCarteJ1()</div><div class="ttdoc">vide le vector&lt;Carte*&gt; RcarteJ1_ </div></div>
+<div class="ttc" id="class_jeu_html_adae51a9577a485942e3d349fa43be0f4"><div class="ttname"><a href="class_jeu.html#adae51a9577a485942e3d349fa43be0f4">Jeu::addRcarteJ2</a></div><div class="ttdeci">void addRcarteJ2(Carte *c)</div><div class="ttdoc">ajoute une carte à la liste des carte à retourner de J2 </div></div>
+<div class="ttc" id="class_jeu_html_ab723c1aa7efb0961d83a53862ebd5122"><div class="ttname"><a href="class_jeu.html#ab723c1aa7efb0961d83a53862ebd5122">Jeu::addCarteJ2</a></div><div class="ttdeci">void addCarteJ2(Carte *c)</div><div class="ttdoc">ajoute une carte à la liste des carte de J2 </div></div>
+<div class="ttc" id="class_jeu_html_a56ed2a2cef42566e3c157cc11588e2ae"><div class="ttname"><a href="class_jeu.html#a56ed2a2cef42566e3c157cc11588e2ae">Jeu::getJ1</a></div><div class="ttdeci">Joueur * getJ1()</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:73</div></div>
+<div class="ttc" id="class_jeu_html_a2b0a504e0fc5a6e5a74f362ab26d9633"><div class="ttname"><a href="class_jeu.html#a2b0a504e0fc5a6e5a74f362ab26d9633">Jeu::getGoodComboType</a></div><div class="ttdeci">int getGoodComboType(int x)</div><div class="ttdoc">retourne le type de combo du joueur i </div></div>
+<div class="ttc" id="class_jeu_html_a37c63b56c95a83753c6f9521e1d355b4"><div class="ttname"><a href="class_jeu.html#a37c63b56c95a83753c6f9521e1d355b4">Jeu::setJ2</a></div><div class="ttdeci">void setJ2(Joueur *j)</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:79</div></div>
+<div class="ttc" id="class_jeu_html_adb7a2e6e6bfe15ed1d720e884faca987"><div class="ttname"><a href="class_jeu.html#adb7a2e6e6bfe15ed1d720e884faca987">Jeu::getComboTypeJ2</a></div><div class="ttdeci">int getComboTypeJ2()</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:101</div></div>
+<div class="ttc" id="class_jeu_html_a724b71e7405bf1f28142973e20902691"><div class="ttname"><a href="class_jeu.html#a724b71e7405bf1f28142973e20902691">Jeu::getFini</a></div><div class="ttdeci">bool getFini()</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:118</div></div>
+<div class="ttc" id="class_jeu_html_aedcf65c5f258409cd5539c7f3132b7b8"><div class="ttname"><a href="class_jeu.html#aedcf65c5f258409cd5539c7f3132b7b8">Jeu::getGagnantCombat</a></div><div class="ttdeci">int getGagnantCombat()</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:92</div></div>
+<div class="ttc" id="class_jeu_html_a71d1539ad625597004b324e15fc9bf7f"><div class="ttname"><a href="class_jeu.html#a71d1539ad625597004b324e15fc9bf7f">Jeu::getLastCarte</a></div><div class="ttdeci">Carte * getLastCarte(int j)</div><div class="ttdoc">retourne la dérnière carte jouer par le joueur i </div></div>
+<div class="ttc" id="class_jeu_html_aee83ada0589e3352ec854b12e1c6e265"><div class="ttname"><a href="class_jeu.html#aee83ada0589e3352ec854b12e1c6e265">Jeu::ajouterObs</a></div><div class="ttdeci">void ajouterObs(Observeur *o)</div><div class="ttdoc">ajoute un observeur à jeu </div></div>
+<div class="ttc" id="class_jeu_html_a0e916d9f16d3e0eb073027e4d9d56ef0"><div class="ttname"><a href="class_jeu.html#a0e916d9f16d3e0eb073027e4d9d56ef0">Jeu::getEtatChoixJ2</a></div><div class="ttdeci">Etat * getEtatChoixJ2()</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:109</div></div>
+<div class="ttc" id="class_jeu_html_acc5795ee00edf75516d3dfe65be3e6d6"><div class="ttname"><a href="class_jeu.html#acc5795ee00edf75516d3dfe65be3e6d6">Jeu::Jeu</a></div><div class="ttdeci">Jeu()</div><div class="ttdoc">Constructeur. </div></div>
+<div class="ttc" id="class_jeu_html_a8f4efbf2847eafdd86cd178b8b17ba24"><div class="ttname"><a href="class_jeu.html#a8f4efbf2847eafdd86cd178b8b17ba24">Jeu::getEtatBluff</a></div><div class="ttdeci">Etat * getEtatBluff()</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:113</div></div>
+<div class="ttc" id="class_jeu_html_a02280609f3dc7843923f8de198d42654"><div class="ttname"><a href="class_jeu.html#a02280609f3dc7843923f8de198d42654">Jeu::setGagnantCombat</a></div><div class="ttdeci">void setGagnantCombat(int x)</div><div class="ttdef"><b>Definition:</b> Jeu.hpp:93</div></div>
+<div class="ttc" id="class_etat_html"><div class="ttname"><a href="class_etat.html">Etat</a></div><div class="ttdef"><b>Definition:</b> Etat.hpp:11</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche 22 Novembre 2015 15:17:00 pour Projet : Jeu de cartes - POO par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>
